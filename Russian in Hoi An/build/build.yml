@@ -1,0 +1,22 @@
+title: Русскоязычный гайд для туристов в Хойане
+language: ru
+output_dir: dist
+source:
+  - overview.md
+  - categories/eda-i-napitki.md
+  - categories/kofe.md
+  - categories/spa-i-krasota.md
+  - categories/pokupki-i-byt.md
+  - categories/dengi.md
+  - categories/transport.md
+  - categories/zdorove.md
+  - categories/deti-i-semya.md
+  - categories/plyazhi-i-otdyh.md
+  - categories/ekskursii.md
+  - categories/shopping-i-suveniry.md
+  - categories/dostavka.md
+  - categories/specialnye-servisy.md
+  - categories/poleznaya-informaciya.md
+  - categories/nochnaya-zhizn.md
+  - categories/foto-i-kontent.md
+  - categories/aktivnyy-otdyh-i-more.md
