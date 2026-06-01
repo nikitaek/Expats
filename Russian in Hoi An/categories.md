@@ -1,0 +1,21 @@
+# Категории
+
+[← Полный план (overview)](overview.md)
+
+- [Еда и напитки](categories/eda-i-napitki.md)
+- [Кофе](categories/kofe.md)
+- [SPA и красота](categories/spa-i-krasota.md)
+- [Покупки и бытовые вопросы](categories/pokupki-i-byt.md)
+- [Деньги](categories/dengi.md)
+- [Транспорт](categories/transport.md)
+- [Здоровье](categories/zdorove.md)
+- [Дети и семья](categories/deti-i-semya.md)
+- [Пляжи и отдых](categories/plyazhi-i-otdyh.md)
+- [Экскурсии и достопримечательности](categories/ekskursii.md)
+- [Шопинг и сувениры](categories/shopping-i-suveniry.md)
+- [Доставка](categories/dostavka.md)
+- [Специальные сервисы](categories/specialnye-servisy.md)
+- [Полезная информация](categories/poleznaya-informaciya.md)
+- [Ночная жизнь](categories/nochnaya-zhizn.md)
+- [Фото и контент](categories/foto-i-kontent.md)
+- [Активный отдых и море](categories/aktivnyy-otdyh-i-more.md)
