@@ -2,8 +2,39 @@
 
 [← Категории](../categories.md) · [Обзор](../overview.md)
 
-1. Лучшие сувениры из Вьетнама
-2. Что купить домой: готовые наборы сувениров
-3. Лучшие рынки: фрукты, еда, сувениры, одежда
-4. Tailor по шелку
-5. Tailor по льну
+1. **Лучшие сувениры из Вьетнама**  
+Хороший сувенир - это вещь, которая реально используется дома, а не только «для полки», поэтому лучше выбирать еду, кофе, текстиль и качественные ремесленные предметы. Перед покупкой хрупких вещей сразу уточняйте упаковку для багажа.
+- Вьетнамский кофе ([Google Maps](https://www.google.com/maps/search/?api=1&query=%D0%92%D1%8C%D0%B5%D1%82%D0%BD%D0%B0%D0%BC%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BA%D0%BE%D1%84%D0%B5%20Hoi%20An%20Da%20Nang%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=%D0%92%D1%8C%D0%B5%D1%82%D0%BD%D0%B0%D0%BC%D1%81%D0%BA%D0%B8%D0%B9%20%D0%BA%D0%BE%D1%84%D0%B5%20Hoi%20An%20Da%20Nang%20Vietnam))
+- Чай/специи ([Google Maps](https://www.google.com/maps/search/?api=1&query=%D0%A7%D0%B0%D0%B9%2F%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D0%B8%20Hoi%20An%20Da%20Nang%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=%D0%A7%D0%B0%D0%B9%2F%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D0%B8%20Hoi%20An%20Da%20Nang%20Vietnam))
+- Шелковые изделия ([Google Maps](https://www.google.com/maps/search/?api=1&query=%D0%A8%D0%B5%D0%BB%D0%BA%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B8%D0%B7%D0%B4%D0%B5%D0%BB%D0%B8%D1%8F%20Hoi%20An%20Da%20Nang%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=%D0%A8%D0%B5%D0%BB%D0%BA%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B8%D0%B7%D0%B4%D0%B5%D0%BB%D0%B8%D1%8F%20Hoi%20An%20Da%20Nang%20Vietnam))
+- Лаковые изделия ([Google Maps](https://www.google.com/maps/search/?api=1&query=%D0%9B%D0%B0%D0%BA%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B8%D0%B7%D0%B4%D0%B5%D0%BB%D0%B8%D1%8F%20Hoi%20An%20Da%20Nang%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=%D0%9B%D0%B0%D0%BA%D0%BE%D0%B2%D1%8B%D0%B5%20%D0%B8%D0%B7%D0%B4%D0%B5%D0%BB%D0%B8%D1%8F%20Hoi%20An%20Da%20Nang%20Vietnam))
+- Керамика ручной работы ([Google Maps](https://www.google.com/maps/search/?api=1&query=%D0%9A%D0%B5%D1%80%D0%B0%D0%BC%D0%B8%D0%BA%D0%B0%20%D1%80%D1%83%D1%87%D0%BD%D0%BE%D0%B9%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B%20Hoi%20An%20Da%20Nang%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=%D0%9A%D0%B5%D1%80%D0%B0%D0%BC%D0%B8%D0%BA%D0%B0%20%D1%80%D1%83%D1%87%D0%BD%D0%BE%D0%B9%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D1%8B%20Hoi%20An%20Da%20Nang%20Vietnam))
+- Coconut/cacao локальные продукты ([Google Maps](https://www.google.com/maps/search/?api=1&query=Coconut%2Fcacao%20%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D1%8B%20Hoi%20An%20Da%20Nang%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Coconut%2Fcacao%20%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%BF%D1%80%D0%BE%D0%B4%D1%83%D0%BA%D1%82%D1%8B%20Hoi%20An%20Da%20Nang%20Vietnam))
+
+2. **Что купить домой: готовые наборы сувениров**  
+Готовые наборы удобны, когда нужно быстро собрать подарки разным людям без долгого выбора. Практичнее формировать набор по теме: «кофе», «чай и сладкое», «дом и декор».
+- Кофе + phin + открытка ([Google Maps](https://www.google.com/maps/search/?api=1&query=%D0%9A%D0%BE%D1%84%D0%B5%20%2B%20phin%20%2B%20%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%BA%D0%B0%20Hoi%20An%20Da%20Nang%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=%D0%9A%D0%BE%D1%84%D0%B5%20%2B%20phin%20%2B%20%D0%BE%D1%82%D0%BA%D1%80%D1%8B%D1%82%D0%BA%D0%B0%20Hoi%20An%20Da%20Nang%20Vietnam))
+- Чай + сухофрукты + специи ([Google Maps](https://www.google.com/maps/search/?api=1&query=%D0%A7%D0%B0%D0%B9%20%2B%20%D1%81%D1%83%D1%85%D0%BE%D1%84%D1%80%D1%83%D0%BA%D1%82%D1%8B%20%2B%20%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D0%B8%20Hoi%20An%20Da%20Nang%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=%D0%A7%D0%B0%D0%B9%20%2B%20%D1%81%D1%83%D1%85%D0%BE%D1%84%D1%80%D1%83%D0%BA%D1%82%D1%8B%20%2B%20%D1%81%D0%BF%D0%B5%D1%86%D0%B8%D0%B8%20Hoi%20An%20Da%20Nang%20Vietnam))
+- Мини-набор косметики/бальзамов ([Google Maps](https://www.google.com/maps/search/?api=1&query=%D0%9C%D0%B8%D0%BD%D0%B8-%D0%BD%D0%B0%D0%B1%D0%BE%D1%80%20%D0%BA%D0%BE%D1%81%D0%BC%D0%B5%D1%82%D0%B8%D0%BA%D0%B8%2F%D0%B1%D0%B0%D0%BB%D1%8C%D0%B7%D0%B0%D0%BC%D0%BE%D0%B2%20Hoi%20An%20Da%20Nang%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=%D0%9C%D0%B8%D0%BD%D0%B8-%D0%BD%D0%B0%D0%B1%D0%BE%D1%80%20%D0%BA%D0%BE%D1%81%D0%BC%D0%B5%D1%82%D0%B8%D0%BA%D0%B8%2F%D0%B1%D0%B0%D0%BB%D1%8C%D0%B7%D0%B0%D0%BC%D0%BE%D0%B2%20Hoi%20An%20Da%20Nang%20Vietnam))
+- Керамика + текстильные салфетки ([Google Maps](https://www.google.com/maps/search/?api=1&query=%D0%9A%D0%B5%D1%80%D0%B0%D0%BC%D0%B8%D0%BA%D0%B0%20%2B%20%D1%82%D0%B5%D0%BA%D1%81%D1%82%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D1%81%D0%B0%D0%BB%D1%84%D0%B5%D1%82%D0%BA%D0%B8%20Hoi%20An%20Da%20Nang%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=%D0%9A%D0%B5%D1%80%D0%B0%D0%BC%D0%B8%D0%BA%D0%B0%20%2B%20%D1%82%D0%B5%D0%BA%D1%81%D1%82%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D1%81%D0%B0%D0%BB%D1%84%D0%B5%D1%82%D0%BA%D0%B8%20Hoi%20An%20Da%20Nang%20Vietnam))
+
+3. **Лучшие рынки: фрукты, еда, сувениры, одежда**  
+Рынки лучше посещать утром для еды/фруктов и вечером для атмосферы/сувениров, при этом всегда полезно сравнить 2-3 точки по цене. Торг уместен, но спокойный и уважительный стиль обычно дает лучший результат.
+- Hoi An Central Market ([Google Maps](https://www.google.com/maps/search/?api=1&query=Hoi%20An%20Central%20Market%20Hoi%20An%20Da%20Nang%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Hoi%20An%20Central%20Market%20Hoi%20An%20Da%20Nang%20Vietnam))
+- Hoi An Night Market ([Google Maps](https://www.google.com/maps/search/?api=1&query=Hoi%20An%20Night%20Market%20Hoi%20An%20Da%20Nang%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Hoi%20An%20Night%20Market%20Hoi%20An%20Da%20Nang%20Vietnam))
+- Con Market (Da Nang) ([Google Maps](https://www.google.com/maps/search/?api=1&query=Con%20Market%20(Da%20Nang)%20Hoi%20An%20Da%20Nang%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Con%20Market%20(Da%20Nang)%20Hoi%20An%20Da%20Nang%20Vietnam))
+- Han Market (Da Nang) ([Google Maps](https://www.google.com/maps/search/?api=1&query=Han%20Market%20(Da%20Nang)%20Hoi%20An%20Da%20Nang%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Han%20Market%20(Da%20Nang)%20Hoi%20An%20Da%20Nang%20Vietnam))
+
+4. **Tailor по шелку**  
+Для шелка выбирайте ателье, где показывают образцы ткани и не торопят с «сегодня-сейчас» без примерок. Минимум одна промежуточная примерка сильно снижает риск, что посадка будет неудобной.
+- Yaly Couture ([Google Maps](https://www.google.com/maps/search/?api=1&query=Yaly%20Couture%20Hoi%20An%20Da%20Nang%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Yaly%20Couture%20Hoi%20An%20Da%20Nang%20Vietnam))
+- Bebe Tailor ([Google Maps](https://www.google.com/maps/search/?api=1&query=Bebe%20Tailor%20Hoi%20An%20Da%20Nang%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Bebe%20Tailor%20Hoi%20An%20Da%20Nang%20Vietnam))
+- A Dong Silk ([Google Maps](https://www.google.com/maps/search/?api=1&query=A%20Dong%20Silk%20Hoi%20An%20Da%20Nang%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=A%20Dong%20Silk%20Hoi%20An%20Da%20Nang%20Vietnam))
+- Kimmy Tailor ([Google Maps](https://www.google.com/maps/search/?api=1&query=Kimmy%20Tailor%20Hoi%20An%20Da%20Nang%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Kimmy%20Tailor%20Hoi%20An%20Da%20Nang%20Vietnam))
+
+5. **Tailor по льну**  
+Лен отлично подходит для местного климата, но качество ткани и пошива отличается даже у соседних мастерских, поэтому просите показать несколько плотностей льна. Лучше выбирать простой крой и добавить запас по свободе, чтобы вещь была комфортной в жару.
+- Bebe Tailor ([Google Maps](https://www.google.com/maps/search/?api=1&query=Bebe%20Tailor%20Hoi%20An%20Da%20Nang%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Bebe%20Tailor%20Hoi%20An%20Da%20Nang%20Vietnam))
+- Tuong Tailor ([Google Maps](https://www.google.com/maps/search/?api=1&query=Tuong%20Tailor%20Hoi%20An%20Da%20Nang%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Tuong%20Tailor%20Hoi%20An%20Da%20Nang%20Vietnam))
+- Lana Tailor ([Google Maps](https://www.google.com/maps/search/?api=1&query=Lana%20Tailor%20Hoi%20An%20Da%20Nang%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Lana%20Tailor%20Hoi%20An%20Da%20Nang%20Vietnam))
+- Izi Wear (linen-friendly lines) ([Google Maps](https://www.google.com/maps/search/?api=1&query=Izi%20Wear%20(linen-friendly%20lines)%20Hoi%20An%20Da%20Nang%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Izi%20Wear%20(linen-friendly%20lines)%20Hoi%20An%20Da%20Nang%20Vietnam))
