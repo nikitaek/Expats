@@ -4,56 +4,56 @@
 
 1. **Лучшие места для кофе с кондиционером**  
 В жаркие часы лучше выбирать кофейни с полноценным indoor-залом, а не только террасой, тогда можно комфортно посидеть и поработать. Дополнительный плюс - стабильная обжарка и понятное меню без «лотереи» по вкусу.
-- The Espresso Station ([Google Maps](https://www.google.com/maps/search/?api=1&query=The%20Espresso%20Station%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=The%20Espresso%20Station%2C%20Hoi%20An%2C%20Vietnam))
-- Hoi An Roastery ([Google Maps](https://www.google.com/maps/search/?api=1&query=Hoi%20An%20Roastery%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Hoi%20An%20Roastery%2C%20Hoi%20An%2C%20Vietnam))
-- Faifo Coffee ([Google Maps](https://www.google.com/maps/search/?api=1&query=Faifo%20Coffee%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Faifo%20Coffee%2C%20Hoi%20An%2C%20Vietnam))
-- Phin Coffee spots в центре ([Google Maps](https://www.google.com/maps/search/?api=1&query=Phin%20Coffee%20spots%20%D0%B2%20%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%B5%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Phin%20Coffee%20spots%20%D0%B2%20%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%B5%2C%20Hoi%20An%2C%20Vietnam))
-- 43 Factory Coffee Roaster (Da Nang) ([Google Maps](https://www.google.com/maps/search/?api=1&query=43%20Factory%20Coffee%20Roaster%20(Da%20Nang)%20Hoi%20An%20Da%20Nang%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=43%20Factory%20Coffee%20Roaster%20(Da%20Nang)%20Hoi%20An%20Da%20Nang%20Vietnam))
+- The Espresso Station
+- Hoi An Roastery
+- Faifo Coffee
+- Phin Coffee spots в центре
+- 43 Factory Coffee Roaster (Da Nang)
 
 2. **Местный кофе и его особенности**  
 Вьетнамский кофе часто плотнее и насыщеннее привычного filter-кофе, потому что активно используется robusta и более темная обжарка. Классическая подача через phin дает концентрированный, медленный и яркий вкус с выраженной горчинкой и шоколадными нотами.
-- Robusta (более крепкий профиль) ([Google Maps](https://www.google.com/maps/search/?api=1&query=Robusta%20(%D0%B1%D0%BE%D0%BB%D0%B5%D0%B5%20%D0%BA%D1%80%D0%B5%D0%BF%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C)%20Hoi%20An%20Da%20Nang%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Robusta%20(%D0%B1%D0%BE%D0%BB%D0%B5%D0%B5%20%D0%BA%D1%80%D0%B5%D0%BF%D0%BA%D0%B8%D0%B9%20%D0%BF%D1%80%D0%BE%D1%84%D0%B8%D0%BB%D1%8C)%20Hoi%20An%20Da%20Nang%20Vietnam))
-- Arabica Da Lat (мягче и кислее) ([Google Maps](https://www.google.com/maps/search/?api=1&query=Arabica%20Da%20Lat%20(%D0%BC%D1%8F%D0%B3%D1%87%D0%B5%20%D0%B8%20%D0%BA%D0%B8%D1%81%D0%BB%D0%B5%D0%B5)%20Hoi%20An%20Da%20Nang%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Arabica%20Da%20Lat%20(%D0%BC%D1%8F%D0%B3%D1%87%D0%B5%20%D0%B8%20%D0%BA%D0%B8%D1%81%D0%BB%D0%B5%D0%B5)%20Hoi%20An%20Da%20Nang%20Vietnam))
-- Смеси arabica/robusta ([Google Maps](https://www.google.com/maps/search/?api=1&query=%D0%A1%D0%BC%D0%B5%D1%81%D0%B8%20arabica%2Frobusta%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=%D0%A1%D0%BC%D0%B5%D1%81%D0%B8%20arabica%2Frobusta%2C%20Hoi%20An%2C%20Vietnam))
+- Robusta (более крепкий профиль)
+- Arabica Da Lat (мягче и кислее)
+- Смеси arabica/robusta
 
 3. **Какой вьетнамский кофе обязательно попробовать**  
 Чтобы понять стиль местного кофе, попробуйте не один напиток, а 3-4 разных формата: горячий классический, холодный со льдом и варианты с локальными акцентами. Так проще выбрать зерно домой под ваш привычный способ заваривания.
-- Ca phe sua da ([Google Maps](https://www.google.com/maps/search/?api=1&query=Ca%20phe%20sua%20da%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Ca%20phe%20sua%20da%2C%20Hoi%20An%2C%20Vietnam))
-- Ca phe den da ([Google Maps](https://www.google.com/maps/search/?api=1&query=Ca%20phe%20den%20da%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Ca%20phe%20den%20da%2C%20Hoi%20An%2C%20Vietnam))
-- Egg coffee ([Google Maps](https://www.google.com/maps/search/?api=1&query=Egg%20coffee%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Egg%20coffee%2C%20Hoi%20An%2C%20Vietnam))
-- Coconut coffee ([Google Maps](https://www.google.com/maps/search/?api=1&query=Coconut%20coffee%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Coconut%20coffee%2C%20Hoi%20An%2C%20Vietnam))
-- Salt coffee ([Google Maps](https://www.google.com/maps/search/?api=1&query=Salt%20coffee%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Salt%20coffee%2C%20Hoi%20An%2C%20Vietnam))
+- Ca phe sua da
+- Ca phe den da
+- Egg coffee
+- Coconut coffee
+- Salt coffee
 
 4. **Где купить кофе домой: зерна, молотый, фильтры, phin**  
 Покупать лучше у обжарщиков или в фирменных точках, где можно уточнить дату обжарки и состав бленда, а не только «красивую упаковку». Сразу берите небольшие пачки разных профилей, чтобы дома сравнить и выбрать любимый.
-- Hoi An Roastery retail ([Google Maps](https://www.google.com/maps/search/?api=1&query=Hoi%20An%20Roastery%20retail%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Hoi%20An%20Roastery%20retail%2C%20Hoi%20An%2C%20Vietnam))
-- La Viet/Da Lat бренды в маркетах ([Google Maps](https://www.google.com/maps/search/?api=1&query=La%20Viet%2FDa%20Lat%20%D0%B1%D1%80%D0%B5%D0%BD%D0%B4%D1%8B%20%D0%B2%20%D0%BC%D0%B0%D1%80%D0%BA%D0%B5%D1%82%D0%B0%D1%85%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=La%20Viet%2FDa%20Lat%20%D0%B1%D1%80%D0%B5%D0%BD%D0%B4%D1%8B%20%D0%B2%20%D0%BC%D0%B0%D1%80%D0%BA%D0%B5%D1%82%D0%B0%D1%85%2C%20Hoi%20An%2C%20Vietnam))
-- Highlands/Trung Nguyen фирменные зоны ([Google Maps](https://www.google.com/maps/search/?api=1&query=Highlands%2FTrung%20Nguyen%20%D1%84%D0%B8%D1%80%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%B7%D0%BE%D0%BD%D1%8B%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Highlands%2FTrung%20Nguyen%20%D1%84%D0%B8%D1%80%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%B7%D0%BE%D0%BD%D1%8B%2C%20Hoi%20An%2C%20Vietnam))
-- Lotte Mart/GO! (широкий выбор) ([Google Maps](https://www.google.com/maps/search/?api=1&query=Lotte%20Mart%2FGO!%20(%D1%88%D0%B8%D1%80%D0%BE%D0%BA%D0%B8%D0%B9%20%D0%B2%D1%8B%D0%B1%D0%BE%D1%80)%20Hoi%20An%20Da%20Nang%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Lotte%20Mart%2FGO!%20(%D1%88%D0%B8%D1%80%D0%BE%D0%BA%D0%B8%D0%B9%20%D0%B2%D1%8B%D0%B1%D0%BE%D1%80)%20Hoi%20An%20Da%20Nang%20Vietnam))
+- Hoi An Roastery retail
+- La Viet/Da Lat бренды в маркетах
+- Highlands/Trung Nguyen фирменные зоны
+- Lotte Mart/GO! (широкий выбор)
 
 5. **Какой кофе купить домой**  
 Если сомневаетесь, берите 2-3 профиля под разные сценарии: «каждый день», «под молоко» и «гостям попробовать Вьетнам». Универсальный старт - medium roast blend, а для «аутентичного удара» можно добавить robusta-heavy вариант.
-- Medium blend (арабика+робуста) ([Google Maps](https://www.google.com/maps/search/?api=1&query=Medium%20blend%20(%D0%B0%D1%80%D0%B0%D0%B1%D0%B8%D0%BA%D0%B0%2B%D1%80%D0%BE%D0%B1%D1%83%D1%81%D1%82%D0%B0)%20Hoi%20An%20Da%20Nang%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Medium%20blend%20(%D0%B0%D1%80%D0%B0%D0%B1%D0%B8%D0%BA%D0%B0%2B%D1%80%D0%BE%D0%B1%D1%83%D1%81%D1%82%D0%B0)%20Hoi%20An%20Da%20Nang%20Vietnam))
-- 100% robusta для phin ([Google Maps](https://www.google.com/maps/search/?api=1&query=100%25%20robusta%20%D0%B4%D0%BB%D1%8F%20phin%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=100%25%20robusta%20%D0%B4%D0%BB%D1%8F%20phin%2C%20Hoi%20An%2C%20Vietnam))
-- Arabica Da Lat для фильтра ([Google Maps](https://www.google.com/maps/search/?api=1&query=Arabica%20Da%20Lat%20%D0%B4%D0%BB%D1%8F%20%D1%84%D0%B8%D0%BB%D1%8C%D1%82%D1%80%D0%B0%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Arabica%20Da%20Lat%20%D0%B4%D0%BB%D1%8F%20%D1%84%D0%B8%D0%BB%D1%8C%D1%82%D1%80%D0%B0%2C%20Hoi%20An%2C%20Vietnam))
-- Подарочный local blend с датой обжарки ([Google Maps](https://www.google.com/maps/search/?api=1&query=%D0%9F%D0%BE%D0%B4%D0%B0%D1%80%D0%BE%D1%87%D0%BD%D1%8B%D0%B9%20local%20blend%20%D1%81%20%D0%B4%D0%B0%D1%82%D0%BE%D0%B9%20%D0%BE%D0%B1%D0%B6%D0%B0%D1%80%D0%BA%D0%B8%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=%D0%9F%D0%BE%D0%B4%D0%B0%D1%80%D0%BE%D1%87%D0%BD%D1%8B%D0%B9%20local%20blend%20%D1%81%20%D0%B4%D0%B0%D1%82%D0%BE%D0%B9%20%D0%BE%D0%B1%D0%B6%D0%B0%D1%80%D0%BA%D0%B8%2C%20Hoi%20An%2C%20Vietnam))
+- Medium blend (арабика+робуста)
+- 100% robusta для phin
+- Arabica Da Lat для фильтра
+- Подарочный local blend с датой обжарки
 
 6. **Где купить phin-фильтр для кофе**  
 Phin-фильтры есть почти везде, но лучше брать модель из плотного металла с ровной перфорацией и надежной крышкой, тогда экстракция стабильнее. Для дома удобны объемы 120-170 мл на 1-2 порции.
-- Супермаркеты WinMart/GO!/Lotte ([Google Maps](https://www.google.com/maps/search/?api=1&query=%D0%A1%D1%83%D0%BF%D0%B5%D1%80%D0%BC%D0%B0%D1%80%D0%BA%D0%B5%D1%82%D1%8B%20WinMart%2FGO!%2FLotte%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=%D0%A1%D1%83%D0%BF%D0%B5%D1%80%D0%BC%D0%B0%D1%80%D0%BA%D0%B5%D1%82%D1%8B%20WinMart%2FGO!%2FLotte%2C%20Vietnam))
-- Кофейные магазины при обжарщиках ([Google Maps](https://www.google.com/maps/search/?api=1&query=%D0%9A%D0%BE%D1%84%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D1%8B%20%D0%BF%D1%80%D0%B8%20%D0%BE%D0%B1%D0%B6%D0%B0%D1%80%D1%89%D0%B8%D0%BA%D0%B0%D1%85%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=%D0%9A%D0%BE%D1%84%D0%B5%D0%B9%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D1%8B%20%D0%BF%D1%80%D0%B8%20%D0%BE%D0%B1%D0%B6%D0%B0%D1%80%D1%89%D0%B8%D0%BA%D0%B0%D1%85%2C%20Hoi%20An%2C%20Vietnam))
-- Kitchenware магазины Danang ([Google Maps](https://www.google.com/maps/search/?api=1&query=Kitchenware%20%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D1%8B%20Danang%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Kitchenware%20%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D1%8B%20Danang%2C%20Vietnam))
+- Супермаркеты WinMart/GO!/Lotte
+- Кофейные магазины при обжарщиках
+- Kitchenware магазины Danang
 
 7. **Как пользоваться phin-фильтром**  
 Базовый алгоритм простой: прогреть фильтр, добавить кофе среднего/крупного помола, слегка утрамбовать прессом и пролить в 2 этапа для равномерной экстракции. Если капает слишком быстро - помол слишком крупный или слабый прижим; если почти не капает - наоборот.
-- 18-22 г кофе на 60-90 мл воды ([Google Maps](https://www.google.com/maps/search/?api=1&query=18-22%20%D0%B3%20%D0%BA%D0%BE%D1%84%D0%B5%20%D0%BD%D0%B0%2060-90%20%D0%BC%D0%BB%20%D0%B2%D0%BE%D0%B4%D1%8B%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=18-22%20%D0%B3%20%D0%BA%D0%BE%D1%84%D0%B5%20%D0%BD%D0%B0%2060-90%20%D0%BC%D0%BB%20%D0%B2%D0%BE%D0%B4%D1%8B%2C%20Hoi%20An%2C%20Vietnam))
-- Bloom 20-30 секунд ([Google Maps](https://www.google.com/maps/search/?api=1&query=Bloom%2020-30%20%D1%81%D0%B5%D0%BA%D1%83%D0%BD%D0%B4%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Bloom%2020-30%20%D1%81%D0%B5%D0%BA%D1%83%D0%BD%D0%B4%2C%20Hoi%20An%2C%20Vietnam))
-- Общая экстракция 4-6 минут ([Google Maps](https://www.google.com/maps/search/?api=1&query=%D0%9E%D0%B1%D1%89%D0%B0%D1%8F%20%D1%8D%D0%BA%D1%81%D1%82%D1%80%D0%B0%D0%BA%D1%86%D0%B8%D1%8F%204-6%20%D0%BC%D0%B8%D0%BD%D1%83%D1%82%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=%D0%9E%D0%B1%D1%89%D0%B0%D1%8F%20%D1%8D%D0%BA%D1%81%D1%82%D1%80%D0%B0%D0%BA%D1%86%D0%B8%D1%8F%204-6%20%D0%BC%D0%B8%D0%BD%D1%83%D1%82%2C%20Hoi%20An%2C%20Vietnam))
-- Лед/сгущенка по вкусу ([Google Maps](https://www.google.com/maps/search/?api=1&query=%D0%9B%D0%B5%D0%B4%2F%D1%81%D0%B3%D1%83%D1%89%D0%B5%D0%BD%D0%BA%D0%B0%20%D0%BF%D0%BE%20%D0%B2%D0%BA%D1%83%D1%81%D1%83%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=%D0%9B%D0%B5%D0%B4%2F%D1%81%D0%B3%D1%83%D1%89%D0%B5%D0%BD%D0%BA%D0%B0%20%D0%BF%D0%BE%20%D0%B2%D0%BA%D1%83%D1%81%D1%83%2C%20Hoi%20An%2C%20Vietnam))
+- 18-22 г кофе на 60-90 мл воды
+- Bloom 20-30 секунд
+- Общая экстракция 4-6 минут
+- Лед/сгущенка по вкусу
 
 8. **Где купить настоящий вьетнамский кофе и не нарваться на подделку**  
 Снижайте риск подделки: покупайте в фирменных точках, проверяйте дату обжарки, состав и целостность упаковки с пломбой/QR. Слишком низкая цена на «премиум арабику» почти всегда сигнал, что внутри либо смесь хуже, либо старый продукт.
-- Официальные магазины брендов ([Google Maps](https://www.google.com/maps/search/?api=1&query=%D0%9E%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D1%8B%20%D0%B1%D1%80%D0%B5%D0%BD%D0%B4%D0%BE%D0%B2%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=%D0%9E%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%D1%8B%20%D0%B1%D1%80%D0%B5%D0%BD%D0%B4%D0%BE%D0%B2%2C%20Hoi%20An%2C%20Vietnam))
-- Известные локальные обжарщики ([Google Maps](https://www.google.com/maps/search/?api=1&query=%D0%98%D0%B7%D0%B2%D0%B5%D1%81%D1%82%D0%BD%D1%8B%D0%B5%20%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%BE%D0%B1%D0%B6%D0%B0%D1%80%D1%89%D0%B8%D0%BA%D0%B8%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=%D0%98%D0%B7%D0%B2%D0%B5%D1%81%D1%82%D0%BD%D1%8B%D0%B5%20%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%BE%D0%B1%D0%B6%D0%B0%D1%80%D1%89%D0%B8%D0%BA%D0%B8%2C%20Hoi%20An%2C%20Vietnam))
-- Крупные сетевые супермаркеты ([Google Maps](https://www.google.com/maps/search/?api=1&query=%D0%9A%D1%80%D1%83%D0%BF%D0%BD%D1%8B%D0%B5%20%D1%81%D0%B5%D1%82%D0%B5%D0%B2%D1%8B%D0%B5%20%D1%81%D1%83%D0%BF%D0%B5%D1%80%D0%BC%D0%B0%D1%80%D0%BA%D0%B5%D1%82%D1%8B%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=%D0%9A%D1%80%D1%83%D0%BF%D0%BD%D1%8B%D0%B5%20%D1%81%D0%B5%D1%82%D0%B5%D0%B2%D1%8B%D0%B5%20%D1%81%D1%83%D0%BF%D0%B5%D1%80%D0%BC%D0%B0%D1%80%D0%BA%D0%B5%D1%82%D1%8B%2C%20Hoi%20An%2C%20Vietnam))
-- Duty Free только как backup-вариант ([Google Maps](https://www.google.com/maps/search/?api=1&query=Duty%20Free%20%D1%82%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D0%BA%D0%B0%D0%BA%20backup-%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Duty%20Free%20%D1%82%D0%BE%D0%BB%D1%8C%D0%BA%D0%BE%20%D0%BA%D0%B0%D0%BA%20backup-%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%2C%20Hoi%20An%2C%20Vietnam))
+- Официальные магазины брендов
+- Известные локальные обжарщики
+- Крупные сетевые супермаркеты
+- Duty Free только как backup-вариант

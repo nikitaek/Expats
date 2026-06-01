@@ -4,74 +4,74 @@
 
 1. **Lady Buddha / Big Buddha**  
 Лучшее время для поездки - раннее утро или ближе к закату, когда меньше жара и приятнее вид на бухту Дананга. На месте действует храмовый этикет: закрытые плечи/колени и спокойное поведение в зоне пагоды.
-- Son Tra Peninsula viewpoint ([Google Maps](https://www.google.com/maps/search/?api=1&query=Son%20Tra%20Peninsula%20viewpoint%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Son%20Tra%20Peninsula%20viewpoint%2C%20Vietnam))
-- Linh Ung Pagoda ([Google Maps](https://www.google.com/maps/search/?api=1&query=Linh%20Ung%20Pagoda%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Linh%20Ung%20Pagoda%2C%20Hoi%20An%2C%20Vietnam))
-- Комбо с Monkey Mountain маршрутом ([Google Maps](https://www.google.com/maps/search/?api=1&query=%D0%9A%D0%BE%D0%BC%D0%B1%D0%BE%20%D1%81%20Monkey%20Mountain%20%D0%BC%D0%B0%D1%80%D1%88%D1%80%D1%83%D1%82%D0%BE%D0%BC%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=%D0%9A%D0%BE%D0%BC%D0%B1%D0%BE%20%D1%81%20Monkey%20Mountain%20%D0%BC%D0%B0%D1%80%D1%88%D1%80%D1%83%D1%82%D0%BE%D0%BC%2C%20Hoi%20An%2C%20Vietnam))
+- Son Tra Peninsula viewpoint
+- Linh Ung Pagoda
+- Комбо с Monkey Mountain маршрутом
 
 2. **Marble Mountains**  
 Горы лучше посещать с запасом воды и обувью с хорошим сцеплением: есть лестницы, пещеры и скользкие участки после дождя. Если хотите без перегруза, закладывайте 2-3 часа и выбирайте 2-3 ключевые точки, а не «все сразу».
-- Thuy Son (главная гора) ([Google Maps](https://www.google.com/maps/search/?api=1&query=Thuy%20Son%20(%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D0%B3%D0%BE%D1%80%D0%B0)%20Hoi%20An%20Da%20Nang%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Thuy%20Son%20(%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%B0%D1%8F%20%D0%B3%D0%BE%D1%80%D0%B0)%20Hoi%20An%20Da%20Nang%20Vietnam))
-- Huyen Khong Cave ([Google Maps](https://www.google.com/maps/search/?api=1&query=Huyen%20Khong%20Cave%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Huyen%20Khong%20Cave%2C%20Hoi%20An%2C%20Vietnam))
-- Tam Thai Pagoda ([Google Maps](https://www.google.com/maps/search/?api=1&query=Tam%20Thai%20Pagoda%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Tam%20Thai%20Pagoda%2C%20Hoi%20An%2C%20Vietnam))
+- Thuy Son (главная гора)
+- Huyen Khong Cave
+- Tam Thai Pagoda
 
 3. **Ba Na Hills / Golden Bridge**  
 Это «аттракционный» день, поэтому важно ехать рано и покупать билет заранее онлайн, чтобы не терять время в очередях. В плохую видимость мост может выглядеть не так эффектно, поэтому прогноз облачности стоит проверить за день.
-- Golden Bridge ([Google Maps](https://www.google.com/maps/search/?api=1&query=Golden%20Bridge%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Golden%20Bridge%2C%20Hoi%20An%2C%20Vietnam))
-- French Village ([Google Maps](https://www.google.com/maps/search/?api=1&query=French%20Village%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=French%20Village%2C%20Hoi%20An%2C%20Vietnam))
-- Cable car route ([Google Maps](https://www.google.com/maps/search/?api=1&query=Cable%20car%20route%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Cable%20car%20route%2C%20Hoi%20An%2C%20Vietnam))
-- Fantasy Park ([Google Maps](https://www.google.com/maps/search/?api=1&query=Fantasy%20Park%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Fantasy%20Park%2C%20Hoi%20An%2C%20Vietnam))
+- Golden Bridge
+- French Village
+- Cable car route
+- Fantasy Park
 
 4. **My Son Sanctuary**  
 Лучше ехать с ранним стартом, чтобы пройти комплекс до сильной жары и больших групп. С гидом вы получите намного больше смысла, потому что без исторического контекста многие башни выглядят «одинаково».
-- Утренний тур из Хойана ([Google Maps](https://www.google.com/maps/search/?api=1&query=%D0%A3%D1%82%D1%80%D0%B5%D0%BD%D0%BD%D0%B8%D0%B9%20%D1%82%D1%83%D1%80%20%D0%B8%D0%B7%20%D0%A5%D0%BE%D0%B9%D0%B0%D0%BD%D0%B0%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=%D0%A3%D1%82%D1%80%D0%B5%D0%BD%D0%BD%D0%B8%D0%B9%20%D1%82%D1%83%D1%80%20%D0%B8%D0%B7%20%D0%A5%D0%BE%D0%B9%D0%B0%D0%BD%D0%B0%2C%20Hoi%20An%2C%20Vietnam))
-- Sunrise-вариант ([Google Maps](https://www.google.com/maps/search/?api=1&query=Sunrise-%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Sunrise-%D0%B2%D0%B0%D1%80%D0%B8%D0%B0%D0%BD%D1%82%2C%20Hoi%20An%2C%20Vietnam))
-- Частный трансфер + локальный гид ([Google Maps](https://www.google.com/maps/search/?api=1&query=%D0%A7%D0%B0%D1%81%D1%82%D0%BD%D1%8B%D0%B9%20%D1%82%D1%80%D0%B0%D0%BD%D1%81%D1%84%D0%B5%D1%80%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=%D0%A7%D0%B0%D1%81%D1%82%D0%BD%D1%8B%D0%B9%20%D1%82%D1%80%D0%B0%D0%BD%D1%81%D1%84%D0%B5%D1%80%2C%20Hoi%20An%2C%20Vietnam))
+- Утренний тур из Хойана
+- Sunrise-вариант
+- Частный трансфер + локальный гид
 
 5. **Hue**  
 Hue - это длинная, но стоящая поездка, если вам интересна имперская история и архитектура династии Nguyen. Оптимально ехать на целый день или с ночевкой, чтобы не превращать маршрут в «галоп».
-- Imperial City ([Google Maps](https://www.google.com/maps/search/?api=1&query=Imperial%20City%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Imperial%20City%2C%20Hoi%20An%2C%20Vietnam))
-- Thien Mu Pagoda ([Google Maps](https://www.google.com/maps/search/?api=1&query=Thien%20Mu%20Pagoda%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Thien%20Mu%20Pagoda%2C%20Hoi%20An%2C%20Vietnam))
-- Royal Tombs (Khai Dinh/Tu Duc) ([Google Maps](https://www.google.com/maps/search/?api=1&query=Royal%20Tombs%20(Khai%20Dinh%2FTu%20Duc)%20Hoi%20An%20Da%20Nang%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Royal%20Tombs%20(Khai%20Dinh%2FTu%20Duc)%20Hoi%20An%20Da%20Nang%20Vietnam))
+- Imperial City
+- Thien Mu Pagoda
+- Royal Tombs (Khai Dinh/Tu Duc)
 
 6. **Cham Islands**  
 Острова хороши для «морского» дня: снорклинг, легкий дайвинг и пляжный отдых, но сильно зависят от погоды и состояния моря. Перед бронированием уточняйте тип лодки, длительность перехода и точное время возврата.
-- Speedboat day trip ([Google Maps](https://www.google.com/maps/search/?api=1&query=Speedboat%20day%20trip%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Speedboat%20day%20trip%2C%20Hoi%20An%2C%20Vietnam))
-- Snorkeling package ([Google Maps](https://www.google.com/maps/search/?api=1&query=Snorkeling%20package%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Snorkeling%20package%2C%20Hoi%20An%2C%20Vietnam))
-- Diving package ([Google Maps](https://www.google.com/maps/search/?api=1&query=Diving%20package%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Diving%20package%2C%20Hoi%20An%2C%20Vietnam))
-- Пляжный day-pass формат ([Google Maps](https://www.google.com/maps/search/?api=1&query=%D0%9F%D0%BB%D1%8F%D0%B6%D0%BD%D1%8B%D0%B9%20day-pass%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=%D0%9F%D0%BB%D1%8F%D0%B6%D0%BD%D1%8B%D0%B9%20day-pass%20%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%2C%20Hoi%20An%2C%20Vietnam))
+- Speedboat day trip
+- Snorkeling package
+- Diving package
+- Пляжный day-pass формат
 
 7. **VinWonders**  
 Подходит семьям и тем, кто хочет «все в одном»: шоу, аттракционы, прогулки и тематические зоны. Чтобы день прошел легче, заранее выберите 3-4 приоритетные активности и проверьте расписание шоу.
-- River Safari ([Google Maps](https://www.google.com/maps/search/?api=1&query=River%20Safari%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=River%20Safari%2C%20Hoi%20An%2C%20Vietnam))
-- Adventure Land ([Google Maps](https://www.google.com/maps/search/?api=1&query=Adventure%20Land%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Adventure%20Land%2C%20Hoi%20An%2C%20Vietnam))
-- Water World ([Google Maps](https://www.google.com/maps/search/?api=1&query=Water%20World%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Water%20World%2C%20Hoi%20An%2C%20Vietnam))
-- Evening show zones ([Google Maps](https://www.google.com/maps/search/?api=1&query=Evening%20show%20zones%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Evening%20show%20zones%2C%20Hoi%20An%2C%20Vietnam))
+- River Safari
+- Adventure Land
+- Water World
+- Evening show zones
 
 8. **Как работает билет в Старый город Хойана**  
 Классический билет в Old Town обычно дает доступ к ограниченному числу heritage-объектов из списка (дома, храмы, музеи), а не ко всем подряд. Покупайте в официальной кассе и сохраняйте билет до конца прогулки.
-- Кассы у входных зон Old Town ([Google Maps](https://www.google.com/maps/search/?api=1&query=%D0%9A%D0%B0%D1%81%D1%81%D1%8B%20%D1%83%20%D0%B2%D1%85%D0%BE%D0%B4%D0%BD%D1%8B%D1%85%20%D0%B7%D0%BE%D0%BD%20Old%20Town%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=%D0%9A%D0%B0%D1%81%D1%81%D1%8B%20%D1%83%20%D0%B2%D1%85%D0%BE%D0%B4%D0%BD%D1%8B%D1%85%20%D0%B7%D0%BE%D0%BD%20Old%20Town%2C%20Hoi%20An%2C%20Vietnam))
-- Официальные инфоточкb для списка объектов ([Google Maps](https://www.google.com/maps/search/?api=1&query=%D0%9E%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%B8%D0%BD%D1%84%D0%BE%D1%82%D0%BE%D1%87%D0%BAb%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%B0%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%BE%D0%B2%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=%D0%9E%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%B8%D0%BD%D1%84%D0%BE%D1%82%D0%BE%D1%87%D0%BAb%20%D0%B4%D0%BB%D1%8F%20%D1%81%D0%BF%D0%B8%D1%81%D0%BA%D0%B0%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%BE%D0%B2%2C%20Hoi%20An%2C%20Vietnam))
-- Комбинация: самостоятельная прогулка + 1-2 платных объекта ([Google Maps](https://www.google.com/maps/search/?api=1&query=%D0%9A%D0%BE%D0%BC%D0%B1%D0%B8%D0%BD%D0%B0%D1%86%D0%B8%D1%8F%3A%20%D1%81%D0%B0%D0%BC%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B3%D1%83%D0%BB%D0%BA%D0%B0%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=%D0%9A%D0%BE%D0%BC%D0%B1%D0%B8%D0%BD%D0%B0%D1%86%D0%B8%D1%8F%3A%20%D1%81%D0%B0%D0%BC%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B3%D1%83%D0%BB%D0%BA%D0%B0%2C%20Hoi%20An%2C%20Vietnam))
+- Кассы у входных зон Old Town
+- Официальные инфоточкb для списка объектов
+- Комбинация: самостоятельная прогулка + 1-2 платных объекта
 
 9. **Где купить экскурсии без переплаты**  
 Главное правило - сравнивать не только цену, но и что включено: трансфер, входные билеты, обед, англогид/русский гид и страховка. Самая дешевая цена часто «догоняется» доплатами уже на месте.
-- 2-3 локальных агентства в Old Town ([Google Maps](https://www.google.com/maps/search/?api=1&query=2-3%20%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B0%D0%B3%D0%B5%D0%BD%D1%82%D1%81%D1%82%D0%B2%D0%B0%20%D0%B2%20Old%20Town%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=2-3%20%D0%BB%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D1%85%20%D0%B0%D0%B3%D0%B5%D0%BD%D1%82%D1%81%D1%82%D0%B2%D0%B0%20%D0%B2%20Old%20Town%2C%20Hoi%20An%2C%20Vietnam))
-- Официальные сайты крупных операторов ([Google Maps](https://www.google.com/maps/search/?api=1&query=%D0%9E%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D1%81%D0%B0%D0%B9%D1%82%D1%8B%20%D0%BA%D1%80%D1%83%D0%BF%D0%BD%D1%8B%D1%85%20%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BE%D0%B2%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=%D0%9E%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D1%81%D0%B0%D0%B9%D1%82%D1%8B%20%D0%BA%D1%80%D1%83%D0%BF%D0%BD%D1%8B%D1%85%20%D0%BE%D0%BF%D0%B5%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BE%D0%B2%2C%20Hoi%20An%2C%20Vietnam))
-- Проверенные реселлеры через отель ([Google Maps](https://www.google.com/maps/search/?api=1&query=%D0%9F%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5%20%D1%80%D0%B5%D1%81%D0%B5%D0%BB%D0%BB%D0%B5%D1%80%D1%8B%20%D1%87%D0%B5%D1%80%D0%B5%D0%B7%20%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=%D0%9F%D1%80%D0%BE%D0%B2%D0%B5%D1%80%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5%20%D1%80%D0%B5%D1%81%D0%B5%D0%BB%D0%BB%D0%B5%D1%80%D1%8B%20%D1%87%D0%B5%D1%80%D0%B5%D0%B7%20%D0%BE%D1%82%D0%B5%D0%BB%D1%8C%2C%20Hoi%20An%2C%20Vietnam))
-- Klook/GetYourGuide (для прозрачного сравнения) ([Google Maps](https://www.google.com/maps/search/?api=1&query=Klook%2FGetYourGuide%20(%D0%B4%D0%BB%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B7%D1%80%D0%B0%D1%87%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%81%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F)%20Hoi%20An%20Da%20Nang%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Klook%2FGetYourGuide%20(%D0%B4%D0%BB%D1%8F%20%D0%BF%D1%80%D0%BE%D0%B7%D1%80%D0%B0%D1%87%D0%BD%D0%BE%D0%B3%D0%BE%20%D1%81%D1%80%D0%B0%D0%B2%D0%BD%D0%B5%D0%BD%D0%B8%D1%8F)%20Hoi%20An%20Da%20Nang%20Vietnam))
+- 2-3 локальных агентства в Old Town
+- Официальные сайты крупных операторов
+- Проверенные реселлеры через отель
+- Klook/GetYourGuide (для прозрачного сравнения)
 
 10. **Какие экскурсии стоят своих денег, а какие проще сделать самостоятельно**  
 Смысл платить за тур там, где сложная логистика, билеты по слотам и риск потери времени; самостоятельный формат лучше для простых городских маршрутов. Для региона обычно выгодно смешивать: 2 организованных тура + 2 самостоятельных дня.
-- Стоит тур: Ba Na Hills ([Google Maps](https://www.google.com/maps/search/?api=1&query=Ba%20Na%20Hills%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Ba%20Na%20Hills%2C%20Vietnam))
-- Стоит тур: Cham Islands (море/снаряжение) ([Google Maps](https://www.google.com/maps/search/?api=1&query=%D0%A1%D1%82%D0%BE%D0%B8%D1%82%20%D1%82%D1%83%D1%80%3A%20Cham%20Islands%20(%D0%BC%D0%BE%D1%80%D0%B5%2F%D1%81%D0%BD%D0%B0%D1%80%D1%8F%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5)%20Hoi%20An%20Da%20Nang%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=%D0%A1%D1%82%D0%BE%D0%B8%D1%82%20%D1%82%D1%83%D1%80%3A%20Cham%20Islands%20(%D0%BC%D0%BE%D1%80%D0%B5%2F%D1%81%D0%BD%D0%B0%D1%80%D1%8F%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5)%20Hoi%20An%20Da%20Nang%20Vietnam))
-- Можно самим: Old Town Hoi An ([Google Maps](https://www.google.com/maps/search/?api=1&query=Old%20Town%20Hoi%20An%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Old%20Town%20Hoi%20An%2C%20Hoi%20An%2C%20Vietnam))
-- Можно самим: Marble Mountains + пляж ([Google Maps](https://www.google.com/maps/search/?api=1&query=Marble%20Mountains%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Marble%20Mountains%2C%20Vietnam))
-- Можно самим: Son Tra + Lady Buddha (с водителем) ([Google Maps](https://www.google.com/maps/search/?api=1&query=%D0%9C%D0%BE%D0%B6%D0%BD%D0%BE%20%D1%81%D0%B0%D0%BC%D0%B8%D0%BC%3A%20Son%20Tra%20%2B%20Lady%20Buddha%20(%D1%81%20%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%BC)%20Hoi%20An%20Da%20Nang%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=%D0%9C%D0%BE%D0%B6%D0%BD%D0%BE%20%D1%81%D0%B0%D0%BC%D0%B8%D0%BC%3A%20Son%20Tra%20%2B%20Lady%20Buddha%20(%D1%81%20%D0%B2%D0%BE%D0%B4%D0%B8%D1%82%D0%B5%D0%BB%D0%B5%D0%BC)%20Hoi%20An%20Da%20Nang%20Vietnam))
+- Стоит тур: Ba Na Hills
+- Стоит тур: Cham Islands (море/снаряжение)
+- Можно самим: Old Town Hoi An
+- Можно самим: Marble Mountains + пляж
+- Можно самим: Son Tra + Lady Buddha (с водителем)
 
 11. **Где купить билеты на Ba Na Hills, VinWonders и Cham Islands дешевле**  
 Дешевле обычно не «самая низкая цифра», а итоговый пакет без скрытых доплат: трансфер, слоты и поддержка при изменении погоды. Проверяйте условия отмены и переноса даты до оплаты.
-- Официальные сайты парков ([Google Maps](https://www.google.com/maps/search/?api=1&query=%D0%9E%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D1%81%D0%B0%D0%B9%D1%82%D1%8B%20%D0%BF%D0%B0%D1%80%D0%BA%D0%BE%D0%B2%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=%D0%9E%D1%84%D0%B8%D1%86%D0%B8%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D1%81%D0%B0%D0%B9%D1%82%D1%8B%20%D0%BF%D0%B0%D1%80%D0%BA%D0%BE%D0%B2%2C%20Hoi%20An%2C%20Vietnam))
-- Klook ([Google Maps](https://www.google.com/maps/search/?api=1&query=Klook%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=Klook%2C%20Hoi%20An%2C%20Vietnam))
-- GetYourGuide ([Google Maps](https://www.google.com/maps/search/?api=1&query=GetYourGuide%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=GetYourGuide%2C%20Hoi%20An%2C%20Vietnam))
-- Локальные агентства с ценой «all-in» ([Google Maps](https://www.google.com/maps/search/?api=1&query=%D0%9B%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%B0%D0%B3%D0%B5%D0%BD%D1%82%D1%81%D1%82%D0%B2%D0%B0%20%D1%81%20%D1%86%D0%B5%D0%BD%D0%BE%D0%B9%20%C2%ABall-in%C2%BB%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=%D0%9B%D0%BE%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5%20%D0%B0%D0%B3%D0%B5%D0%BD%D1%82%D1%81%D1%82%D0%B2%D0%B0%20%D1%81%20%D1%86%D0%B5%D0%BD%D0%BE%D0%B9%20%C2%ABall-in%C2%BB%2C%20Hoi%20An%2C%20Vietnam))
-- Комбо-предложения отелей ([Google Maps](https://www.google.com/maps/search/?api=1&query=%D0%9A%D0%BE%D0%BC%D0%B1%D0%BE-%D0%BF%D1%80%D0%B5%D0%B4%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BE%D1%82%D0%B5%D0%BB%D0%B5%D0%B9%2C%20Hoi%20An%2C%20Vietnam), [Yandex Maps](https://yandex.com/maps/?text=%D0%9A%D0%BE%D0%BC%D0%B1%D0%BE-%D0%BF%D1%80%D0%B5%D0%B4%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20%D0%BE%D1%82%D0%B5%D0%BB%D0%B5%D0%B9%2C%20Hoi%20An%2C%20Vietnam))
+- Официальные сайты парков
+- Klook
+- GetYourGuide
+- Локальные агентства с ценой «all-in»
+- Комбо-предложения отелей
