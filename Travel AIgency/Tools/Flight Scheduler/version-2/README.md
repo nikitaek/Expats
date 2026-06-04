@@ -1,26 +1,40 @@
 # Flight Scheduler Version 2
 
+Self-contained under this folder. Seed data lives in **`data/seeds/`** (paths below are relative to `version-2/`).
+
+Route discovery, scoring, and inbound/outbound scans are in **[README-future.md](./README-future.md)** (v2.1+).
+
 ## Goal
 
-Version 2 should rebuild Flight Scheduler as a small FR24-only data pipeline for Vietnam inbound tourism analysis.
+Version 2 rebuilds Flight Scheduler as a small FR24-only data pipeline for CIS-origin traffic to **all Vietnam airports** in `data/seeds/airports.json` (equal priority — no single “primary” destination).
 
-The system should answer:
+We use the data for three operational reasons:
 
-- Which flights actually flew from Russian-speaking / CIS origin markets to Vietnam?
-- Which routes are regular, seasonal, charter-like, or no longer useful?
-- Which new origin airports appear in Vietnam inbound traffic and should be added to our vocabulary?
-- How many likely passengers arrived, grouped by date, airport, route, airline, and flight number?
-- Which routes or flight numbers need more monitoring because route data, inbound data, or flight-number data disagree?
+| Use | Time horizon | Question |
+|-----|----------------|----------|
+| **1. Past arrivals** | Completed flights (historical FR24) | How many people already arrived, by date, airport, route, flight, and `pax_est`? |
+| **2. Airport outreach** | Next ~72 hours (live + near-term scheduled) | Who is landing soon and when should we be at the airport to offer services? |
+| **3. Traffic outlook** | Next ~2 weeks (scheduled / provisional) | What incoming volume should we expect by destination and day? |
 
-The main design rule is that each step communicates through stored data, not direct function calls. A downloader saves raw FR24 output. A parser reads raw output and writes normalized records. An analyzer reads normalized records and writes reports, route scores, and suggested vocabulary updates.
+Each stored flight row includes: **flight number**, **route**, **date**, **departure/arrival times**, **`pax_est`**, and **`data_kind`** (`actual` | `upcoming` | `forecast`).
+
+Do not classify routes as seasonal/charter or reconcile multi-source disagreements in v2 — see [README-future.md](./README-future.md).
+
+The main design rule is that each step communicates through stored data, not public HTTP endpoints:
+
+```text
+cron/debug command -> scheduler plan -> job manifest -> raw FR24 object (R2) -> canonical object (R2) -> enriched row -> D1 flights table -> reports/export
+```
 
 Target runtime:
 
 - Node.js services now.
 - Cloudflare Workers later.
-- Cloudflare R2 as S3-compatible object storage.
-- Cloudflare D1 for small relational indexes, job state, route priority, and API metadata.
-- Cloudflare Queues or Cron Triggers later for scheduled pipeline execution.
+- Cloudflare R2 for immutable raw and canonical JSON objects.
+- Cloudflare D1 for **normalized flight rows only** (query and aggregation).
+- Job state, route lists, and airport metadata in **versioned seed JSON** and optional R2 job manifests — not D1.
+- Cloudflare Cron Triggers later for scheduled pipeline execution.
+- No public API and no frontend listeners in v2. Manual control is by debug scripts only.
 
 ## FR24-Only Source Strategy
 
@@ -31,16 +45,15 @@ FR24 gives several useful ways to ask for flight data. The method should depend 
 Example:
 
 ```text
-routes=SVO-DAD,ALA-DAD,TAS-DAD
+routes=SVO-SGN,ALA-CXR,VVO-PQC
 ```
 
 Use this as the primary method.
 
 Best for:
 
-- Known or suspected CIS to Vietnam routes.
-- DAD charter discovery.
-- Cheap historical checks over fixed date windows.
+- Known or suspected CIS to Vietnam routes (every origin × every Vietnam airport in seeds).
+- Cheap checks over fixed date windows (historical, upcoming, or forecast).
 - Rechecking route quality over time.
 - Filling known gaps for a specific origin and destination.
 
@@ -56,191 +69,37 @@ Weakness:
 - It only finds routes we already include in the route vocabulary.
 - New unknown origins will not be discovered unless another process suggests them.
 
-### 2. Origin Airport Outbound
+### 2. Other FR24 Modes (v2.1+)
 
-Example:
+Inbound/outbound airport scans and flight-number-only discovery: [README-future.md](./README-future.md).
 
-```text
-outbound=ALA
-outbound=TAS
-outbound=VVO
-```
+### 3. Time Modes (v2)
 
-Use as a supplement, not as the default.
+All v2 fetches use the same `routes=` batch endpoint; the **date window** and resulting **`data_kind`** differ:
 
-Best for:
-
-- Smaller CIS origin airports.
-- Discovering new Vietnam destinations from one known origin.
-- Checking whether a hub has Vietnam flights not represented in the route matrix.
-
-Use carefully for:
-
-- `SVO`, `DME`, `VKO`.
-
-Large Moscow airports produce many pages of unrelated flights. Outbound pagination finds scheduled Vietnam flights, but it is expensive and can still miss DAD charters unless we paginate deeply.
-
-### 3. Vietnam Airport Inbound
-
-Example:
-
-```text
-inbound=DAD
-inbound=SGN
-inbound=HAN
-```
-
-Use for discovery and monitoring, not for the main CIS route fetch.
-
-Best for:
-
-- Finding new origin airports that land at Vietnam destinations.
-- Checking if our route vocabulary is missing something.
-- Creating a raw list of all source airports for an LLM or analyst to review.
-- Monitoring important destination airports like DAD, SGN, HAN, CXR, PQC.
-
-Weakness:
-
-- Very noisy.
-- Most arrivals are irrelevant regional flights.
-- Bad primary method for CIS charters.
-
-### 4. Flight Number Monitoring
-
-Example:
-
-```text
-flight=VJ8924
-flight=SU292
-flight=VN62
-```
-
-Use after a flight number is discovered.
-
-Best for:
-
-- Checking repeat patterns.
-- Finding route changes for the same flight number.
-- Detecting data gaps when route queries and inbound queries disagree.
-- Monitoring charter numbers that move between routes or dates.
-
-Weakness:
-
-- Not a discovery method unless we already know the flight number.
-
-### 5. Time Modes
-
-Use FR24 historical data for the main dataset.
-
-Use FR24 future/scheduled data only for forecasting and planning dashboards. Charter and tour flights can appear late, so future data should be treated as provisional.
-
-Use FR24 realtime data for today monitoring and operational alerts, not for building historical truth.
-
-## Charter Flights And Future Data
-
-Charter flights should not be expected to appear reliably in future/scheduled data early.
-
-FR24 may show a charter in future data if the flight plan or schedule is already known, but tour charters often appear late, change flight numbers, change times, or only become reliable when the aircraft is close to operating. Because of that, future data should be treated as a forecast, not as proof that the flight will or will not happen.
-
-The system should solve this with progressive confirmation:
-
-1. Historical FR24 route data is the source of truth for what actually flew.
-2. Future/scheduled FR24 data is stored as provisional forecast data.
-3. Live/realtime FR24 data upgrades a provisional or expected flight into a confirmed active flight.
-4. Completed historical data upgrades the flight into final actual data.
-5. Route and flight-number monitoring keep checking known charter patterns even when future data is empty.
-
-### Method By Time Window
-
-Historical data:
+| `data_kind` | FR24 window | Business use |
+|-------------|-------------|----------------|
+| `actual` | Past completed days (e.g. yesterday) | Past arrival analysis (1.1) |
+| `upcoming` | Today through next ~72 hours | Airport outreach timing (1.2) |
+| `forecast` | Next ~14 days | Two-week traffic outlook (1.3) |
 
 ```text
 GET /api/flight-summary/full
-flight_datetime_from=YYYY-MM-DD 00:00:00
-flight_datetime_to=YYYY-MM-DD 23:59:59
-routes=SVO-DAD,ALA-DAD,TAS-DAD
+flight_datetime_from=...
+flight_datetime_to=...
+routes=SVO-SGN,ALA-CXR,VVO-PQC
 ```
 
-Use historical route batches as the main dataset. Supplement with `airports=inbound:DAD` for discovery and `airports=outbound:ALA` for smaller origin hubs.
+Parser sets `data_kind` from the job’s declared window (not from extra metadata fields). Charter rows may appear late in `forecast` and move to `upcoming` then `actual` — treat `forecast` as provisional.
 
-Live / today data:
+Store zero-result responses in R2 for audit.
 
-```text
-GET /api/flight-summary/full
-flight_datetime_from=<now or start of day>
-flight_datetime_to=<near future or end of day>
-routes=SVO-DAD,ALA-DAD,TAS-DAD
-```
+### Refresh Cadence (v2)
 
-Also check:
-
-```text
-airports=inbound:DAD
-airports=inbound:SGN
-airports=inbound:HAN
-airports=inbound:CXR
-```
-
-Live data is used to catch charters as they become visible and to confirm same-day operations.
-
-Future data:
-
-```text
-GET /api/flight-summary/full
-flight_datetime_from=<future date>
-flight_datetime_to=<future date>
-routes=SVO-DAD,ALA-DAD,TAS-DAD
-```
-
-If FR24 returns future/scheduled rows through the same summary endpoint or another documented future endpoint on the active plan, store those rows with:
-
-```json
-{
-  "scheduleMode": "future",
-  "confidence": "provisional",
-  "needsRefresh": true
-}
-```
-
-Do not mark an empty future route response as proof that no charter will operate. Store it as a zero-result forecast check, then refresh later.
-
-### Is The Route Endpoint Enough?
-
-Route queries are enough for known routes:
-
-```text
-SVO-DAD, ALA-DAD, TAS-DAD, SVO-SGN, SVO-HAN, SVO-CXR
-```
-
-Route queries are not enough for unknown new charter origins because they only query routes already in the vocabulary.
-
-The full method should be:
-
-```text
-Primary: route checks
-Discovery: inbound airport checks
-Supplement: small-origin outbound checks
-Monitor: flight numbers
-```
-
-### Refresh Cadence
-
-Recommended refresh plan:
-
-- Historical backfill: daily, for yesterday and recent completed days.
-- Future route forecast: daily for the next 7 to 30 days.
-- Near-term refresh: every 6 to 12 hours for the next 72 hours.
-- Live/today refresh: every 30 to 60 minutes for high-priority routes and top inbound airports.
-- Inbound discovery: weekly, or on selected sample days.
-- Route priority recalculation: weekly.
-
-The dashboard should show different confidence states:
-
-- `historical_actual`: completed flight, highest confidence.
-- `live_confirmed`: active or same-day observed flight.
-- `future_provisional`: scheduled or forecast row from FR24.
-- `expected_from_pattern`: no future row yet, but route/flight number has repeated historically.
-- `zero_forecast_check`: future check returned no rows, but this does not cancel the route.
+- `actual`: daily backfill for yesterday and recent completed days.
+- `upcoming`: every 6 hours for the next 72 hours.
+- `forecast`: daily for the next 14 days.
+- Parse, index-to-D1, enrich: after each download batch.
 
 ## FR24 API Call Examples
 
@@ -271,7 +130,7 @@ GET /api/flight-summary/full
 Use for the main historical fetch.
 
 ```bash
-curl "https://fr24api.flightradar24.com/api/flight-summary/full?flight_datetime_from=2026-05-20%2000:00:00&flight_datetime_to=2026-05-27%2023:59:59&routes=SVO-DAD,ALA-DAD,TAS-DAD&limit=2000&sort=asc" \
+curl "https://fr24api.flightradar24.com/api/flight-summary/full?flight_datetime_from=2026-05-20%2000:00:00&flight_datetime_to=2026-05-27%2023:59:59&routes=SVO-SGN,ALA-CXR,VVO-HAN&limit=2000&sort=asc" \
   -H "Authorization: Bearer $FR24_API_TOKEN" \
   -H "Accept: application/json" \
   -H "Accept-Version: v1"
@@ -287,7 +146,7 @@ Observed result from our sample:
       "flight": "VJ8924",
       "callsign": "VJC8924",
       "orig_iata": "SVO",
-      "dest_iata": "DAD",
+      "dest_iata": "SGN",
       "datetime_takeoff": "2026-05-22T14:00:00Z",
       "datetime_landed": "2026-05-22T22:40:00Z",
       "first_seen": "2026-05-22T13:48:00Z",
@@ -301,117 +160,52 @@ Observed result from our sample:
 }
 ```
 
-Sample outcome:
+Sample outcome (test window; destinations vary by route batch):
 
-- `routes=SVO-DAD,VVO-DAD,ALA-DAD`, 2026-05-20 to 2026-05-27: 11 DAD legs.
-- Included `SVO-DAD` flights `VJ8924`, `VJ8932`.
-- Included `ALA-DAD` flights `VJ52`, `DV5328`, `DV5340`.
+- `routes=SVO-SGN,ALA-CXR,VVO-HAN`, 2026-05-20 to 2026-05-27: multiple legs across Vietnam airports.
+- Example numbers seen in earlier tests: `VJ8924` / `VJ8932` (Moscow–Da Nang), `VJ52` / `DV5328` (Almaty–Da Nang), `SU292` (Moscow–Ho Chi Minh).
 
-### Inbound Airport Request
+### Debug Command Examples
 
-Use for discovery, not as the main source.
+The pipeline is not controlled by HTTP. Cron runs the normal schedule; debug commands are for manual one-off runs.
 
-```bash
-curl "https://fr24api.flightradar24.com/api/flight-summary/full?flight_datetime_from=2026-05-23%2000:00:00&flight_datetime_to=2026-05-23%2023:59:59&airports=inbound:DAD&limit=20&sort=asc" \
-  -H "Authorization: Bearer $FR24_API_TOKEN" \
-  -H "Accept: application/json" \
-  -H "Accept-Version: v1"
-```
-
-The plan can cap responses around 20 rows even when a larger `limit` is requested. Pagination should advance `flight_datetime_from` to the last row's `first_seen` plus one second.
-
-Observed result from our sample:
-
-- `inbound:DAD`, 2026-05-23: 131 total arrivals after pagination.
-- Only 2 were CIS-origin, so this is noisy but useful for discovering unknown origins.
-
-### Outbound Airport Request
-
-Use for smaller CIS origin airports.
+Plan what cron would do without calling FR24:
 
 ```bash
-curl "https://fr24api.flightradar24.com/api/flight-summary/full?flight_datetime_from=2026-05-20%2000:00:00&flight_datetime_to=2026-05-27%2023:59:59&airports=outbound:ALA&limit=20&sort=asc" \
-  -H "Authorization: Bearer $FR24_API_TOKEN" \
-  -H "Accept: application/json" \
-  -H "Accept-Version: v1"
+npm run v2:plan -- --date 2026-06-04
 ```
 
-Do not use this as the default for `SVO`, `DME`, or `VKO`. Moscow airports create too many unrelated pages.
-
-### Flight Number Request
-
-Use only after the system discovers a flight number worth monitoring.
-
-The exact FR24 filter name for flight-number lookup should be confirmed against the active FR24 docs before implementation. In v2, keep this behind the `fr24.flight-number.fetch` job type and implement it only after route and inbound pipelines are stable.
-
-Expected use:
-
-```text
-flight number: VJ8924
-date range: 2026-05-14 to 2026-05-30
-purpose: check repeat pattern and possible route changes
-```
-
-### Internal Pipeline API Examples
-
-Create a route fetch job:
+Run the full daily pipeline for the scheduler-chosen windows:
 
 ```bash
-curl -X POST "https://api.example.com/v1/download/fr24/routes" \
-  -H "X-API-Key: $FLIGHT_SCHEDULER_API_KEY" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "dateFrom": "2026-05-20",
-    "dateTo": "2026-05-27",
-    "routes": ["SVO-DAD", "ALA-DAD", "TAS-DAD"]
-  }'
+npm run v2:daily
 ```
 
-Reply:
-
-```json
-{
-  "jobId": "job_20260604_routes_001",
-  "status": "queued",
-  "type": "fr24.routes.fetch",
-  "dateFrom": "2026-05-20",
-  "dateTo": "2026-05-27",
-  "input": {
-    "routes": ["SVO-DAD", "ALA-DAD", "TAS-DAD"]
-  },
-  "outputPrefix": "raw/fr24/routes/date_from=2026-05-20/date_to=2026-05-27/batch=SVO-DAD__ALA-DAD__TAS-DAD/"
-}
-```
-
-Parse a raw prefix:
+Manually fetch a fixed route/date window:
 
 ```bash
-curl -X POST "https://api.example.com/v1/parse/prefix" \
-  -H "X-API-Key: $FLIGHT_SCHEDULER_API_KEY" \
-  -H "Content-Type: application/json" \
-  -d '{
-    "prefix": "raw/fr24/routes/date_from=2026-05-20/date_to=2026-05-27/"
-  }'
+npm run v2:download-routes -- \
+  --data-kind actual \
+  --date-from 2026-05-20 \
+  --date-to 2026-05-27 \
+  --routes SVO-SGN,ALA-CXR
 ```
 
-Reply:
-
-```json
-{
-  "jobId": "job_20260604_parse_001",
-  "status": "queued",
-  "type": "parse.prefix"
-}
-```
-
-Query normalized flights:
+Parse, index, and enrich a raw prefix:
 
 ```bash
-curl "https://api.example.com/v1/flights?dateFrom=2026-05-20&dateTo=2026-05-27&destinationIata=DAD" \
-  -H "X-API-Key: $FLIGHT_SCHEDULER_API_KEY"
+npm run v2:parse-prefix -- --prefix raw/fr24/routes/date_from=2026-05-20/date_to=2026-05-27/
+npm run v2:index-prefix -- --prefix normalized/flights/date_from=2026-05-20/date_to=2026-05-27/
+npm run v2:enrich-flights -- --date-from 2026-05-20 --date-to 2026-05-27
 ```
 
-Reply:
+Export a small report from D1 for inspection:
+
+```bash
+npm run v2:report -- --data-kind actual --date-from 2026-05-20 --date-to 2026-05-27 --destination SGN
+```
+
+Example report rows:
 
 ```json
 [
@@ -419,134 +213,73 @@ Reply:
     "id": "fr24:example-fr24-id",
     "flightNumber": "VJ8924",
     "airlineIata": "VJ",
-    "route": "SVO-DAD",
+    "route": "SVO-SGN",
     "originIata": "SVO",
-    "destinationIata": "DAD",
+    "destinationIata": "SGN",
     "actualDepartureAt": "2026-05-22T14:00:00Z",
     "actualArrivalAt": "2026-05-22T22:40:00Z",
     "aircraftCode": "A333",
     "aircraftRegistration": "VN-A...",
     "paxEst": 300,
-    "sourceMethods": ["routes"],
-    "confidence": 90
+    "dataKind": "actual"
   }
 ]
 ```
 
-## Recommended Full-Picture Method
+## Recommended v2 Method
 
-The best approach is a hybrid FR24 strategy:
+1. Scheduler reads `data/seeds/v2-routes.json` (240 routes: 16 CIS origins × 15 Vietnam airports).
+2. Route batch fetch for `actual`, `upcoming`, and `forecast` windows.
+3. Parse → enrich (`pax_est` only) → upsert D1 `flights`.
+4. Reports/exports: flights list + summaries filtered by `dataKind`.
 
-1. Primary historical route matrix fetch.
-2. Periodic inbound airport discovery.
-3. Selective outbound checks for smaller CIS hubs.
-4. Flight-number monitoring for discovered important flights.
-5. Route scoring so no-result routes are kept but gradually lowered in priority.
+Hybrid discovery: [README-future.md](./README-future.md).
 
-Do not use full inbound Vietnam airport scans or full Moscow outbound scans as the main source.
+## Seed files (not D1)
 
-## Vocabulary
+| File | Purpose |
+|------|---------|
+| `data/seeds/airports.json` | All Vietnam destination airports (equal importance) |
+| `data/seeds/v2-origin-airports.json` | CIS / RU-speaking origin airports |
+| `data/seeds/v2-routes.json` | Routes to fetch (`{ "route": "ORIGIN-DEST" }` only) |
+| `data/seeds/v2-flight-numbers.json` | Optional flight numbers for v2.1+ monitoring |
+| `data/seeds/aircraft-pax.json` | Aircraft → `pax_est` mapping |
+| `data/seeds/russian-speaking-countries.json` | Country reference |
 
-The system needs a versioned vocabulary. This is the source of truth for what we care about and why.
+### Destination airports
 
-### Destination Airports
+`data/seeds/airports.json` — all entries are treated equally for scheduling and reporting.
 
-Keep the existing Vietnam airport seed:
+### Origin airports
 
-```text
-data/seeds/airports.json
-```
+`data/seeds/v2-origin-airports.json` — fields: `iata`, `icao`, `city`, `country`, `countryIso2`, `scanOutbound` (Moscow hubs `false`; use route queries only).
 
-Initial priority:
+### Routes
 
-- Tier 1: `DAD`, `SGN`, `HAN`, `CXR`, `PQC`
-- Tier 2: `VDO`, `HPH`, `VCA`, `HUI`
-- Tier 3: `DLI`, `BMV`, `VII`, `THD`, `VDH`, `PXU`
-
-### Origin Airports
-
-Create a v2 origin vocabulary with fields:
+`data/seeds/v2-routes.json` — one field per row:
 
 ```json
-{
-  "iata": "ALA",
-  "icao": "UAAA",
-  "city": "Almaty",
-  "country": "Kazakhstan",
-  "countryIso2": "KZ",
-  "market": "russian-speaking",
-  "tier": 1,
-  "scanOutbound": true,
-  "notes": "Known DAD charter source"
-}
+{ "route": "ALA-SGN" }
 ```
 
-Suggested initial tiers:
+Matrix: each origin in `v2-origin-airports.json` × each `iata` in `airports.json`.
 
-- Tier 1: `SVO`, `DME`, `VKO`, `ALA`, `TAS`, `NQZ`, `VVO`, `OVB`
-- Tier 2: `LED`, `KJA`, `IKT`, `KHV`, `FRU`, `GYD`, `EVN`, `MSQ`
-- Tier 3: any airport discovered from inbound scans or flight-number monitoring.
+### Flight numbers
 
-Known initial origin airport list:
-
-```text
-SVO, DME, VKO, ALA, TAS, NQZ, VVO, OVB, LED, KJA, IKT, KHV, FRU, GYD, EVN, MSQ
-```
-
-### Route Vocabulary
-
-Create route entries from origin x destination pairs, but give every route its own priority.
-
-```json
-{
-  "route": "ALA-DAD",
-  "originIata": "ALA",
-  "destinationIata": "DAD",
-  "priority": 1,
-  "status": "active",
-  "method": "routes",
-  "lastSeenAt": "2026-05-28T04:08:00Z",
-  "zeroResultCount": 0,
-  "positiveResultCount": 8,
-  "notes": "Known charter/tourism route"
-}
-```
-
-Important: store zero-result route fetches. A zero result is useful data because it tells the scheduler to lower priority later instead of repeating expensive calls blindly.
-
-### Flight Number Vocabulary
-
-Create tracked flight-number entries:
+`data/seeds/v2-flight-numbers.json` — for future monitoring jobs; not used by the v2 downloader.
 
 ```json
 {
   "flightNumber": "VJ8924",
   "airlineIata": "VJ",
-  "priority": 1,
   "knownRoutes": ["SVO-DAD"],
-  "monitor": true,
-  "reason": "DAD charter found by route scan"
+  "monitor": true
 }
 ```
 
-Known observed or candidate flight numbers:
+### Airlines (reference)
 
-```text
-VJ8924, VJ8932, VJ52, DV5328, DV5340, VN62, SU292, SU294, SU298, N43545, VJ7989
-```
-
-Notes:
-
-- `VJ8924`, `VJ8932`: observed `SVO-DAD`.
-- `VJ52`, `DV5328`, `DV5340`: observed `ALA-DAD`.
-- `VN62`: observed `SVO-HAN`.
-- `SU292`: observed `SVO-SGN`.
-- `SU294`, `SU298`, `N43545`: observed `SVO-CXR`.
-- `VJ7989`: observed `VVO-HAN`, not `VVO-DAD`, in the previous FR24 result.
-
-### Airline Vocabulary
-
-Known airline codes from the observed sample:
+Known airline codes from samples:
 
 ```text
 VJ, DV, VN, SU, N4
@@ -614,7 +347,16 @@ E19 100 Embraer E-Jet
 
 ## Storage Layout
 
-Use R2/S3 for raw and derived data objects. Use D1 for indexes, job state, and small queryable tables.
+| Layer | Where | What |
+|-------|--------|------|
+| Raw FR24 | R2 | Immutable request/response/manifest per fetch |
+| Canonical | R2 | Parsed rows before D1 upsert (audit/replay) |
+| Normalized flights | **D1** | Queryable flight facts (minimal columns) |
+| Jobs | Local `data/jobs/` or R2 `jobs/` | Queue state, not D1 |
+| Route/airport lists | `data/seeds/*.json` | What to fetch; human-edited |
+| Summaries | D1 SQL or API aggregation | Daily totals from `flights` |
+
+Keep D1 small: one primary table plus indexes. Do not duplicate raw JSON in D1.
 
 ### R2 Buckets
 
@@ -636,11 +378,10 @@ raw/fr24/routes/date_from=2026-05-20/date_to=2026-05-27/batch=SVO-DAD__ALA-DAD__
 raw/fr24/routes/date_from=2026-05-20/date_to=2026-05-27/batch=SVO-DAD__ALA-DAD__TAS-DAD/manifest.json
 ```
 
-Raw inbound airport fetch:
+Raw inbound airport fetch (v2.1+ only):
 
 ```text
-raw/fr24/inbound/airport=DAD/date_from=2026-05-23/date_to=2026-05-23/page=001/response.json
-raw/fr24/inbound/airport=DAD/date_from=2026-05-23/date_to=2026-05-23/manifest.json
+raw/fr24/inbound/airport=SGN/date_from=2026-05-23/date_to=2026-05-23/page=001/response.json
 ```
 
 Raw outbound airport fetch:
@@ -656,115 +397,34 @@ Zero-result route fetch:
 raw/fr24/routes/date_from=2026-05-20/date_to=2026-05-27/batch=VVO-DAD/zero.json
 ```
 
-Normalized records:
+Canonical records (optional R2 mirror before D1):
 
 ```text
 normalized/flights/date=2026-05-22/part-000.json
-normalized/routes/date_from=2026-05-20/date_to=2026-05-27/routes.json
-normalized/airports/date_from=2026-05-20/date_to=2026-05-27/discovered-origin-airports.json
 ```
 
-Reports:
+Job manifests (not D1):
 
 ```text
-reports/daily/date=2026-05-22/summary.json
-reports/route-score/date=2026-05-27/routes.json
-reports/llm-review/inbound-origins/date=2026-05-27/input.json
-reports/llm-review/inbound-origins/date=2026-05-27/output.json
+jobs/2026-06-04/job_20260604_routes_001.json
 ```
 
-### D1 Tables
+### D1 Schema
 
-Use D1 only for indexes and API querying, not as the only copy of raw data.
+See `version-2/migrations/0001_flights.sql`. D1 holds **normalized flight facts** only; raw JSON stays in R2.
 
-```sql
-CREATE TABLE jobs (
-  id TEXT PRIMARY KEY,
-  type TEXT NOT NULL,
-  status TEXT NOT NULL,
-  priority INTEGER NOT NULL DEFAULT 5,
-  date_from TEXT,
-  date_to TEXT,
-  input_json TEXT NOT NULL,
-  output_prefix TEXT,
-  error TEXT,
-  created_at TEXT NOT NULL,
-  started_at TEXT,
-  finished_at TEXT
-);
+Columns (no `provider`, `source_method`, `raw_refs`, `confidence`, or `pax_estimate_method`):
 
-CREATE TABLE route_vocabulary (
-  route TEXT PRIMARY KEY,
-  origin_iata TEXT NOT NULL,
-  destination_iata TEXT NOT NULL,
-  priority INTEGER NOT NULL DEFAULT 5,
-  status TEXT NOT NULL DEFAULT 'candidate',
-  method TEXT NOT NULL DEFAULT 'routes',
-  zero_result_count INTEGER NOT NULL DEFAULT 0,
-  positive_result_count INTEGER NOT NULL DEFAULT 0,
-  last_seen_at TEXT,
-  last_checked_at TEXT,
-  notes TEXT
-);
+- Identity: `id`, `fr24_id`, `flight_number`, `airline_iata`, `route`, `origin_iata`, `destination_iata`
+- Time: `flight_date`, `data_kind` (`actual` | `upcoming` | `forecast`), scheduled/actual departure and arrival
+- Estimate: `pax_est`
+- Meta: `aircraft_code`, `aircraft_registration`, `created_at`, `updated_at`
 
-CREATE TABLE airport_vocabulary (
-  iata TEXT PRIMARY KEY,
-  icao TEXT,
-  city TEXT,
-  country TEXT,
-  country_iso2 TEXT,
-  role TEXT NOT NULL,
-  tier INTEGER NOT NULL DEFAULT 3,
-  scan_inbound INTEGER NOT NULL DEFAULT 0,
-  scan_outbound INTEGER NOT NULL DEFAULT 0,
-  source TEXT,
-  notes TEXT
-);
+`flight_date` — calendar date for daily rollups (from arrival/departure at destination, or UTC if simpler initially).
 
-CREATE TABLE flight_number_vocabulary (
-  flight_number TEXT PRIMARY KEY,
-  airline_iata TEXT,
-  priority INTEGER NOT NULL DEFAULT 5,
-  monitor INTEGER NOT NULL DEFAULT 0,
-  known_routes_json TEXT,
-  last_seen_at TEXT,
-  notes TEXT
-);
+Upsert uses the unique index including `data_kind` so the same flight number can exist once per kind when windows overlap.
 
-CREATE TABLE flight_index (
-  id TEXT PRIMARY KEY,
-  flight_number TEXT,
-  route TEXT,
-  origin_iata TEXT,
-  destination_iata TEXT,
-  scheduled_departure_at TEXT,
-  actual_departure_at TEXT,
-  scheduled_arrival_at TEXT,
-  actual_arrival_at TEXT,
-  aircraft_code TEXT,
-  aircraft_registration TEXT,
-  pax_est INTEGER,
-  source_methods TEXT NOT NULL,
-  raw_refs_json TEXT NOT NULL,
-  confidence INTEGER NOT NULL DEFAULT 50,
-  created_at TEXT NOT NULL,
-  updated_at TEXT NOT NULL
-);
-
-CREATE TABLE airport_lookup_cache (
-  iata TEXT PRIMARY KEY,
-  icao TEXT,
-  name TEXT,
-  city TEXT,
-  country TEXT,
-  country_iso2 TEXT,
-  latitude REAL,
-  longitude REAL,
-  source TEXT NOT NULL,
-  raw_ref TEXT,
-  updated_at TEXT NOT NULL
-);
-```
+**Not in D1:** jobs, vocabulary tables, airport lookup cache — use seed JSON and job manifest files.
 
 ## Pipeline Modules
 
@@ -774,110 +434,179 @@ Each module should be small enough to become a Cloudflare Worker later.
 
 Keep responsibilities strict:
 
-- Scheduler creates jobs only. It does not call FR24, parse rows, or score routes.
-- Downloader calls FR24 only. It writes raw request, raw response, and manifest objects only.
-- Parser reads raw objects and converts provider rows into canonical rows only.
-- Indexer deduplicates canonical rows and writes queryable database records only.
-- Enrichment adds passenger estimates and lookup metadata only.
-- Analyzer reads indexed/enriched data and writes reports only.
-- Vocabulary service stores approved airports, routes, airlines, and flight numbers only.
-- API service exposes stored data and creates small jobs only. It never performs large scans inline.
+- Scheduler creates route-fetch jobs from seed JSON only. It does not call FR24 or parse rows.
+- Downloader calls FR24 (`routes=` only in v2). It writes raw request, response, and manifest objects only.
+- Parser reads raw objects and writes canonical JSON to R2.
+- Indexer deduplicates canonical rows and upserts D1 `flights`.
+- Enrichment updates `pax_est` and aircraft fields on D1 rows (and canonical JSON if mirrored).
+- Reporter reads D1 and writes report/export files. It never calls FR24.
 
 The pipeline boundary is always stored data:
 
 ```text
-job -> raw object -> canonical object -> indexed flight -> enriched flight -> report -> vocabulary update
+cron/debug command -> scheduler plan -> job manifest -> raw object -> canonical object -> D1 flights -> report/export
 ```
 
 No module should import another service's job implementation. Shared code belongs in `src/shared`, especially:
 
 - FR24 HTTP client and pagination.
 - R2/S3 object store.
-- D1/SQLite repository.
-- canonical flight contracts.
-- dedupe keys.
-- aircraft passenger estimate rules.
-- route scoring formulas.
+- D1/SQLite `flights` repository.
+- Canonical flight contracts and dedupe keys.
+- Aircraft passenger estimate rules from `data/seeds/aircraft-pax.json`.
 
-### Pipeline Orchestration
-
-The scheduler should create small jobs from vocabulary and audit state:
+### Pipeline Orchestration (v2)
 
 ```text
 Scheduler
-  -> creates fr24.routes.fetch jobs
-  -> creates fr24.inbound.fetch jobs
-  -> creates fr24.outbound.fetch jobs
-  -> creates fr24.flight-number.fetch jobs
+  -> reads data/seeds/v2-routes.json
+  -> creates fr24.routes.fetch jobs (manifest under jobs/ or R2)
 
 Downloader
-  -> saves raw FR24 objects
-  -> emits parse.prefix jobs
+  -> saves raw FR24 objects to R2
+  -> updates job manifest
 
 Parser
-  -> saves canonical objects
-  -> emits index.canonical jobs
+  -> reads raw prefix
+  -> writes canonical JSON to R2
 
 Indexer
-  -> deduplicates and writes flight_index
-  -> emits enrich.flight-index jobs
+  -> reads canonical prefix
+  -> upserts D1 flights (dedupe)
 
 Enrichment
-  -> adds airport, aircraft, pax, airline metadata
-  -> emits analyze jobs
+  -> updates pax_est / aircraft on D1 rows
 
-Analyzer
-  -> writes reports and route scores
-  -> emits vocabulary candidate updates
-
-Vocabulary Service
-  -> stores approved candidates and route priority changes
+Reporter
+  -> writes reports/daily, reports/upcoming, reports/forecast
 ```
 
-### 1. Vocabulary Service
+Future orchestration (inbound, analyzer, vocabulary updates): [README-future.md](./README-future.md).
 
-Purpose:
+### 1. Route seeds (not a service)
 
-- Store destination airports, origin airports, routes, and flight numbers.
-- Keep the existing airport lookup data so we do not repeat API calls.
-- Store route priority values produced by the analyzer.
-- Store candidate airports suggested by analysis after approval.
-
-Inputs:
-
-- Seed files.
-- D1 vocabulary tables.
-- LLM suggestions.
-- Analysis outputs.
-
-Outputs:
-
-- Read-only vocabulary snapshots for the scheduler.
-- Approved vocabulary changes for later jobs.
-
-It should not call FR24 and should not decide cron timing.
+Scheduler loads `data/seeds/v2-routes.json` and batches routes (15 per FR24 request). Supporting seeds: `airports.json`, `v2-origin-airports.json`, `aircraft-pax.json`.
 
 ### 2. Scheduler / Orchestrator Service
 
 Purpose:
 
-- Read vocabulary, route scores, zero-result counts, and job history.
-- Create the smallest useful jobs for the next run.
+- Read `v2-routes.json`, recent job manifests, and runtime limits.
+- Decide which date windows and route batches must run.
+- Create `fr24.routes.fetch`, parse, index, enrich, and report jobs.
 - Enforce API-credit budgets.
-- Prevent unbounded scans.
+- Avoid repeating raw FR24 requests when the exact object exists.
 
 Inputs:
 
-- Vocabulary tables.
-- Route score reports.
-- Job history.
-- API-credit budget configuration.
+- Route seed file.
+- Job manifest files (completed / failed).
+- Runtime policy (`data/config/scheduler-policy.json` or env defaults).
+- Current date/time.
 
 Outputs:
 
-- Queued jobs only.
+- Job manifest files only.
 
-It should not call FR24, parse data, or write reports.
+It should not expose HTTP listeners. It may either create manifests for workers or run the local pipeline directly in debug mode.
+
+## Autonomous Scheduler Plan
+
+The system must know what to scan without a user clicking anything. Scheduler input is:
+
+- `data/seeds/v2-routes.json`: all route strings to scan.
+- `data/jobs/**`: previous completed/skipped/failed manifests.
+- Existing R2 raw objects: used as an idempotency check.
+- Daily request budget and per-run request budget.
+- Current time in Vietnam timezone.
+
+### Route Batching
+
+- Read all route seeds.
+- Sort routes alphabetically for stable batches.
+- Split into batches of 15 routes (FR24 route limit).
+- Each batch gets a deterministic ID:
+
+```text
+routes_YYYY-MM-DD_<data_kind>_<date_from>_<date_to>_<hash(routes)>
+```
+
+### Automatic Date Windows
+
+The scheduler creates these windows automatically:
+
+| `data_kind` | Window | Frequency | Purpose |
+|-------------|--------|-----------|---------|
+| `actual` | yesterday | daily | past arrival truth |
+| `actual` | today - 2 through today - 7 | daily rolling repair | catch late FR24 completion or missed jobs |
+| `actual` | configurable backfill range | debug/manual only | historical rebuild |
+| `upcoming` | now through +72 hours | every 6 hours | airport outreach |
+| `forecast` | +4 through +14 days | daily | traffic outlook |
+
+Why `forecast` starts at +4: the next 72 hours are already covered by `upcoming`, and charter schedules can be volatile. Overlap is allowed only when `data_kind` differs.
+
+### Idempotency Rules
+
+Before a FR24 call, downloader checks the expected R2 key:
+
+```text
+raw/fr24/routes/data_kind=<data_kind>/date_from=<YYYY-MM-DD>/date_to=<YYYY-MM-DD>/batch=<hash>/response.json
+```
+
+If it exists and the job is not forced, skip the request and write a skipped manifest.
+
+### Failure Retry Rules
+
+- Failed FR24 jobs are retried on the next cron run.
+- Retry up to 3 times per deterministic job ID.
+- After 3 failures, write `status=failed_permanent` and continue with the next batch.
+- Debug command can run with `--force` to re-fetch a raw object.
+
+### Request Budget Policy
+
+Default policy:
+
+```json
+{
+  "routesPerRequest": 15,
+  "maxRequestsPerCronRun": 20,
+  "maxRequestsPerDay": 80,
+  "minRequestDelayMs": 3500,
+  "actualRepairDays": 7,
+  "upcomingHours": 72,
+  "forecastStartDays": 4,
+  "forecastEndDays": 14
+}
+```
+
+With 240 route seeds and 15 routes per request, one full window is 16 FR24 requests. That means:
+
+- `actual yesterday`: 16 requests.
+- one `upcoming 72h` run: 16 requests.
+- one `forecast +4..+14` run: 16 requests.
+
+If the daily budget is too small, scheduler prioritizes:
+
+1. `upcoming` (airport outreach).
+2. `actual yesterday`.
+3. `actual repair`.
+4. `forecast`.
+
+### Debug Modes
+
+Debug commands do not start listeners. They run a bounded pipeline action and exit:
+
+```bash
+npm run v2:plan
+npm run v2:daily
+npm run v2:download-routes -- --data-kind upcoming --date-from 2026-06-04 --date-to 2026-06-07
+npm run v2:parse-prefix -- --prefix raw/fr24/routes/...
+npm run v2:index-prefix -- --prefix normalized/flights/...
+npm run v2:enrich-flights -- --date-from 2026-06-04 --date-to 2026-06-07
+npm run v2:report -- --data-kind upcoming --date-from 2026-06-04 --date-to 2026-06-07
+```
+
+Debug commands always require explicit date windows unless the command is `v2:plan` or `v2:daily`.
 
 ### 3. Download Service
 
@@ -888,12 +617,9 @@ Purpose:
 - Never parse business meaning.
 - Store zero-result responses.
 
-Job types:
+Job type (v2):
 
 - `fr24.routes.fetch`
-- `fr24.inbound.fetch`
-- `fr24.outbound.fetch`
-- `fr24.flight-number.fetch`
 
 Rules:
 
@@ -908,12 +634,12 @@ Manifest shape:
 
 ```json
 {
-  "provider": "fr24",
   "jobType": "fr24.routes.fetch",
+  "dataKind": "actual",
   "dateFrom": "2026-05-20",
   "dateTo": "2026-05-27",
   "query": {
-    "routes": ["SVO-DAD", "ALA-DAD", "TAS-DAD"]
+    "routes": ["SVO-SGN", "ALA-CXR"]
   },
   "requestCount": 1,
   "rowCount": 11,
@@ -932,48 +658,45 @@ Purpose:
 - Convert FR24 records to canonical flight records.
 - Write canonical records to object storage.
 
-It should not update route scores or route vocabulary.
+It should not update route seed files or D1.
 
-Canonical flight shape:
+Canonical flight shape (R2 and D1 — minimal fields):
 
 ```json
 {
-  "id": "fr24:c65539",
-  "provider": "fr24",
+  "id": "c65539",
   "fr24Id": "c65539",
   "flightNumber": "VJ8924",
   "airlineIata": "VJ",
   "originIata": "SVO",
-  "destinationIata": "DAD",
-  "route": "SVO-DAD",
+  "destinationIata": "SGN",
+  "route": "SVO-SGN",
+  "dataKind": "actual",
   "scheduledDepartureAt": null,
   "actualDepartureAt": "2026-05-22T14:00:00Z",
   "scheduledArrivalAt": null,
   "actualArrivalAt": "2026-05-22T22:40:00Z",
   "aircraftCode": "A333",
   "aircraftRegistration": "VN-A...",
-  "paxEst": 300,
-  "paxEstimateMethod": "aircraft-code",
-  "sourceMethods": ["routes"],
-  "rawRefs": ["raw/fr24/routes/.../response.json"],
-  "confidence": 90
+  "paxEst": null
 }
 ```
+
+`paxEst` is filled by enrichment before D1 upsert.
 
 ### 5. Indexer Service
 
 Purpose:
 
-- Read canonical flight records.
-- Deduplicate records from routes, inbound, outbound, and flight-number sources.
-- Write `flight_index`.
-- Preserve raw object references for auditability.
+- Read canonical flight records from R2.
+- Deduplicate and upsert into D1 `flights`.
+- Set `flight_date` for daily rollups.
 
 Deduplication keys:
 
-1. FR24 internal ID if present.
-2. Flight number + origin + destination + actual/scheduled time bucket.
-3. Aircraft registration + route + time bucket.
+1. FR24 internal ID if present (`fr24_id` → `id`).
+2. Flight number + origin + destination + departure/arrival timestamp.
+3. Unique index on ingest (see D1 schema).
 
 It should not call FR24 and should not estimate passengers.
 
@@ -981,417 +704,93 @@ It should not call FR24 and should not estimate passengers.
 
 Purpose:
 
-- Add airport lookup metadata from local cache.
-- Add airline metadata.
-- Add aircraft and passenger estimates.
-- Flag unknown aircraft or missing airport lookup records.
-
-It should not deduplicate records and should not create route recommendations.
-
-### 7. Analysis Service
-
-Purpose:
-
-- Score routes.
-- Identify new airports.
-- Compare route, inbound, outbound, and flight-number findings.
-- Produce daily and period reports.
-
-Outputs:
-
-- Daily passenger estimates.
-- Route score report.
-- Candidate airport list.
-- Candidate flight-number monitor list.
-- Data quality issues.
-
-Route scoring signals:
-
-- Positive sightings in the last N checks.
-- Zero-result count.
-- Passenger estimate volume.
-- Whether route is to Tier 1 Vietnam airports.
-- Whether route was found by multiple methods.
-- Whether same flight number repeats.
-- Whether route appears in inbound discovery but not route vocabulary.
-
-Suggested statuses:
-
-- `active`
-- `seasonal`
-- `candidate`
-- `monitor`
-- `low_priority`
-- `disabled`
-
-It should not call FR24. If more raw data is needed, it should emit recommendations for the scheduler.
-
-### 8. Inbound Discovery Analyzer
-
-Purpose:
-
-- Read parsed inbound arrivals for destination airports.
-- Extract all origin airports.
-- Produce a source-airport list for LLM or analyst review.
-
-This process is not for final route coverage. It is for discovering missing origins.
-
-Flow:
-
-1. Scheduler creates small `fr24.inbound.fetch` jobs for DAD, SGN, HAN, CXR, and PQC.
-2. Downloader saves raw responses.
-3. Parser converts rows to canonical records.
-4. Inbound Discovery Analyzer extracts unique origin airports.
-5. Enrichment joins with existing airport lookup cache.
-6. Analyzer marks known and unknown origin airports.
-7. Analyzer writes `reports/llm-review/inbound-origins/.../input.json`.
-8. LLM reviews unknown or suspicious origins and suggests additions.
-9. Vocabulary service stores approved suggestions as candidate origins/routes.
-
-LLM review input:
-
-```json
-{
-  "destinationAirports": ["DAD", "SGN", "HAN", "CXR", "PQC"],
-  "dateFrom": "2026-05-20",
-  "dateTo": "2026-05-27",
-  "originAirports": [
-    {
-      "iata": "ALA",
-      "city": "Almaty",
-      "country": "Kazakhstan",
-      "seenDestinations": ["DAD"],
-      "flightNumbers": ["VJ52", "DV5340"],
-      "known": true
-    }
-  ]
-}
-```
-
-### 9. Flight Number Monitor Analyzer
-
-Purpose:
-
-- Extract flight numbers from normalized records.
-- Suggest selected flight numbers for later monitoring.
-- Detect missing route records or route changes.
-
-Monitor when:
-
-- Flight number appears on a DAD route.
-- Flight number appears more than once in the period.
-- Flight number appears from a candidate origin airport.
-- Flight number is known charter/tour operator traffic.
-- Route query has zero result but flight number appears elsewhere.
-
-The analyzer should not fetch flight-number data directly. It should write candidate jobs for the scheduler.
-
-### 10. Aircraft Vocabulary Audit
-
-Purpose:
-
-- Read enriched flights and passenger estimate metadata.
-- Flag unknown aircraft types.
-- Suggest improvements to aircraft mapping.
-
-Use existing:
-
-```text
-data/seeds/aircraft-pax.json
-```
+- Set `pax_est` from `aircraft-pax.json` rules only.
 
 Passenger estimate priority:
 
 1. Exact aircraft code match.
 2. Aircraft family prefix rule.
 3. Aircraft model text pattern.
-4. Airline/route default.
-5. System default.
+4. System default.
 
-Output fields:
+It should not deduplicate rows or modify route seeds.
 
-```json
-{
-  "aircraftCode": "A333",
-  "aircraftLabel": "Airbus A330-300",
-  "paxEst": 300,
-  "paxEstimateMethod": "exact-aircraft-code",
-  "paxEstimateConfidence": 85
-}
-```
+### Future modules
 
-Also produce:
+Analysis, inbound discovery, flight-number monitoring, aircraft audit, and periodic audit: [README-future.md](./README-future.md).
 
-- Unknown aircraft report.
-- Low-confidence estimate report.
-- Suggested changes for `data/seeds/aircraft-pax.json`.
+## FR24 Credit Usage Policy
 
-It should not write passenger estimates itself. Passenger estimation belongs to the Enrichment Service.
-
-### 11. Periodic Audit Service
-
-Purpose:
-
-- Check for missing raw objects.
-- Check parse failures.
-- Check zero-result routes.
-- Check newly discovered origins.
-- Check low-confidence passenger estimates.
-- Suggest jobs for the next run.
-
-Examples:
-
-- Route exists in vocabulary but has not been checked in 7 days.
-- Route has 5 zero results and no positive result in 30 days, lower priority.
-- Inbound DAD found a CIS origin not in route vocabulary, create candidate route.
-- Flight number appears from DAD but no route job exists, create monitor job.
-
-## API Credit Usage Policy
-
-FR24 API credits are limited, so the scheduler should always choose the cheapest useful query.
-
-### Endpoint Priority
-
-Use FR24 methods in this order:
-
-1. `routes=` batch query.
-2. `airports=outbound:<small-origin-airport>`.
-3. `airports=inbound:<vietnam-airport>` for discovery sample days.
-4. `flight-number` lookup only for selected monitored flight numbers, after confirming the active FR24 filter name.
-5. Airline-wide scan only as a manual audit experiment, not scheduled by default.
+FR24 credits are limited. In v2 the scheduler uses **`routes=` batch queries only**.
 
 ### Credit Rules
 
-Route queries:
-
-- Primary method for historical, live, and future checks.
 - Batch up to 15 routes per FR24 request.
 - Split date ranges into 14-day chunks.
-- Skip if the exact raw object already exists.
+- Skip if the exact raw object already exists in R2.
 - Store zero-result responses.
 
-Inbound airport queries:
-
-- Use only for discovery.
-- Limit to top destination airports unless manually requested.
-- Use sample days instead of every day when looking for new origins.
-- Cap pages per job.
-- Never use full inbound scans as the main CIS schedule source.
-
-Outbound airport queries:
-
-- Use only for smaller origin airports where pagination is affordable.
-- Default allowed origins: `ALA`, `TAS`, `NQZ`, `VVO`, `OVB`, `FRU`, `GYD`, `EVN`, `MSQ`.
-- Avoid scheduled full outbound scans for `SVO`, `DME`, `VKO`.
-- For Moscow, use route queries like `SVO-DAD`, `SVO-SGN`, `SVO-HAN`, `SVO-CXR`.
-
-Flight-number queries:
-
-- Use only for monitored flight numbers from the vocabulary.
-- Use short windows.
-- Prefer route checks first if the route is known.
-
-Airline queries:
-
-- Do not schedule by default.
-- Use as an analyst-triggered audit only if route and inbound data show repeated missing flights for one airline.
-- If used, require a strict date range and a destination or route filter.
-
 ### Credit Budget Guards
-
-The scheduler should enforce these limits:
-
-- Max route requests per run.
-- Max inbound airport pages per run.
-- Max outbound airport pages per run.
-- Max flight-number requests per run.
-- No job without a `maxPages`, `dateFrom`, `dateTo`, and reason.
-- No Moscow outbound job unless manually approved.
-- No repeat call when an identical raw object already exists.
-
-Suggested default budget:
 
 ```json
 {
   "dailyRouteRequests": 20,
-  "dailyInboundPages": 20,
-  "dailyOutboundPages": 20,
-  "dailyFlightNumberRequests": 10,
-  "minRequestDelayMs": 3500,
-  "manualApprovalRequired": ["outbound:SVO", "outbound:DME", "outbound:VKO", "airline-scan"]
+  "minRequestDelayMs": 3500
 }
 ```
 
+No job without `dateFrom`, `dateTo`, and `routes`. Discovery modes and extra budgets: [README-future.md](./README-future.md).
+
 ## Job Scheduling
 
-All cron jobs should create pipeline jobs. They should not call FR24 directly.
+Production has one kind of entry point: **scheduler cron**. It starts the scheduler, and the scheduler decides what to do from `scheduler-policy.json`, seed files, manifests, and existing R2 objects.
 
-### Cron Frequency Plan
+Cron should not call downloader/parser/indexer scripts directly.
+
+### Cron Frequency Plan (v2)
 
 ```text
-*/30 * * * *      live-high-priority-routes
-0 */6 * * *       near-term-route-refresh
-30 1 * * *        historical-yesterday-routes
-0 2 * * *         parse-new-raw-objects
-30 2 * * *        index-new-canonical
-45 2 * * *        enrich-new-indexed-flights
-0 3 * * *         daily-route-analysis
-30 3 * * *        daily-passenger-summary
-0 4 * * *         audit-and-plan-next-jobs
-0 5 * * *         future-route-forecast
-0 6 * * 1,4       inbound-discovery-sample
-0 7 * * 2         small-origin-outbound-discovery
-0 8 * * 3         flight-number-monitoring
-0 9 * * 5         route-priority-recalculation
-0 10 * * 5        llm-origin-review-pack
+*/30 * * * *      v2-scheduler-cron
 ```
 
-### Scheduled Job Details
+On each run:
 
-`live-high-priority-routes`
+1. Load `data/config/scheduler-policy.json`.
+2. Load route seeds and calculate deterministic route batches.
+3. Check pending/failed manifests first.
+4. Create or run missing jobs for due windows, respecting request budget.
+5. Parse/index/enrich any raw/canonical objects that are ready.
+6. Write report files for changed `data_kind` windows.
 
-- Frequency: every 30 minutes.
-- FR24 method: `routes=`.
-- Scope: active Tier 1 routes for today only.
-- Purpose: catch charters as they become visible.
-- Credit guard: max 5 route batch requests per run.
+Due windows:
 
-`near-term-route-refresh`
+| Window | Due rule | `data_kind` | Purpose |
+|--------|----------|-------------|---------|
+| upcoming | every 6 hours | `upcoming` | Airport outreach (1.2) |
+| actual yesterday | daily after local midnight | `actual` | Past arrivals (1.1) |
+| actual repair | daily, last 7 completed days | `actual` | Catch late completions / failed jobs |
+| forecast | daily | `forecast` | Two-week outlook (1.3) |
 
-- Frequency: every 6 hours.
-- FR24 method: `routes=`.
-- Scope: next 72 hours for active and monitored routes.
-- Purpose: refresh provisional future rows.
-- Credit guard: max 10 route batch requests per run.
+Summaries are written as report files and can also be exported by debug command:
 
-`historical-yesterday-routes`
+```text
+reports/daily/data_kind=<kind>/date=<YYYY-MM-DD>/summary.json
+reports/routes/data_kind=<kind>/date_from=<YYYY-MM-DD>/date_to=<YYYY-MM-DD>/summary.json
+```
 
-- Frequency: daily.
-- FR24 method: `routes=`.
-- Scope: yesterday and recent completed days.
-- Purpose: convert live/provisional data into historical truth.
-- Credit guard: max 20 route batch requests per run.
-
-`future-route-forecast`
-
-- Frequency: daily.
-- FR24 method: `routes=`.
-- Scope: next 7 to 30 days.
-- Purpose: store provisional forecast rows.
-- Credit guard: only active, seasonal, and monitor routes; max 20 route batch requests per run.
-
-`inbound-discovery-sample`
-
-- Frequency: twice per week.
-- FR24 method: `airports=inbound:<destination>`.
-- Scope: `DAD`, `SGN`, `HAN`, `CXR`, `PQC`.
-- Purpose: discover unknown origin airports.
-- Credit guard: sample days only; max 2 pages per airport unless manually approved.
-
-`small-origin-outbound-discovery`
-
-- Frequency: weekly.
-- FR24 method: `airports=outbound:<origin>`.
-- Scope: smaller origin airports only.
-- Purpose: find Vietnam flights missing from the route matrix.
-- Credit guard: max 3 pages per origin; no `SVO`, `DME`, or `VKO`.
-
-`flight-number-monitoring`
-
-- Frequency: weekly, or daily for very high-priority charters during season.
-- FR24 method: flight-number lookup, if supported by the active FR24 plan.
-- Scope: monitored flight numbers only.
-- Purpose: find route changes and missed route records.
-- Credit guard: max 10 flight numbers per run.
-
-`parse-new-raw-objects`
-
-- Frequency: daily, after downloader jobs.
-- FR24 method: none.
-- Scope: raw prefixes with no canonical output.
-
-`index-new-canonical`
-
-- Frequency: daily.
-- FR24 method: none.
-- Scope: canonical objects not yet indexed.
-
-`enrich-new-indexed-flights`
-
-- Frequency: daily.
-- FR24 method: none.
-- Scope: indexed flights missing airport, airline, aircraft, or passenger metadata.
-
-`daily-route-analysis`
-
-- Frequency: daily.
-- FR24 method: none.
-- Scope: indexed flights.
-
-`daily-passenger-summary`
-
-- Frequency: daily.
-- FR24 method: none.
-- Scope: enriched flights.
-
-`audit-and-plan-next-jobs`
-
-- Frequency: daily.
-- FR24 method: none.
-- Scope: job history, route scores, zero-result counts, missing raw objects.
-
-`route-priority-recalculation`
-
-- Frequency: weekly.
-- FR24 method: none.
-- Scope: route vocabulary and reports.
-
-`llm-origin-review-pack`
-
-- Frequency: weekly.
-- FR24 method: none.
-- Scope: discovered origin airport reports.
+Discovery crons: [README-future.md](./README-future.md).
 
 ### Backfill Jobs
 
-Backfills should be manual or explicitly queued with a fixed budget.
+Manual jobs with `dateFrom`, `dateTo`, `routes`, and `dataKind`. Use `routes=` only.
 
-- Historical route matrix for selected periods: use `routes=` only.
-- Historical inbound discovery for sample days: cap pages and airports.
-- Flight-number reconstruction for key charters: monitored numbers only.
-- Never run full all-origin or full Moscow outbound scans as a default backfill.
+## Runtime Configuration
 
-## Route Priority Policy
-
-Start with route batches:
-
-- `SVO-DAD`, `DME-DAD`, `VKO-DAD`
-- `ALA-DAD`, `NQZ-DAD`, `TAS-DAD`, `VVO-DAD`, `OVB-DAD`
-- Same origins to `SGN`, `HAN`, `CXR`, `PQC`
-
-Priority rules:
-
-- Positive result: increase priority.
-- Repeated positive result: keep active.
-- Zero result: keep the raw zero object and increment `zero_result_count`.
-- Many zero results: lower priority, do not delete.
-- New inbound origin from CIS market: add candidate route with medium priority.
-- New flight number on DAD route: add flight-number monitor.
-
-## API Key
-
-All internal API endpoints should require an API key.
-
-Header:
-
-```text
-X-API-Key: <FLIGHT_SCHEDULER_API_KEY>
-```
+There are no HTTP listeners and no public API keys in v2. Runtime is cron/debug only.
 
 Environment variables:
 
 ```text
-FLIGHT_SCHEDULER_API_KEY=local-dev-key
 FR24_API_TOKEN=...
 R2_ACCOUNT_ID=...
 R2_ACCESS_KEY_ID=...
@@ -1406,150 +805,98 @@ Later on Cloudflare Workers:
 - Store keys as Worker secrets.
 - Bind R2 buckets as `RAW_BUCKET`, `NORMALIZED_BUCKET`, `REPORTS_BUCKET`.
 - Bind D1 as `DB`.
+- Bind cron-triggered Worker as the only production entry point.
 
-## Small Internal API Endpoints
+### Optional Scheduler Policy File
 
-Keep endpoints small. Each endpoint should do one thing.
-
-### Health
-
-```text
-GET /health
-```
-
-Returns service status.
-
-### Vocabulary
+If env defaults are not enough, store policy in:
 
 ```text
-GET /v1/vocabulary/airports
-GET /v1/vocabulary/routes
-GET /v1/vocabulary/flight-numbers
-POST /v1/vocabulary/airports
-POST /v1/vocabulary/routes
-POST /v1/vocabulary/flight-numbers
-PATCH /v1/vocabulary/routes/{route}
+data/config/scheduler-policy.json
 ```
 
-### Jobs
+Example:
+
+```json
+{
+  "timezone": "Asia/Ho_Chi_Minh",
+  "routesPerRequest": 15,
+  "maxRequestsPerCronRun": 20,
+  "maxRequestsPerDay": 80,
+  "minRequestDelayMs": 3500,
+  "actual": {
+    "enabled": true,
+    "yesterday": true,
+    "repairDays": 7
+  },
+  "upcoming": {
+    "enabled": true,
+    "hoursAhead": 72,
+    "cron": "0 */6 * * *"
+  },
+  "forecast": {
+    "enabled": true,
+    "startDaysAhead": 4,
+    "endDaysAhead": 14,
+    "cron": "0 5 * * *"
+  },
+  "priorityOrder": ["upcoming", "actual_yesterday", "actual_repair", "forecast"],
+  "retry": {
+    "maxAttempts": 3,
+    "forceRequiresDebugFlag": true
+  }
+}
+```
+
+## Debug And Report Contract
+
+Debug commands are the only manual control interface. They run and exit; they do not listen on a port.
+
+### Debug commands
 
 ```text
-POST /v1/jobs
-GET /v1/jobs/{jobId}
-POST /v1/jobs/{jobId}/run
+npm run v2:cron
+npm run v2:plan
+npm run v2:daily
+npm run v2:download-routes -- --data-kind actual --date-from YYYY-MM-DD --date-to YYYY-MM-DD --routes SVO-SGN,ALA-CXR
+npm run v2:parse-prefix -- --prefix raw/fr24/routes/...
+npm run v2:index-prefix -- --prefix normalized/flights/...
+npm run v2:enrich-flights -- --date-from YYYY-MM-DD --date-to YYYY-MM-DD
+npm run v2:report -- --data-kind upcoming --date-from YYYY-MM-DD --date-to YYYY-MM-DD
 ```
 
-### Raw Data
+### Report outputs
+
+Reports are files, not HTTP responses:
 
 ```text
-GET /v1/raw/objects?prefix=
-GET /v1/raw/objects/{objectKey}
+reports/daily/data_kind=actual/date=2026-06-03/summary.json
+reports/daily/data_kind=upcoming/date=2026-06-04/summary.json
+reports/daily/data_kind=forecast/date=2026-06-08/summary.json
+reports/routes/data_kind=actual/date_from=2026-05-20/date_to=2026-05-27/summary.json
 ```
 
-Raw writes should usually happen only from downloader jobs, not from frontend.
+Report flight row shape:
 
-### Download Actions
+| Field | Description |
+|-------|-------------|
+| `flightNumber` | e.g. `VJ8924` |
+| `route` | e.g. `SVO-SGN` |
+| `dataKind` | `actual`, `upcoming`, or `forecast` |
+| `flightDate` | calendar date for grouping |
+| `actualDepartureAt` / `actualArrivalAt` | ISO timestamps |
+| `paxEst` | estimated passengers |
 
-```text
-POST /v1/download/fr24/routes
-POST /v1/download/fr24/inbound
-POST /v1/download/fr24/outbound
-POST /v1/download/fr24/flight-number
-```
-
-These endpoints create or run downloader jobs. They save raw data only.
-
-### Parse Actions
-
-```text
-POST /v1/parse/raw-object
-POST /v1/parse/prefix
-```
-
-These endpoints read raw objects and write normalized data.
-
-### Index Actions
-
-```text
-POST /v1/index/canonical-object
-POST /v1/index/prefix
-```
-
-These endpoints deduplicate canonical rows and update `flight_index`.
-
-### Enrichment Actions
-
-```text
-POST /v1/enrich/flights
-POST /v1/enrich/prefix
-```
-
-These endpoints add airport, airline, aircraft, and passenger estimate metadata.
-
-### Analysis
-
-```text
-POST /v1/analyze/routes
-POST /v1/analyze/inbound-origins
-POST /v1/analyze/aircraft-vocabulary
-POST /v1/analyze/flight-numbers
-GET /v1/reports/daily
-GET /v1/reports/routes
-GET /v1/reports/discovered-origins
-GET /v1/reports/issues
-```
-
-### Public Backend For Frontend
-
-```text
-GET /v1/flights
-GET /v1/summary/daily
-GET /v1/summary/routes
-GET /v1/summary/airports
-```
-
-The frontend should read normalized/indexed data only. It should not trigger large FR24 fetches directly.
-
-## OpenAPI Document
-
-The OpenAPI contract is stored separately in:
-
-```text
-openapi.v2.yaml
-```
-
-Keep examples and design notes in this document. Keep the executable API contract in `openapi.v2.yaml` so backend and frontend can share it directly.
-
-## Frontend Contract
-
-The frontend should not know about FR24 internals.
-
-Frontend reads:
-
-- `GET /v1/flights`
-- `GET /v1/summary/daily`
-- `GET /v1/summary/routes`
-- `GET /v1/summary/airports`
-- `GET /v1/reports/issues`
-
-Admin screens can read:
-
-- jobs
-- vocabulary
-- discovered origins
-- route scores
-- unknown aircraft
-
-Admin screens can trigger small jobs, but should never trigger an unbounded scan.
+Analysis and discovery debug commands: [README-future.md](./README-future.md).
 
 ## Folder Architecture
 
 Keep the local Node.js version close to the future Cloudflare Worker split.
 
 ```text
-Flight Scheduler/
-  openapi.v2.yaml
+Flight Scheduler/version-2/
   README.md
+  README-future.md
   package.json
   .env.example
 
@@ -1561,152 +908,123 @@ Flight Scheduler/
       contracts/
         flight.js
         job.js
-        route.js
       storage/
-        object-store.js        # R2/S3/local abstraction
-        d1-repository.js       # D1/SQLite abstraction
+        object-store.js        # R2/S3/local
+        flights-repository.js  # D1/SQLite flights table only
       fr24/
-        client.js              # thin FR24 HTTP client
+        client.js
         pagination.js
-        adapters.js            # FR24 row -> canonical row
-      vocabulary/
-        airports.js
-        routes.js
-        flight-numbers.js
-        airlines.js
-      analysis/
+        adapters.js
+      enrichment/
         pax-estimate.js
         dedupe.js
-        route-score.js
 
     services/
-      api/
-        index.js               # public + admin HTTP API
-        middleware/
-          api-key.js
-        routes/
-          health.js
-          jobs.js
-          vocabulary.js
-          flights.js
-          reports.js
       downloader/
-        index.js
-        jobs/
-          fr24-routes.js
-          fr24-inbound.js
-          fr24-outbound.js
-          fr24-flight-number.js
+        jobs/fr24-routes.js
       parser/
-        index.js
-        parse-prefix.js
-        parse-object.js
       indexer/
-        index.js
-        dedupe-canonical.js
-        write-flight-index.js
       enrichment/
-        index.js
-        enrich-airports.js
-        enrich-airlines.js
-        enrich-aircraft-pax.js
-      analyzer/
-        index.js
-        route-analysis.js
-        inbound-origin-discovery.js
-        aircraft-vocabulary-audit.js
-        flight-number-analysis.js
+      reporter/
       scheduler/
-        index.js
-        daily-plan.js
-        weekly-plan.js
-        backfill-plan.js
 
   data/
+    config/
+      scheduler-policy.json
     seeds/
       airports.json
       aircraft-pax.json
       russian-speaking-countries.json
-      v2-origin-airports.json
       v2-routes.json
-      v2-airlines.json
+      v2-origin-airports.json
       v2-flight-numbers.json
+    jobs/                      # job manifests, not D1
     local-r2/
       raw/
       normalized/
-      reports/
-    local-db/
-      flight-scheduler.sqlite
 
   migrations/
-    0001_jobs.sql
-    0002_vocabulary.sql
-    0003_flight_index.sql
+    0001_flights.sql
 
   scripts/
+    v2-cron.mjs
+    v2-plan.mjs
+    v2-daily-run.mjs
     v2-download-routes.mjs
-    v2-download-inbound.mjs
     v2-parse-prefix.mjs
     v2-index-canonical.mjs
     v2-enrich-flights.mjs
-    v2-analyze-routes.mjs
-    v2-daily-run.mjs
+    v2-report.mjs
 ```
 
-Future Cloudflare split:
-
-```text
-workers/
-  api-worker/
-  downloader-worker/
-  parser-worker/
-  indexer-worker/
-  enrichment-worker/
-  analyzer-worker/
-  scheduler-worker/
-```
+Future Cloudflare workers: scheduler, downloader, parser, indexer, enrichment, reporter. Analyzer worker: see [README-future.md](./README-future.md).
 
 The shared modules should avoid Node-only APIs where possible so they can move into Workers with minimal changes.
 
 ## Implementation Phases
 
-### Phase 1: Local Node.js Pipeline
+### Phase 1: Local Node.js Pipeline (v2)
 
-- Keep Express or split into small scripts.
-- Add R2-compatible storage abstraction that can also write to local files in development.
-- Add D1-compatible repository interface, backed by SQLite locally if needed.
-- Implement route downloader first.
-- Implement parser and `flight_index`.
-- Implement daily summary.
+- Seeds in `data/seeds/` (routes matrix, origins, airports).
+- R2-compatible storage (local folder in dev).
+- D1/SQLite `flights` per `migrations/0001_flights.sql`.
+- Route downloader (`actual`, `upcoming`, `forecast`) → parser → indexer → enrichment.
+- Report/export writer with `dataKind` filter.
 
 ### Phase 2: Discovery And Scoring
 
-- Add inbound discovery for destination airports.
-- Add candidate origin reports.
-- Add route priority scoring.
-- Add zero-result retention and priority lowering.
-- Add flight-number monitor extraction.
+See [README-future.md](./README-future.md).
 
 ### Phase 3: Cloudflare Deployment
 
-- Move each service to a small Worker:
-  - API Worker
-  - Downloader Worker
-  - Parser Worker
-  - Analyzer Worker
-- Use Cron Triggers for scheduled jobs.
-- Use Queues between steps if jobs become asynchronous.
-- Store raw in R2.
-- Store indexes and vocabulary in D1.
+- Workers per service; Cron for v2 jobs.
+- Raw and canonical JSON in R2.
+- **Only** normalized flights in D1.
+- Seeds and job manifests outside D1.
 
 ## Key Decisions
 
-- Use FR24 route queries as the main data source.
-- Use inbound airport scans only for discovery.
-- Use outbound scans only for smaller origin airports.
-- Store zero-result responses.
-- Keep raw data immutable.
-- Keep existing airport and aircraft lookup data.
-- Separate download, parse, analysis, and API.
-- Make data objects the boundary between pipeline steps.
-- Keep endpoints tiny so they can become Cloudflare Workers later.
+- Three business uses: past arrivals, upcoming outreach, ~2-week forecast — via `data_kind`.
+- All Vietnam airports in `airports.json` are equal; route matrix is in `v2-routes.json`.
+- FR24 `routes=` batches only; `data_kind` comes from the job time window.
+- Flight rows are minimal: no provider, sourceMethods, rawRefs, confidence, or paxEstimateMethod in storage.
+- D1 stores normalized `flights` only; minimal columns and indexes.
+- Jobs, routes, and airport metadata live in JSON files / R2, not D1.
+- Raw data immutable in R2; canonical JSON optional for replay.
+- Pipeline steps communicate through stored objects and D1 upserts.
+- No public API, no frontend listener, no OpenAPI contract in v2.
+- Cron is the production entry point; debug scripts are the manual entry point.
+- Discovery and analyzers deferred to [README-future.md](./README-future.md).
+
+## Migrating from v1 (parent `Flight Scheduler/`)
+
+### Copy into v2 (done)
+
+All seed JSON is in `version-2/data/seeds/` — you can delete the parent `data/seeds/` when you remove v1.
+
+### Keep from v1 when building v2 code
+
+| Item | Why |
+|------|-----|
+| **`server/services/flightradar24.js`** | FR24 HTTP client: `splitDateRange`, `fetchRoutes`, pagination, rate-limit handling |
+| **`server/services/pax-estimate.js`** | `pax_est` from `aircraft-pax.json` (move under `src/shared/enrichment/`) |
+| **`server/lib/fs-json.js`** | Small read/write JSON helper |
+| **`.env` → `FR24_API_TOKEN`** | Required for downloads |
+| **`data/cache/fr24/cis-vn_*.json`** (optional, ~124 KB) | One prior FR24 sample export; useful to test parser adapters, not v2 R2 layout |
+
+### Do not need from v1
+
+| Item | Why |
+|------|-----|
+| **`data/cache/raw/`** (~98 MB) | Aviation Edge / Aviationstack **arrival-timetable** cache (`{date}_{IATA}.json`). Different API and schema than v2 FR24 route batches. |
+| **`data/normalized/`** | v1 normalized shape (`dep_iata`, `arr_iata`, …), not v2 D1 `flights` |
+| **`data/cache/airports/`** | Aviation Edge departure-country lookups; v2 uses `v2-origin-airports.json` + `russian-speaking-countries.json` |
+| **`data/cache/status/`, audits, manifests** | v1 scheduler/cache bookkeeping only |
+| **`server/services/aviation-edge.js`**, **`aviationstack.js`** | v2 is FR24-only per spec |
+| **`public/`** (v1 dashboard) | v2 has no frontend listener; use report files / exports |
+| **Prefetch / fill-gap scripts** | v1 near-term gap workarounds; v2 uses FR24 `actual` / `upcoming` / `forecast` route jobs |
+
+### Reference only (optional)
+
+- **`scripts/fetch-fr24-cis-vn.mjs`** — shows route vs outbound patterns; v2 should use **routes-only** from `v2-routes.json`, not Moscow outbound pagination.
+- **Parent `README.md`, `task.md`** — v1 operational notes, not implementation spec for v2.

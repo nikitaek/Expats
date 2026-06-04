@@ -1,0 +1,722 @@
+[
+  {
+    "route": "ALA-BMV"
+  },
+  {
+    "route": "ALA-CXR"
+  },
+  {
+    "route": "ALA-DAD"
+  },
+  {
+    "route": "ALA-DLI"
+  },
+  {
+    "route": "ALA-HAN"
+  },
+  {
+    "route": "ALA-HPH"
+  },
+  {
+    "route": "ALA-HUI"
+  },
+  {
+    "route": "ALA-PQC"
+  },
+  {
+    "route": "ALA-PXU"
+  },
+  {
+    "route": "ALA-SGN"
+  },
+  {
+    "route": "ALA-THD"
+  },
+  {
+    "route": "ALA-VCA"
+  },
+  {
+    "route": "ALA-VDH"
+  },
+  {
+    "route": "ALA-VDO"
+  },
+  {
+    "route": "ALA-VII"
+  },
+  {
+    "route": "DME-BMV"
+  },
+  {
+    "route": "DME-CXR"
+  },
+  {
+    "route": "DME-DAD"
+  },
+  {
+    "route": "DME-DLI"
+  },
+  {
+    "route": "DME-HAN"
+  },
+  {
+    "route": "DME-HPH"
+  },
+  {
+    "route": "DME-HUI"
+  },
+  {
+    "route": "DME-PQC"
+  },
+  {
+    "route": "DME-PXU"
+  },
+  {
+    "route": "DME-SGN"
+  },
+  {
+    "route": "DME-THD"
+  },
+  {
+    "route": "DME-VCA"
+  },
+  {
+    "route": "DME-VDH"
+  },
+  {
+    "route": "DME-VDO"
+  },
+  {
+    "route": "DME-VII"
+  },
+  {
+    "route": "EVN-BMV"
+  },
+  {
+    "route": "EVN-CXR"
+  },
+  {
+    "route": "EVN-DAD"
+  },
+  {
+    "route": "EVN-DLI"
+  },
+  {
+    "route": "EVN-HAN"
+  },
+  {
+    "route": "EVN-HPH"
+  },
+  {
+    "route": "EVN-HUI"
+  },
+  {
+    "route": "EVN-PQC"
+  },
+  {
+    "route": "EVN-PXU"
+  },
+  {
+    "route": "EVN-SGN"
+  },
+  {
+    "route": "EVN-THD"
+  },
+  {
+    "route": "EVN-VCA"
+  },
+  {
+    "route": "EVN-VDH"
+  },
+  {
+    "route": "EVN-VDO"
+  },
+  {
+    "route": "EVN-VII"
+  },
+  {
+    "route": "FRU-BMV"
+  },
+  {
+    "route": "FRU-CXR"
+  },
+  {
+    "route": "FRU-DAD"
+  },
+  {
+    "route": "FRU-DLI"
+  },
+  {
+    "route": "FRU-HAN"
+  },
+  {
+    "route": "FRU-HPH"
+  },
+  {
+    "route": "FRU-HUI"
+  },
+  {
+    "route": "FRU-PQC"
+  },
+  {
+    "route": "FRU-PXU"
+  },
+  {
+    "route": "FRU-SGN"
+  },
+  {
+    "route": "FRU-THD"
+  },
+  {
+    "route": "FRU-VCA"
+  },
+  {
+    "route": "FRU-VDH"
+  },
+  {
+    "route": "FRU-VDO"
+  },
+  {
+    "route": "FRU-VII"
+  },
+  {
+    "route": "GYD-BMV"
+  },
+  {
+    "route": "GYD-CXR"
+  },
+  {
+    "route": "GYD-DAD"
+  },
+  {
+    "route": "GYD-DLI"
+  },
+  {
+    "route": "GYD-HAN"
+  },
+  {
+    "route": "GYD-HPH"
+  },
+  {
+    "route": "GYD-HUI"
+  },
+  {
+    "route": "GYD-PQC"
+  },
+  {
+    "route": "GYD-PXU"
+  },
+  {
+    "route": "GYD-SGN"
+  },
+  {
+    "route": "GYD-THD"
+  },
+  {
+    "route": "GYD-VCA"
+  },
+  {
+    "route": "GYD-VDH"
+  },
+  {
+    "route": "GYD-VDO"
+  },
+  {
+    "route": "GYD-VII"
+  },
+  {
+    "route": "IKT-BMV"
+  },
+  {
+    "route": "IKT-CXR"
+  },
+  {
+    "route": "IKT-DAD"
+  },
+  {
+    "route": "IKT-DLI"
+  },
+  {
+    "route": "IKT-HAN"
+  },
+  {
+    "route": "IKT-HPH"
+  },
+  {
+    "route": "IKT-HUI"
+  },
+  {
+    "route": "IKT-PQC"
+  },
+  {
+    "route": "IKT-PXU"
+  },
+  {
+    "route": "IKT-SGN"
+  },
+  {
+    "route": "IKT-THD"
+  },
+  {
+    "route": "IKT-VCA"
+  },
+  {
+    "route": "IKT-VDH"
+  },
+  {
+    "route": "IKT-VDO"
+  },
+  {
+    "route": "IKT-VII"
+  },
+  {
+    "route": "KHV-BMV"
+  },
+  {
+    "route": "KHV-CXR"
+  },
+  {
+    "route": "KHV-DAD"
+  },
+  {
+    "route": "KHV-DLI"
+  },
+  {
+    "route": "KHV-HAN"
+  },
+  {
+    "route": "KHV-HPH"
+  },
+  {
+    "route": "KHV-HUI"
+  },
+  {
+    "route": "KHV-PQC"
+  },
+  {
+    "route": "KHV-PXU"
+  },
+  {
+    "route": "KHV-SGN"
+  },
+  {
+    "route": "KHV-THD"
+  },
+  {
+    "route": "KHV-VCA"
+  },
+  {
+    "route": "KHV-VDH"
+  },
+  {
+    "route": "KHV-VDO"
+  },
+  {
+    "route": "KHV-VII"
+  },
+  {
+    "route": "KJA-BMV"
+  },
+  {
+    "route": "KJA-CXR"
+  },
+  {
+    "route": "KJA-DAD"
+  },
+  {
+    "route": "KJA-DLI"
+  },
+  {
+    "route": "KJA-HAN"
+  },
+  {
+    "route": "KJA-HPH"
+  },
+  {
+    "route": "KJA-HUI"
+  },
+  {
+    "route": "KJA-PQC"
+  },
+  {
+    "route": "KJA-PXU"
+  },
+  {
+    "route": "KJA-SGN"
+  },
+  {
+    "route": "KJA-THD"
+  },
+  {
+    "route": "KJA-VCA"
+  },
+  {
+    "route": "KJA-VDH"
+  },
+  {
+    "route": "KJA-VDO"
+  },
+  {
+    "route": "KJA-VII"
+  },
+  {
+    "route": "LED-BMV"
+  },
+  {
+    "route": "LED-CXR"
+  },
+  {
+    "route": "LED-DAD"
+  },
+  {
+    "route": "LED-DLI"
+  },
+  {
+    "route": "LED-HAN"
+  },
+  {
+    "route": "LED-HPH"
+  },
+  {
+    "route": "LED-HUI"
+  },
+  {
+    "route": "LED-PQC"
+  },
+  {
+    "route": "LED-PXU"
+  },
+  {
+    "route": "LED-SGN"
+  },
+  {
+    "route": "LED-THD"
+  },
+  {
+    "route": "LED-VCA"
+  },
+  {
+    "route": "LED-VDH"
+  },
+  {
+    "route": "LED-VDO"
+  },
+  {
+    "route": "LED-VII"
+  },
+  {
+    "route": "MSQ-BMV"
+  },
+  {
+    "route": "MSQ-CXR"
+  },
+  {
+    "route": "MSQ-DAD"
+  },
+  {
+    "route": "MSQ-DLI"
+  },
+  {
+    "route": "MSQ-HAN"
+  },
+  {
+    "route": "MSQ-HPH"
+  },
+  {
+    "route": "MSQ-HUI"
+  },
+  {
+    "route": "MSQ-PQC"
+  },
+  {
+    "route": "MSQ-PXU"
+  },
+  {
+    "route": "MSQ-SGN"
+  },
+  {
+    "route": "MSQ-THD"
+  },
+  {
+    "route": "MSQ-VCA"
+  },
+  {
+    "route": "MSQ-VDH"
+  },
+  {
+    "route": "MSQ-VDO"
+  },
+  {
+    "route": "MSQ-VII"
+  },
+  {
+    "route": "NQZ-BMV"
+  },
+  {
+    "route": "NQZ-CXR"
+  },
+  {
+    "route": "NQZ-DAD"
+  },
+  {
+    "route": "NQZ-DLI"
+  },
+  {
+    "route": "NQZ-HAN"
+  },
+  {
+    "route": "NQZ-HPH"
+  },
+  {
+    "route": "NQZ-HUI"
+  },
+  {
+    "route": "NQZ-PQC"
+  },
+  {
+    "route": "NQZ-PXU"
+  },
+  {
+    "route": "NQZ-SGN"
+  },
+  {
+    "route": "NQZ-THD"
+  },
+  {
+    "route": "NQZ-VCA"
+  },
+  {
+    "route": "NQZ-VDH"
+  },
+  {
+    "route": "NQZ-VDO"
+  },
+  {
+    "route": "NQZ-VII"
+  },
+  {
+    "route": "OVB-BMV"
+  },
+  {
+    "route": "OVB-CXR"
+  },
+  {
+    "route": "OVB-DAD"
+  },
+  {
+    "route": "OVB-DLI"
+  },
+  {
+    "route": "OVB-HAN"
+  },
+  {
+    "route": "OVB-HPH"
+  },
+  {
+    "route": "OVB-HUI"
+  },
+  {
+    "route": "OVB-PQC"
+  },
+  {
+    "route": "OVB-PXU"
+  },
+  {
+    "route": "OVB-SGN"
+  },
+  {
+    "route": "OVB-THD"
+  },
+  {
+    "route": "OVB-VCA"
+  },
+  {
+    "route": "OVB-VDH"
+  },
+  {
+    "route": "OVB-VDO"
+  },
+  {
+    "route": "OVB-VII"
+  },
+  {
+    "route": "SVO-BMV"
+  },
+  {
+    "route": "SVO-CXR"
+  },
+  {
+    "route": "SVO-DAD"
+  },
+  {
+    "route": "SVO-DLI"
+  },
+  {
+    "route": "SVO-HAN"
+  },
+  {
+    "route": "SVO-HPH"
+  },
+  {
+    "route": "SVO-HUI"
+  },
+  {
+    "route": "SVO-PQC"
+  },
+  {
+    "route": "SVO-PXU"
+  },
+  {
+    "route": "SVO-SGN"
+  },
+  {
+    "route": "SVO-THD"
+  },
+  {
+    "route": "SVO-VCA"
+  },
+  {
+    "route": "SVO-VDH"
+  },
+  {
+    "route": "SVO-VDO"
+  },
+  {
+    "route": "SVO-VII"
+  },
+  {
+    "route": "TAS-BMV"
+  },
+  {
+    "route": "TAS-CXR"
+  },
+  {
+    "route": "TAS-DAD"
+  },
+  {
+    "route": "TAS-DLI"
+  },
+  {
+    "route": "TAS-HAN"
+  },
+  {
+    "route": "TAS-HPH"
+  },
+  {
+    "route": "TAS-HUI"
+  },
+  {
+    "route": "TAS-PQC"
+  },
+  {
+    "route": "TAS-PXU"
+  },
+  {
+    "route": "TAS-SGN"
+  },
+  {
+    "route": "TAS-THD"
+  },
+  {
+    "route": "TAS-VCA"
+  },
+  {
+    "route": "TAS-VDH"
+  },
+  {
+    "route": "TAS-VDO"
+  },
+  {
+    "route": "TAS-VII"
+  },
+  {
+    "route": "VKO-BMV"
+  },
+  {
+    "route": "VKO-CXR"
+  },
+  {
+    "route": "VKO-DAD"
+  },
+  {
+    "route": "VKO-DLI"
+  },
+  {
+    "route": "VKO-HAN"
+  },
+  {
+    "route": "VKO-HPH"
+  },
+  {
+    "route": "VKO-HUI"
+  },
+  {
+    "route": "VKO-PQC"
+  },
+  {
+    "route": "VKO-PXU"
+  },
+  {
+    "route": "VKO-SGN"
+  },
+  {
+    "route": "VKO-THD"
+  },
+  {
+    "route": "VKO-VCA"
+  },
+  {
+    "route": "VKO-VDH"
+  },
+  {
+    "route": "VKO-VDO"
+  },
+  {
+    "route": "VKO-VII"
+  },
+  {
+    "route": "VVO-BMV"
+  },
+  {
+    "route": "VVO-CXR"
+  },
+  {
+    "route": "VVO-DAD"
+  },
+  {
+    "route": "VVO-DLI"
+  },
+  {
+    "route": "VVO-HAN"
+  },
+  {
+    "route": "VVO-HPH"
+  },
+  {
+    "route": "VVO-HUI"
+  },
+  {
+    "route": "VVO-PQC"
+  },
+  {
+    "route": "VVO-PXU"
+  },
+  {
+    "route": "VVO-SGN"
+  },
+  {
+    "route": "VVO-THD"
+  },
+  {
+    "route": "VVO-VCA"
+  },
+  {
+    "route": "VVO-VDH"
+  },
+  {
+    "route": "VVO-VDO"
+  },
+  {
+    "route": "VVO-VII"
+  }
+]
