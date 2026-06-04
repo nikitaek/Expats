@@ -1,0 +1,198 @@
+{
+  "main": {
+    "id": "8b2540d89d5b8f13",
+    "type": "split",
+    "children": [
+      {
+        "id": "4f914bf0ee8002dd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b65e261e62f836d7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Travel AIgency/Tourist Sources.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Tourist Sources"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "21b47ead4b51bdc3",
+    "type": "split",
+    "children": [
+      {
+        "id": "5e42ee03f5ee1164",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1c1a99b2d8b3d65c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "0ee4d2c03d365328",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "c72df22e42064230",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "83d5f6aaec5ea0f5",
+    "type": "split",
+    "children": [
+      {
+        "id": "3dd49a191f8f35bc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a7441c5ec239f952",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Travel AIgency/Tourist Sources.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Tourist Sources"
+            }
+          },
+          {
+            "id": "e06f3b8b8497a6d9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Travel AIgency/Tourist Sources.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Tourist Sources"
+            }
+          },
+          {
+            "id": "6ad68f9a17160046",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "e39f3c6536368065",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "805e4591a7045c0f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Travel AIgency/Tourist Sources.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Tourist Sources"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "b65e261e62f836d7",
+  "lastOpenFiles": [
+    "Travel AIgency/Tools/Flight Scheduler/task.md",
+    "Travel AIgency/Operation/HR/Vietnamese Job Search FB Groups.md",
+    "Travel AIgency/Tourist Sources.md",
+    "Travel AIgency/Operation/HR",
+    "Travel AIgency/Operation",
+    "Travel AIgency/Tools/Flight Scheduler/about.md",
+    "Travel AIgency/Tools/Flight Scheduler",
+    "Travel AIgency/Tools",
+    "Travel AIgency"
+  ]
+}
