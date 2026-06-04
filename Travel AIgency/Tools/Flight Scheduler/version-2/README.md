@@ -23,7 +23,7 @@ Do not classify routes as seasonal/charter or reconcile multi-source disagreemen
 The main design rule is that each step communicates through stored data, not public HTTP endpoints:
 
 ```text
-cron/debug command -> scheduler plan -> job manifest -> raw FR24 object (R2) -> canonical object (R2) -> enriched row -> D1 flights table -> reports/export
+cron/debug command -> scheduler -> job manifest -> raw FR24 object (R2) -> canonical object (R2) -> enriched row -> BigQuery flights tables -> reports/export
 ```
 
 Target runtime:
@@ -31,8 +31,8 @@ Target runtime:
 - Node.js services now.
 - Cloudflare Workers later.
 - Cloudflare R2 for immutable raw and canonical JSON objects.
-- Cloudflare D1 for **normalized flight rows only** (query and aggregation).
-- Job state, route lists, and airport metadata in **versioned seed JSON** and optional R2 job manifests — not D1.
+- BigQuery for **normalized flight facts** (`flights_actual`, `flights_upcoming`, `flights_forecast`) with view `flights_current`.
+- Job state, route lists, and airport metadata in **versioned seed JSON** and R2 job manifests — not BigQuery.
 - Cloudflare Cron Triggers later for scheduled pipeline execution.
 - No public API and no frontend listeners in v2. Manual control is by debug scripts only.
 
@@ -92,14 +92,14 @@ routes=SVO-SGN,ALA-CXR,VVO-PQC
 
 Parser sets `data_kind` from the job’s declared window (not from extra metadata fields). Charter rows may appear late in `forecast` and move to `upcoming` then `actual` — treat `forecast` as provisional.
 
-Store zero-result responses in R2 for audit.
+Empty FR24 responses (zero flights in the batch) are not written to R2 — only the job manifest records `rowCount: 0`.
 
 ### Refresh Cadence (v2)
 
 - `actual`: daily backfill for yesterday and recent completed days.
 - `upcoming`: every 6 hours for the next 72 hours.
 - `forecast`: daily for the next 14 days.
-- Parse, index-to-D1, enrich: after each download batch.
+- Parse, enrich, load to BigQuery: after each download batch.
 
 ## FR24 API Call Examples
 
@@ -169,12 +169,6 @@ Sample outcome (test window; destinations vary by route batch):
 
 The pipeline is not controlled by HTTP. Cron runs the normal schedule; debug commands are for manual one-off runs.
 
-Plan what cron would do without calling FR24:
-
-```bash
-npm run v2:plan -- --date 2026-06-04
-```
-
 Run the full daily pipeline for the scheduler-chosen windows:
 
 ```bash
@@ -199,7 +193,7 @@ npm run v2:index-prefix -- --prefix normalized/flights/date_from=2026-05-20/date
 npm run v2:enrich-flights -- --date-from 2026-05-20 --date-to 2026-05-27
 ```
 
-Export a small report from D1 for inspection:
+Export a small report from BigQuery for inspection:
 
 ```bash
 npm run v2:report -- --data-kind actual --date-from 2026-05-20 --date-to 2026-05-27 --destination SGN
@@ -228,20 +222,64 @@ Example report rows:
 
 ## Recommended v2 Method
 
-1. Scheduler reads `data/seeds/v2-routes.json` (240 routes: 16 CIS origins × 15 Vietnam airports).
+1. Scheduler reads enabled routes from `data/seeds/v2-routes.json` (full matrix ~240 routes until bootstrap prune).
 2. Route batch fetch for `actual`, `upcoming`, and `forecast` windows.
-3. Parse → enrich (`pax_est` only) → upsert D1 `flights`.
+3. Parse → enrich (`pax_est` only) → load to BigQuery (`flights_actual/upcoming/forecast`), one row per `fr24_id` per table (no duplicates).
 4. Reports/exports: flights list + summaries filtered by `dataKind`.
 
 Hybrid discovery: [README-future.md](./README-future.md).
 
-## Seed files (not D1)
+## First launch (route bootstrap)
+
+The full origin × destination matrix in `v2-routes.json` is a **candidate** list. Many pairs never have CIS–Vietnam service. The first run discovers which routes are real; steady-state cron only fetches **enabled** routes.
+
+### 1. Initial download (all candidates)
+
+On first launch, download **every route** where `enabled` is not `false` (omit `enabled` or set `"enabled": true`).
+
+Date window (single bootstrap pass, split into FR24 14-day chunks if needed):
+
+```text
+date_from = today − 30 days
+date_to   = today + 30 days
+```
+
+Run manually (example):
+
+```bash
+npm run v2:download-routes -- \
+  --date-from <today-30d> \
+  --date-to <today+30d> \
+  --routes <all enabled routes, batched 15 per request>
+```
+
+Then parse → enrich → load to BigQuery for that window. Expect many zero-flight route batches; that is normal.
+
+### 2. Prune routes with no data
+
+After the bootstrap load, analyze which routes **never appear** in stored flight facts (canonical JSON or BigQuery `route` column) across the bootstrap window.
+
+For each route with **no flights** in that 60-day window, edit `data/seeds/v2-routes.json` and set:
+
+```json
+{ "route": "IKT-BMV", "enabled": false }
+```
+
+Routes that returned at least one flight stay enabled (or omit `enabled`).
+
+Re-run this check after major seed expansions (new origin or new Vietnam airport). Optional: a future script can propose `enabled: false` from BigQuery; v2 does this manually in the seed file.
+
+### 3. Steady state
+
+Scheduler and downloader **skip** routes with `"enabled": false`. Cron uses the normal `actual` / `upcoming` / `forecast` windows from [Autonomous Scheduler Plan](#autonomous-scheduler-plan), not the ±30-day bootstrap range.
+
+## Seed files (not BigQuery)
 
 | File | Purpose |
 |------|---------|
 | `data/seeds/airports.json` | All Vietnam destination airports (equal importance) |
 | `data/seeds/v2-origin-airports.json` | CIS / RU-speaking origin airports |
-| `data/seeds/v2-routes.json` | Routes to fetch (`{ "route": "ORIGIN-DEST" }` only) |
+| `data/seeds/v2-routes.json` | Routes to fetch; `enabled: false` after bootstrap if no flights in ±30d window |
 | `data/seeds/v2-flight-numbers.json` | Optional flight numbers for v2.1+ monitoring |
 | `data/seeds/aircraft-pax.json` | Aircraft → `pax_est` mapping |
 | `data/seeds/russian-speaking-countries.json` | Country reference |
@@ -256,13 +294,19 @@ Hybrid discovery: [README-future.md](./README-future.md).
 
 ### Routes
 
-`data/seeds/v2-routes.json` — one field per row:
+`data/seeds/v2-routes.json` — matrix: each origin in `v2-origin-airports.json` × each `iata` in `airports.json`.
 
 ```json
 { "route": "ALA-SGN" }
+{ "route": "IKT-BMV", "enabled": false }
 ```
 
-Matrix: each origin in `v2-origin-airports.json` × each `iata` in `airports.json`.
+| Field | Default | Meaning |
+|-------|---------|---------|
+| `route` | (required) | `ORIGIN-DEST` for FR24 `routes=` |
+| `enabled` | `true` | If `false`, scheduler and downloader skip this route (set after first-launch prune) |
+
+All rows start enabled for the [first launch](#first-launch-route-bootstrap). Disable routes that had no flights in the bootstrap window.
 
 ### Flight numbers
 
@@ -349,82 +393,199 @@ E19 100 Embraer E-Jet
 
 | Layer | Where | What |
 |-------|--------|------|
-| Raw FR24 | R2 | Immutable request/response/manifest per fetch |
-| Canonical | R2 | Parsed rows before D1 upsert (audit/replay) |
-| Normalized flights | **D1** | Queryable flight facts (minimal columns) |
-| Jobs | Local `data/jobs/` or R2 `jobs/` | Queue state, not D1 |
-| Route/airport lists | `data/seeds/*.json` | What to fetch; human-edited |
-| Summaries | D1 SQL or API aggregation | Daily totals from `flights` |
-
-Keep D1 small: one primary table plus indexes. Do not duplicate raw JSON in D1.
+| Raw FR24 responses | R2 (`vn-flights` bucket) | Immutable JSON per fetch; key schema below |
+| Canonical (parsed) records | R2 (`vn-flights` bucket) | Parsed, pre-BigQuery; audit/replay |
+| Normalized flight facts | **BigQuery** | `flights_actual`, `flights_upcoming`, `flights_forecast` + view `flights_current` |
+| Jobs | R2 `jobs/` or local `data/jobs/` | Manifests; never BigQuery |
+| Seeds & config | `data/seeds/`, `data/config/` | Route list, policy; human-edited files |
+| Reports | R2 `reports/` | Summary JSONs written by reporter |
 
 ### R2 Buckets
 
-Recommended buckets:
-
-- `flight-scheduler-raw`
-- `flight-scheduler-normalized`
-- `flight-scheduler-reports`
-
-If fewer buckets are easier, use one bucket with top-level prefixes.
-
-### R2 Object Keys
-
-Raw FR24 route fetch:
+One bucket is enough. Use top-level prefixes to separate concerns. Suggested name:
 
 ```text
-raw/fr24/routes/date_from=2026-05-20/date_to=2026-05-27/batch=SVO-DAD__ALA-DAD__TAS-DAD/request.json
-raw/fr24/routes/date_from=2026-05-20/date_to=2026-05-27/batch=SVO-DAD__ALA-DAD__TAS-DAD/response.json
-raw/fr24/routes/date_from=2026-05-20/date_to=2026-05-27/batch=SVO-DAD__ALA-DAD__TAS-DAD/manifest.json
+vn-flights
 ```
 
-Raw inbound airport fetch (v2.1+ only):
+### R2 Key Convention
+
+All keys follow this pattern:
 
 ```text
-raw/fr24/inbound/airport=SGN/date_from=2026-05-23/date_to=2026-05-23/page=001/response.json
+<category>/<subcategory>/<date-or-window>/<identifier>/<file>
 ```
 
-Raw outbound airport fetch:
+Rules:
+- Dates are plain ISO values: `2026-05-20`, never `date_from=2026-05-20`
+- Windows are `<from>_<to>`: `2026-05-20_2026-05-27`
+- Batch identifier is a short deterministic hash of the sorted route list, not the route names themselves (routes can be up to 15 entries and make keys unreadable)
+- Separator is always `/`
+- Files are lowercase with dashes: `response.json`, `manifest.json`
+
+#### Raw FR24 route fetch
 
 ```text
-raw/fr24/outbound/airport=ALA/date_from=2026-05-20/date_to=2026-05-27/page=001/response.json
-raw/fr24/outbound/airport=ALA/date_from=2026-05-20/date_to=2026-05-27/manifest.json
+raw/routes/<from>_<to>/<batch-hash>/request.json
+raw/routes/<from>_<to>/<batch-hash>/response.json
+raw/routes/<from>_<to>/<batch-hash>/manifest.json
 ```
 
-Zero-result route fetch:
+Example:
 
 ```text
-raw/fr24/routes/date_from=2026-05-20/date_to=2026-05-27/batch=VVO-DAD/zero.json
+raw/routes/2026-05-20_2026-05-27/a3f9c1/request.json
+raw/routes/2026-05-20_2026-05-27/a3f9c1/response.json
+raw/routes/2026-05-20_2026-05-27/a3f9c1/manifest.json
 ```
 
-Canonical records (optional R2 mirror before D1):
+The manifest records which routes were in the batch, so the hash alone is enough in the path. If FR24 returns no flights, **do not** create `response.json` under that prefix (manifest only).
+
+#### Raw inbound airport fetch (v2.1+)
 
 ```text
-normalized/flights/date=2026-05-22/part-000.json
+raw/inbound/<airport>/<from>_<to>/p<page>/response.json
 ```
 
-Job manifests (not D1):
+Example:
 
 ```text
-jobs/2026-06-04/job_20260604_routes_001.json
+raw/inbound/SGN/2026-05-23_2026-05-23/p001/response.json
 ```
 
-### D1 Schema
+#### Canonical (parsed) records
 
-See `version-2/migrations/0001_flights.sql`. D1 holds **normalized flight facts** only; raw JSON stays in R2.
+```text
+canonical/flights/<from>_<to>/<batch-hash>/flights.json
+```
 
-Columns (no `provider`, `source_method`, `raw_refs`, `confidence`, or `pax_estimate_method`):
+#### Job manifests
 
-- Identity: `id`, `fr24_id`, `flight_number`, `airline_iata`, `route`, `origin_iata`, `destination_iata`
-- Time: `flight_date`, `data_kind` (`actual` | `upcoming` | `forecast`), scheduled/actual departure and arrival
-- Estimate: `pax_est`
-- Meta: `aircraft_code`, `aircraft_registration`, `created_at`, `updated_at`
+```text
+jobs/<YYYY-MM-DD>/<job-id>.json
+```
 
-`flight_date` — calendar date for daily rollups (from arrival/departure at destination, or UTC if simpler initially).
+Example:
 
-Upsert uses the unique index including `data_kind` so the same flight number can exist once per kind when windows overlap.
+```text
+jobs/2026-06-04/fr24-routes-actual-2026-06-03-a3f9c1.json
+```
 
-**Not in D1:** jobs, vocabulary tables, airport lookup cache — use seed JSON and job manifest files.
+#### Reports
+
+```text
+reports/<data-kind>/<YYYY-MM-DD>/daily.json
+reports/<data-kind>/<from>_<to>/routes.json
+```
+
+Example:
+
+```text
+reports/actual/2026-06-03/daily.json
+reports/upcoming/2026-06-04_2026-06-07/routes.json
+```
+
+### BigQuery Storage
+
+BigQuery holds normalized flight facts. Each table stores **at most one row per `fr24_id`**; re-downloads refresh that row instead of inserting duplicates.
+
+A flight moves through trust levels over its lifetime:
+
+```text
+forecast  →  upcoming  →  actual (completed)
+```
+
+`actual` rows are ground truth. `upcoming` rows are operational but may change. `forecast` rows are provisional. All three are loaded into separate tables so partition expiry can differ and so queries can skip irrelevant data.
+
+#### Query pattern: reliability overwrite
+
+Every query reads all three tables, unions them, and keeps the most-trusted version of each flight:
+
+```sql
+SELECT * EXCEPT(trust)
+FROM (
+  SELECT *, 1 AS trust FROM `vn_flights.flights_actual`
+  UNION ALL
+  SELECT *, 2 AS trust FROM `vn_flights.flights_upcoming`
+  UNION ALL
+  SELECT *, 3 AS trust FROM `vn_flights.flights_forecast`
+)
+QUALIFY ROW_NUMBER() OVER (
+  PARTITION BY fr24_id
+  ORDER BY trust ASC, loaded_at DESC
+) = 1
+```
+
+`actual` beats `upcoming` beats `forecast` when the same `fr24_id` appears in more than one table during a lifecycle transition. Volumes are small (hundreds of rows per query) so reading all three tables on every query is not a cost concern.
+
+This query is wrapped in a BigQuery **view** (`flights_current`) so reports do not need to union tables manually. Per-table uniqueness is enforced at load time (see ingest rules).
+
+#### Table design
+
+All three tables share the same schema. Only the name differs.
+
+```sql
+-- vn_flights.flights_actual
+-- vn_flights.flights_upcoming
+-- vn_flights.flights_forecast
+
+fr24_id             STRING    NOT NULL   -- primary dedup key
+flight_number       STRING    NOT NULL
+airline_iata        STRING
+route               STRING    NOT NULL   -- e.g. SVO-SGN
+origin_iata         STRING    NOT NULL
+destination_iata    STRING    NOT NULL
+flight_date         DATE      NOT NULL   -- partition column; arrival date Vietnam time
+scheduled_dep_at    TIMESTAMP
+actual_dep_at       TIMESTAMP
+scheduled_arr_at    TIMESTAMP
+actual_arr_at       TIMESTAMP
+aircraft_code       STRING
+aircraft_reg        STRING
+pax_est             INT64
+loaded_at           TIMESTAMP NOT NULL   -- ingest time; used on cross-table merge in flights_current
+```
+
+Partition by `flight_date`. Cluster by `destination_iata`, `origin_iata`.
+
+#### `flights_current` view
+
+```sql
+CREATE OR REPLACE VIEW `vn_flights.flights_current` AS
+SELECT * EXCEPT(trust)
+FROM (
+  SELECT *, 1 AS trust FROM `vn_flights.flights_actual`
+  UNION ALL
+  SELECT *, 2 AS trust FROM `vn_flights.flights_upcoming`
+  UNION ALL
+  SELECT *, 3 AS trust FROM `vn_flights.flights_forecast`
+)
+QUALIFY ROW_NUMBER() OVER (
+  PARTITION BY fr24_id
+  ORDER BY trust ASC, loaded_at DESC
+) = 1
+```
+
+All reports and debug exports query `flights_current`. Direct table queries are only for debugging or partition-scoped operations.
+
+#### Ingest rules
+
+- Load to the table matching the job's `data_kind`: `actual` → `flights_actual`, etc.
+- **No duplicate `fr24_id` rows** in a table: collapse each batch to one row per `fr24_id` before load; then `MERGE` on `fr24_id` (insert new, update when the incoming row is newer). Re-running download → parse → load for the same window must not multiply rows.
+- Set `loaded_at = CURRENT_TIMESTAMP()` at ingest time, not the flight's departure time.
+- Scheduler refreshes `upcoming` every 6 hours; `forecast` and `actual` daily.
+
+#### Partition expiry (suggested)
+
+| Table | Expiry |
+|-------|--------|
+| `flights_forecast` | 21 days |
+| `flights_upcoming` | 7 days |
+| `flights_actual` | no expiry |
+
+#### Not in BigQuery
+
+Jobs, seeds, and airport/aircraft lookup data stay as R2/local JSON files.
 
 ## Pipeline Modules
 
@@ -434,24 +595,24 @@ Each module should be small enough to become a Cloudflare Worker later.
 
 Keep responsibilities strict:
 
-- Scheduler creates route-fetch jobs from seed JSON only. It does not call FR24 or parse rows.
+- Scheduler creates route-fetch jobs from enabled routes in seed JSON only. It does not call FR24 or parse rows.
 - Downloader calls FR24 (`routes=` only in v2). It writes raw request, response, and manifest objects only.
 - Parser reads raw objects and writes canonical JSON to R2.
-- Indexer deduplicates canonical rows and upserts D1 `flights`.
-- Enrichment updates `pax_est` and aircraft fields on D1 rows (and canonical JSON if mirrored).
-- Reporter reads D1 and writes report/export files. It never calls FR24.
+- Loader merges enriched canonical rows into the correct BigQuery table (`flights_actual`, `flights_upcoming`, or `flights_forecast`), keyed on `fr24_id` so re-downloads do not create duplicates.
+- Enrichment sets `pax_est` on canonical rows before loading.
+- Reporter queries BigQuery via the `flights_current` view and writes report files. It never calls FR24.
 
 The pipeline boundary is always stored data:
 
 ```text
-cron/debug command -> scheduler plan -> job manifest -> raw object -> canonical object -> D1 flights -> report/export
+cron/debug command -> scheduler -> job manifest -> raw object -> canonical object (R2) -> BigQuery flights tables -> report files (R2)
 ```
 
 No module should import another service's job implementation. Shared code belongs in `src/shared`, especially:
 
 - FR24 HTTP client and pagination.
 - R2/S3 object store.
-- D1/SQLite `flights` repository.
+- BigQuery streaming insert / load job client.
 - Canonical flight contracts and dedupe keys.
 - Aircraft passenger estimate rules from `data/seeds/aircraft-pax.json`.
 
@@ -470,12 +631,12 @@ Parser
   -> reads raw prefix
   -> writes canonical JSON to R2
 
-Indexer
-  -> reads canonical prefix
-  -> upserts D1 flights (dedupe)
-
 Enrichment
-  -> updates pax_est / aircraft on D1 rows
+  -> reads canonical prefix
+  -> sets pax_est on each row
+
+Loader
+  -> MERGE enriched rows into flights_actual / flights_upcoming / flights_forecast (dedupe key: fr24_id)
 
 Reporter
   -> writes reports/daily, reports/upcoming, reports/forecast
@@ -485,13 +646,13 @@ Future orchestration (inbound, analyzer, vocabulary updates): [README-future.md]
 
 ### 1. Route seeds (not a service)
 
-Scheduler loads `data/seeds/v2-routes.json` and batches routes (15 per FR24 request). Supporting seeds: `airports.json`, `v2-origin-airports.json`, `aircraft-pax.json`.
+Scheduler loads enabled routes from `data/seeds/v2-routes.json` and batches them (15 per FR24 request). Supporting seeds: `airports.json`, `v2-origin-airports.json`, `aircraft-pax.json`.
 
 ### 2. Scheduler / Orchestrator Service
 
 Purpose:
 
-- Read `v2-routes.json`, recent job manifests, and runtime limits.
+- Read enabled routes from `v2-routes.json`, recent job manifests, and runtime limits.
 - Decide which date windows and route batches must run.
 - Create `fr24.routes.fetch`, parse, index, enrich, and report jobs.
 - Enforce API-credit budgets.
@@ -514,7 +675,7 @@ It should not expose HTTP listeners. It may either create manifests for workers 
 
 The system must know what to scan without a user clicking anything. Scheduler input is:
 
-- `data/seeds/v2-routes.json`: all route strings to scan.
+- `data/seeds/v2-routes.json`: enabled route strings only (`enabled` not `false`).
 - `data/jobs/**`: previous completed/skipped/failed manifests.
 - Existing R2 raw objects: used as an idempotency check.
 - Daily request budget and per-run request budget.
@@ -522,7 +683,7 @@ The system must know what to scan without a user clicking anything. Scheduler in
 
 ### Route Batching
 
-- Read all route seeds.
+- Read route seeds where `enabled` is not `false`.
 - Sort routes alphabetically for stable batches.
 - Split into batches of 15 routes (FR24 route limit).
 - Each batch gets a deterministic ID:
@@ -553,7 +714,9 @@ Before a FR24 call, downloader checks the expected R2 key:
 raw/fr24/routes/data_kind=<data_kind>/date_from=<YYYY-MM-DD>/date_to=<YYYY-MM-DD>/batch=<hash>/response.json
 ```
 
-If it exists and the job is not forced, skip the request and write a skipped manifest.
+If `response.json` exists for that batch/window and the job is not forced, skip the FR24 call and write a skipped manifest.
+
+If a completed manifest already exists for the same batch/window (including `rowCount: 0` with no `response.json`), skip the FR24 call unless `--force`.
 
 ### Failure Retry Rules
 
@@ -597,7 +760,6 @@ If the daily budget is too small, scheduler prioritizes:
 Debug commands do not start listeners. They run a bounded pipeline action and exit:
 
 ```bash
-npm run v2:plan
 npm run v2:daily
 npm run v2:download-routes -- --data-kind upcoming --date-from 2026-06-04 --date-to 2026-06-07
 npm run v2:parse-prefix -- --prefix raw/fr24/routes/...
@@ -606,16 +768,16 @@ npm run v2:enrich-flights -- --date-from 2026-06-04 --date-to 2026-06-07
 npm run v2:report -- --data-kind upcoming --date-from 2026-06-04 --date-to 2026-06-07
 ```
 
-Debug commands always require explicit date windows unless the command is `v2:plan` or `v2:daily`.
+Debug commands always require explicit date windows unless the command is `v2:daily` (scheduler picks windows from policy).
 
 ### 3. Download Service
 
 Purpose:
 
 - Execute FR24 API calls.
-- Save only raw request, raw response, and manifest objects.
+- Save `request.json` and `manifest.json` for every job; save `response.json` only when FR24 returns at least one flight.
 - Never parse business meaning.
-- Store zero-result responses.
+- Do not write `response.json` when FR24 returns an empty `data` array (`rowCount: 0` on the manifest only).
 
 Job type (v2):
 
@@ -643,12 +805,13 @@ Manifest shape:
   },
   "requestCount": 1,
   "rowCount": 11,
-  "isZeroResult": false,
   "startedAt": "2026-06-04T00:00:00Z",
   "finishedAt": "2026-06-04T00:00:05Z",
   "rawRefs": ["raw/fr24/routes/.../response.json"]
 }
 ```
+
+When `rowCount` is `0`, omit `rawRefs` (no `response.json` in R2). Idempotency uses the job manifest, not a zero-result object.
 
 ### 4. Parse Service
 
@@ -658,9 +821,9 @@ Purpose:
 - Convert FR24 records to canonical flight records.
 - Write canonical records to object storage.
 
-It should not update route seed files or D1.
+It should not update route seed files or BigQuery directly.
 
-Canonical flight shape (R2 and D1 — minimal fields):
+Canonical flight shape (R2 — minimal fields, loaded as-is into BigQuery):
 
 ```json
 {
@@ -682,25 +845,9 @@ Canonical flight shape (R2 and D1 — minimal fields):
 }
 ```
 
-`paxEst` is filled by enrichment before D1 upsert.
+`paxEst` is filled by enrichment before the loader runs.
 
-### 5. Indexer Service
-
-Purpose:
-
-- Read canonical flight records from R2.
-- Deduplicate and upsert into D1 `flights`.
-- Set `flight_date` for daily rollups.
-
-Deduplication keys:
-
-1. FR24 internal ID if present (`fr24_id` → `id`).
-2. Flight number + origin + destination + departure/arrival timestamp.
-3. Unique index on ingest (see D1 schema).
-
-It should not call FR24 and should not estimate passengers.
-
-### 6. Enrichment Service
+### 5. Enrichment Service
 
 Purpose:
 
@@ -713,7 +860,24 @@ Passenger estimate priority:
 3. Aircraft model text pattern.
 4. System default.
 
-It should not deduplicate rows or modify route seeds.
+It should not load to BigQuery or modify route seeds.
+
+### 6. Loader Service
+
+Purpose:
+
+- Read enriched canonical records from R2.
+- Merge rows into the BigQuery table matching the job's `data_kind`.
+- Set `loaded_at` to current timestamp on every row.
+- Enforce **one row per `fr24_id`** in the target table (no duplicates from re-downloads).
+
+Load steps:
+
+1. Collapse the canonical batch to one row per `fr24_id` (if the same flight appears in multiple raw objects).
+2. `MERGE` into `flights_actual`, `flights_upcoming`, or `flights_forecast` on `fr24_id` — insert when missing, update when the new row has a newer `loaded_at` or changed fields.
+3. Use `src/shared/enrichment/dedupe.js` (or equivalent) for batch collapse; use BigQuery `MERGE` for cross-load idempotency.
+
+Cross-table overlap (`forecast` vs `upcoming` vs `actual`) is still resolved by the `flights_current` view, not by deleting rows from other tables.
 
 ### Future modules
 
@@ -728,7 +892,7 @@ FR24 credits are limited. In v2 the scheduler uses **`routes=` batch queries onl
 - Batch up to 15 routes per FR24 request.
 - Split date ranges into 14-day chunks.
 - Skip if the exact raw object already exists in R2.
-- Store zero-result responses.
+- Do not persist empty FR24 `data` arrays to R2.
 
 ### Credit Budget Guards
 
@@ -782,7 +946,7 @@ Discovery crons: [README-future.md](./README-future.md).
 
 ### Backfill Jobs
 
-Manual jobs with `dateFrom`, `dateTo`, `routes`, and `dataKind`. Use `routes=` only.
+Manual jobs with `dateFrom`, `dateTo`, `routes`, and `dataKind`. Use `routes=` only. The [first launch](#first-launch-route-bootstrap) ±30-day window is a one-time bootstrap, not the daily cron schedule.
 
 ## Runtime Configuration
 
@@ -797,15 +961,16 @@ R2_ACCESS_KEY_ID=...
 R2_SECRET_ACCESS_KEY=...
 R2_BUCKET_RAW=flight-scheduler-raw
 R2_BUCKET_NORMALIZED=flight-scheduler-normalized
-D1_DATABASE_ID=...
+BIGQUERY_PROJECT=...
+BIGQUERY_DATASET=vn_flights
 ```
 
 Later on Cloudflare Workers:
 
 - Store keys as Worker secrets.
-- Bind R2 buckets as `RAW_BUCKET`, `NORMALIZED_BUCKET`, `REPORTS_BUCKET`.
-- Bind D1 as `DB`.
-- Bind cron-triggered Worker as the only production entry point.
+- Bind R2 bucket as `BUCKET`.
+- BigQuery is accessed over HTTP from Node.js or Workers (use service account JSON or Workload Identity).
+- Cron-triggered Worker is the only production entry point.
 
 ### Optional Scheduler Policy File
 
@@ -856,7 +1021,6 @@ Debug commands are the only manual control interface. They run and exit; they do
 
 ```text
 npm run v2:cron
-npm run v2:plan
 npm run v2:daily
 npm run v2:download-routes -- --data-kind actual --date-from YYYY-MM-DD --date-to YYYY-MM-DD --routes SVO-SGN,ALA-CXR
 npm run v2:parse-prefix -- --prefix raw/fr24/routes/...
@@ -910,7 +1074,7 @@ Flight Scheduler/version-2/
         job.js
       storage/
         object-store.js        # R2/S3/local
-        flights-repository.js  # D1/SQLite flights table only
+        bigquery-client.js     # BigQuery insert / query
       fr24/
         client.js
         pagination.js
@@ -925,6 +1089,7 @@ Flight Scheduler/version-2/
       parser/
       indexer/
       enrichment/
+      loader/
       reporter/
       scheduler/
 
@@ -938,22 +1103,21 @@ Flight Scheduler/version-2/
       v2-routes.json
       v2-origin-airports.json
       v2-flight-numbers.json
-    jobs/                      # job manifests, not D1
+    jobs/                      # job manifests, not BigQuery
     local-r2/
       raw/
       normalized/
 
   migrations/
-    0001_flights.sql
+    bq-flights-schema.json     # BigQuery table schema (JSON Schema format)
 
   scripts/
     v2-cron.mjs
-    v2-plan.mjs
     v2-daily-run.mjs
     v2-download-routes.mjs
     v2-parse-prefix.mjs
-    v2-index-canonical.mjs
     v2-enrich-flights.mjs
+    v2-load-bigquery.mjs
     v2-report.mjs
 ```
 
@@ -967,9 +1131,9 @@ The shared modules should avoid Node-only APIs where possible so they can move i
 
 - Seeds in `data/seeds/` (routes matrix, origins, airports).
 - R2-compatible storage (local folder in dev).
-- D1/SQLite `flights` per `migrations/0001_flights.sql`.
-- Route downloader (`actual`, `upcoming`, `forecast`) → parser → indexer → enrichment.
-- Report/export writer with `dataKind` filter.
+- BigQuery dataset `vn_flights` with tables `flights_actual`, `flights_upcoming`, `flights_forecast` and view `flights_current`.
+- Route downloader → parser → enrichment → loader (BigQuery MERGE on `fr24_id`, no duplicate rows).
+- Report files written to R2 `reports/`.
 
 ### Phase 2: Discovery And Scoring
 
@@ -978,20 +1142,20 @@ See [README-future.md](./README-future.md).
 ### Phase 3: Cloudflare Deployment
 
 - Workers per service; Cron for v2 jobs.
-- Raw and canonical JSON in R2.
-- **Only** normalized flights in D1.
-- Seeds and job manifests outside D1.
+- Raw and canonical JSON in R2 bucket `vn-flights`.
+- BigQuery for normalized flight facts.
+- Seeds and job manifests outside BigQuery.
 
 ## Key Decisions
 
 - Three business uses: past arrivals, upcoming outreach, ~2-week forecast — via `data_kind`.
-- All Vietnam airports in `airports.json` are equal; route matrix is in `v2-routes.json`.
+- All Vietnam airports in `airports.json` are equal; route matrix is in `v2-routes.json`; routes with no flights after ±30d bootstrap get `enabled: false`.
 - FR24 `routes=` batches only; `data_kind` comes from the job time window.
 - Flight rows are minimal: no provider, sourceMethods, rawRefs, confidence, or paxEstimateMethod in storage.
-- D1 stores normalized `flights` only; minimal columns and indexes.
-- Jobs, routes, and airport metadata live in JSON files / R2, not D1.
-- Raw data immutable in R2; canonical JSON optional for replay.
-- Pipeline steps communicate through stored objects and D1 upserts.
+- BigQuery stores normalized flights only, across 3 tables (one row per `fr24_id` each) + `flights_current` view for cross-table trust.
+- Jobs, routes, and airport metadata live in JSON files / R2, not BigQuery.
+- Raw data immutable in R2; canonical JSON is the pre-load audit record.
+- Pipeline steps communicate through stored objects; BigQuery is the terminal deduped load target.
 - No public API, no frontend listener, no OpenAPI contract in v2.
 - Cron is the production entry point; debug scripts are the manual entry point.
 - Discovery and analyzers deferred to [README-future.md](./README-future.md).
@@ -1017,7 +1181,7 @@ All seed JSON is in `version-2/data/seeds/` — you can delete the parent `data/
 | Item | Why |
 |------|-----|
 | **`data/cache/raw/`** (~98 MB) | Aviation Edge / Aviationstack **arrival-timetable** cache (`{date}_{IATA}.json`). Different API and schema than v2 FR24 route batches. |
-| **`data/normalized/`** | v1 normalized shape (`dep_iata`, `arr_iata`, …), not v2 D1 `flights` |
+| **`data/normalized/`** | v1 normalized shape (`dep_iata`, `arr_iata`, …), not v2 BigQuery schema |
 | **`data/cache/airports/`** | Aviation Edge departure-country lookups; v2 uses `v2-origin-airports.json` + `russian-speaking-countries.json` |
 | **`data/cache/status/`, audits, manifests** | v1 scheduler/cache bookkeeping only |
 | **`server/services/aviation-edge.js`**, **`aviationstack.js`** | v2 is FR24-only per spec |
