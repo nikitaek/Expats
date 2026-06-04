@@ -7,9 +7,12 @@ Requirements:
 
 2. Create a local JSON seed file for Russian-speaking origin countries. Use this list later to filter flights by departure country.
 
-3. Add API integration for AirLabs schedules:
-   https://airlabs.co/docs/schedules
-   Load incoming flights for selected Vietnamese airports.
+3. Add API integration for Aviation Edge schedules:
+   https://aviation-edge.com/developers/
+   Load incoming flights for selected Vietnamese airports. Use the appropriate endpoint by date:
+   - **Today:** [Real-time Flight Schedules API](https://aviation-edge.com/developers/) (`/v2/public/timetable`, `type=arrival`)
+   - **Past dates:** [Historical Schedules API](https://aviation-edge.com/historical-flight-schedules-api/) (`/v2/public/flightsHistory`)
+   - **Future dates:** [Future Schedules API](https://aviation-edge.com/future-flight-schedules-and-timetables-of-airports-api/) (`/v2/public/flightsFuture`)
 
 4. Before calling the API, check whether raw cached data already exists locally for the same query scope:
    `date` + `incoming airport`
@@ -43,3 +46,4 @@ Implementation notes:
 - Keep raw API responses and normalized data separate.
 - Design the code so airport seeds, country seeds, caching, normalization, and UI are modular.
 - Passenger count is not provided by the API, fill `paxEst` from aircraft type with a simple mapping table.
+- Resolve departure country via Aviation Edge [Airport Database API](https://aviation-edge.com/developers/) (`/v2/public/airportDatabase`), with local cache per IATA.

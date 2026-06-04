@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "4f914bf0ee8002dd",
+        "id": "902ef2bb12e9476d",
         "type": "tabs",
         "children": [
           {
-            "id": "b65e261e62f836d7",
+            "id": "41053f0a3ff69db4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Travel AIgency/Tourist Sources.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Tourist Sources"
+              "title": "New tab"
             }
           }
         ]
@@ -94,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Travel AIgency/Tourist Sources.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Tourist Sources"
+              "title": "Backlinks"
             }
           },
           {
@@ -113,12 +108,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Travel AIgency/Tourist Sources.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Tourist Sources"
+              "title": "Outgoing links"
             }
           },
           {
@@ -156,13 +150,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Travel AIgency/Tourist Sources.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Tourist Sources"
+              "title": "Outline"
             }
           }
         ]
@@ -183,16 +176,43 @@
       "bases:Create new base": false
     }
   },
-  "active": "b65e261e62f836d7",
+  "active": "41053f0a3ff69db4",
   "lastOpenFiles": [
-    "Travel AIgency/Tools/Flight Scheduler/task.md",
-    "Travel AIgency/Operation/HR/Vietnamese Job Search FB Groups.md",
+    "Travel AIgency/Tools/Flight Scheduler/data/normalized/2026-05-19_SGN.json",
+    "Travel AIgency/Tools/Flight Scheduler/data/cache/airports/PKZ.json",
+    "Travel AIgency/Tools/Flight Scheduler/data/cache/status/2026-05-19_SGN.json",
+    "Travel AIgency/Tools/Flight Scheduler/data/cache/raw/2026-05-19_SGN.json",
+    "Travel AIgency/Tools/Flight Scheduler/data/normalized/2026-05-18_VCA.json",
+    "Travel AIgency/Tools/Flight Scheduler/data/cache/status/2026-05-18_VCA.json",
+    "Travel AIgency/Tools/Flight Scheduler/data/cache/raw/2026-05-18_VCA.json",
+    "Travel AIgency/Tools/Flight Scheduler/data/normalized/2026-05-18_HPH.json",
+    "Travel AIgency/Tools/Flight Scheduler/data/cache/status/2026-05-18_HPH.json",
+    "Travel AIgency/Tools/Flight Scheduler/data/cache/raw/2026-05-18_HPH.json",
+    "Travel AIgency/Tools/Flight Scheduler/data/cache/status/2026-05-18_VDO.json",
+    "Travel AIgency/Research/Revenue Sources by OpenAi.md",
+    "Travel AIgency/Research/Revenue Sources by Perplexity.md",
+    "Travel AIgency/Research/Revenue Sources by Google.md",
+    "Travel AIgency/Research/Revenue Sources.md",
+    "Travel AIgency/Research/Incomming Flights Form RU speaking countries.md",
+    "Travel AIgency/Research/RU Tour Agencies with Vietnam Packages 2.md",
+    "Travel AIgency/Research/RU Tour Agencies with Vietnam Packages.md",
     "Travel AIgency/Tourist Sources.md",
-    "Travel AIgency/Operation/HR",
-    "Travel AIgency/Operation",
-    "Travel AIgency/Tools/Flight Scheduler/about.md",
-    "Travel AIgency/Tools/Flight Scheduler",
-    "Travel AIgency/Tools",
-    "Travel AIgency"
+    "Travel AIgency/Tools/Flight Scheduler/node_modules/dotenv/SECURITY.md",
+    "Travel AIgency/Tools/Flight Scheduler/node_modules/dotenv/README.md",
+    "Travel AIgency/Tools/Flight Scheduler/node_modules/dotenv/README-es.md",
+    "Travel AIgency/Tools/Flight Scheduler/node_modules/dotenv/CHANGELOG.md",
+    "Travel AIgency/Tools/Flight Scheduler/node_modules/object-inspect/CHANGELOG.md",
+    "Travel AIgency/Tools/Flight Scheduler/node_modules/express/Readme.md",
+    "Travel AIgency/Tools/Flight Scheduler/node_modules/express/History.md",
+    "Travel AIgency/Tools/Flight Scheduler/node_modules/qs/README.md",
+    "Travel AIgency/Tools/Flight Scheduler/node_modules/qs/LICENSE.md",
+    "Travel AIgency/Tools/Flight Scheduler/node_modules/qs/CHANGELOG.md",
+    "Travel AIgency/Tools/Flight Scheduler/node_modules/body-parser/README.md",
+    "Travel AIgency/Tools/Flight Scheduler/node_modules/math-intrinsics/README.md",
+    "Travel AIgency/Tools/Flight Scheduler/node_modules/body-parser/HISTORY.md",
+    "Travel AIgency/Tools/Flight Scheduler/node_modules/has-symbols/README.md",
+    "Travel AIgency/Tools/Flight Scheduler/node_modules/math-intrinsics/CHANGELOG.md",
+    "Travel AIgency/Tools/Flight Scheduler/node_modules/has-symbols/CHANGELOG.md",
+    "Travel AIgency/Tools/Flight Scheduler/node_modules/mime-db/README.md"
   ]
 }

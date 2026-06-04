@@ -1,3 +1,13 @@
 .DS_Store
+
+# Hoi An guide — build outputs and generated files
 Russian in Hoi An/dist/
+Russian in Hoi An/build/dist/
 Russian in Hoi An/build/.pdf-header.generated.tex
+Russian in Hoi An/build/.maps_cache.json
+
+# Vendored Python deps (not used by make build; reinstall locally if needed)
+.vendor/
+
+# Obsidian — personal layout; keep vault settings tracked
+.obsidian/workspace.json

@@ -1,0 +1,1 @@
+Vietnam inbound flight scheduler for the Travel Agency: tracks arrivals at major Vietnamese airports and highlights flights from Russian-speaking origin countries. Data provider: [Aviation Edge](https://aviation-edge.com/developers/). See [README.md](./README.md) for setup.

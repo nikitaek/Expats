@@ -1,0 +1,17 @@
+node_modules/
+.env
+.env.*
+!.env.example
+
+logs/
+*.log
+
+# API/cache data (large, machine-local)
+data/cache/*
+!data/cache/.gitkeep
+!data/cache/timetable/
+data/cache/timetable/*
+!data/cache/timetable/.gitkeep
+
+data/normalized/*
+!data/normalized/.gitkeep
