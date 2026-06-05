@@ -1,0 +1,325 @@
+
+> flight-scheduler-v2@2.0.0 v2:download-routes
+> node scripts/v2-download-routes.mjs --data-kind actual --date-from 2026-01-01 --date-to 2026-06-05
+
+download: actual 2026-01-01..2026-06-05 | 2 batch(es) × 12 fetchable chunk(s) = 24 job(s)
+
+--- job 1/24 ---
+[02:54:09] fetch actual 2026-01-01..2026-01-14 routes=ALA-CXR,ALA-DAD,ALA-PQC,DME-CXR,GYD-HAN,IKT-CXR,KHV-CXR,KHV-HAN,KJA-CXR,KJA-DAD,LED-CXR,MSQ-CXR,NQZ-CXR,NQZ-DAD,OVB-CXR → raw/routes/2026-01-01_2026-01-14/2f81c2/
+[02:54:09] rate-limit wait 3500ms
+[02:54:12] calling FR24 flight-summary/full…
+[02:54:19] failed fr24-routes-actual-2026-01-01-2026-01-14-2f81c2: FR24 API 400: Validation failed
+[error] fr24-routes-actual-2026-01-01-2026-01-14-2f81c2: FR24 API 400: Validation failed
+
+--- job 2/24 ---
+[02:54:20] fetch actual 2026-01-01..2026-01-14 routes=OVB-DAD,SVO-CXR,SVO-DAD,SVO-HAN,SVO-SGN,TAS-CXR,TAS-DAD,TAS-PQC,TAS-SGN,VKO-CXR,VKO-DAD,VVO-CXR,VVO-HAN → raw/routes/2026-01-01_2026-01-14/c38d9f/
+[02:54:20] rate-limit wait 3500ms
+[02:54:23] calling FR24 flight-summary/full…
+[02:54:28] failed fr24-routes-actual-2026-01-01-2026-01-14-c38d9f: FR24 API 400: Validation failed
+[error] fr24-routes-actual-2026-01-01-2026-01-14-c38d9f: FR24 API 400: Validation failed
+
+--- job 3/24 ---
+[02:54:29] fetch actual 2026-01-15..2026-01-28 routes=ALA-CXR,ALA-DAD,ALA-PQC,DME-CXR,GYD-HAN,IKT-CXR,KHV-CXR,KHV-HAN,KJA-CXR,KJA-DAD,LED-CXR,MSQ-CXR,NQZ-CXR,NQZ-DAD,OVB-CXR → raw/routes/2026-01-15_2026-01-28/2f81c2/
+[02:54:29] rate-limit wait 3500ms
+[02:54:32] calling FR24 flight-summary/full…
+[02:54:37] failed fr24-routes-actual-2026-01-15-2026-01-28-2f81c2: FR24 API 400: Validation failed
+[error] fr24-routes-actual-2026-01-15-2026-01-28-2f81c2: FR24 API 400: Validation failed
+
+--- job 4/24 ---
+[02:54:38] fetch actual 2026-01-15..2026-01-28 routes=OVB-DAD,SVO-CXR,SVO-DAD,SVO-HAN,SVO-SGN,TAS-CXR,TAS-DAD,TAS-PQC,TAS-SGN,VKO-CXR,VKO-DAD,VVO-CXR,VVO-HAN → raw/routes/2026-01-15_2026-01-28/c38d9f/
+[02:54:38] rate-limit wait 3500ms
+[02:54:41] calling FR24 flight-summary/full…
+[02:54:46] failed fr24-routes-actual-2026-01-15-2026-01-28-c38d9f: FR24 API 400: Validation failed
+[error] fr24-routes-actual-2026-01-15-2026-01-28-c38d9f: FR24 API 400: Validation failed
+
+--- job 5/24 ---
+[02:54:47] fetch actual 2026-01-29..2026-02-11 routes=ALA-CXR,ALA-DAD,ALA-PQC,DME-CXR,GYD-HAN,IKT-CXR,KHV-CXR,KHV-HAN,KJA-CXR,KJA-DAD,LED-CXR,MSQ-CXR,NQZ-CXR,NQZ-DAD,OVB-CXR → raw/routes/2026-01-29_2026-02-11/2f81c2/
+[02:54:47] rate-limit wait 3500ms
+[02:54:51] calling FR24 flight-summary/full…
+[02:54:55] failed fr24-routes-actual-2026-01-29-2026-02-11-2f81c2: FR24 API 400: Validation failed
+[error] fr24-routes-actual-2026-01-29-2026-02-11-2f81c2: FR24 API 400: Validation failed
+
+--- job 6/24 ---
+[02:54:56] fetch actual 2026-01-29..2026-02-11 routes=OVB-DAD,SVO-CXR,SVO-DAD,SVO-HAN,SVO-SGN,TAS-CXR,TAS-DAD,TAS-PQC,TAS-SGN,VKO-CXR,VKO-DAD,VVO-CXR,VVO-HAN → raw/routes/2026-01-29_2026-02-11/c38d9f/
+[02:54:56] rate-limit wait 3500ms
+[02:55:00] calling FR24 flight-summary/full…
+[02:55:04] failed fr24-routes-actual-2026-01-29-2026-02-11-c38d9f: FR24 API 400: Validation failed
+[error] fr24-routes-actual-2026-01-29-2026-02-11-c38d9f: FR24 API 400: Validation failed
+
+--- job 7/24 ---
+[02:55:05] fetch actual 2026-02-12..2026-02-25 routes=ALA-CXR,ALA-DAD,ALA-PQC,DME-CXR,GYD-HAN,IKT-CXR,KHV-CXR,KHV-HAN,KJA-CXR,KJA-DAD,LED-CXR,MSQ-CXR,NQZ-CXR,NQZ-DAD,OVB-CXR → raw/routes/2026-02-12_2026-02-25/2f81c2/
+[02:55:05] rate-limit wait 3500ms
+[02:55:08] calling FR24 flight-summary/full…
+[02:55:13] failed fr24-routes-actual-2026-02-12-2026-02-25-2f81c2: FR24 API 400: Validation failed
+[error] fr24-routes-actual-2026-02-12-2026-02-25-2f81c2: FR24 API 400: Validation failed
+
+--- job 8/24 ---
+[02:55:14] fetch actual 2026-02-12..2026-02-25 routes=OVB-DAD,SVO-CXR,SVO-DAD,SVO-HAN,SVO-SGN,TAS-CXR,TAS-DAD,TAS-PQC,TAS-SGN,VKO-CXR,VKO-DAD,VVO-CXR,VVO-HAN → raw/routes/2026-02-12_2026-02-25/c38d9f/
+[02:55:14] rate-limit wait 3500ms
+[02:55:17] calling FR24 flight-summary/full…
+[02:55:21] failed fr24-routes-actual-2026-02-12-2026-02-25-c38d9f: FR24 API 400: Validation failed
+[error] fr24-routes-actual-2026-02-12-2026-02-25-c38d9f: FR24 API 400: Validation failed
+
+--- job 9/24 ---
+[02:55:22] fetch actual 2026-02-26..2026-03-11 routes=ALA-CXR,ALA-DAD,ALA-PQC,DME-CXR,GYD-HAN,IKT-CXR,KHV-CXR,KHV-HAN,KJA-CXR,KJA-DAD,LED-CXR,MSQ-CXR,NQZ-CXR,NQZ-DAD,OVB-CXR → raw/routes/2026-02-26_2026-03-11/2f81c2/
+[02:55:22] rate-limit wait 3500ms
+[02:55:26] calling FR24 flight-summary/full…
+[02:55:30] failed fr24-routes-actual-2026-02-26-2026-03-11-2f81c2: FR24 API 400: Validation failed
+[error] fr24-routes-actual-2026-02-26-2026-03-11-2f81c2: FR24 API 400: Validation failed
+
+--- job 10/24 ---
+[02:55:31] fetch actual 2026-02-26..2026-03-11 routes=OVB-DAD,SVO-CXR,SVO-DAD,SVO-HAN,SVO-SGN,TAS-CXR,TAS-DAD,TAS-PQC,TAS-SGN,VKO-CXR,VKO-DAD,VVO-CXR,VVO-HAN → raw/routes/2026-02-26_2026-03-11/c38d9f/
+[02:55:31] rate-limit wait 3500ms
+[02:55:34] calling FR24 flight-summary/full…
+[02:55:38] failed fr24-routes-actual-2026-02-26-2026-03-11-c38d9f: FR24 API 400: Validation failed
+[error] fr24-routes-actual-2026-02-26-2026-03-11-c38d9f: FR24 API 400: Validation failed
+
+--- job 11/24 ---
+[02:55:39] fetch actual 2026-03-12..2026-03-25 routes=ALA-CXR,ALA-DAD,ALA-PQC,DME-CXR,GYD-HAN,IKT-CXR,KHV-CXR,KHV-HAN,KJA-CXR,KJA-DAD,LED-CXR,MSQ-CXR,NQZ-CXR,NQZ-DAD,OVB-CXR → raw/routes/2026-03-12_2026-03-25/2f81c2/
+[02:55:39] rate-limit wait 3500ms
+[02:55:43] calling FR24 flight-summary/full…
+[02:55:47] failed fr24-routes-actual-2026-03-12-2026-03-25-2f81c2: FR24 API 400: Validation failed
+[error] fr24-routes-actual-2026-03-12-2026-03-25-2f81c2: FR24 API 400: Validation failed
+
+--- job 12/24 ---
+[02:55:48] fetch actual 2026-03-12..2026-03-25 routes=OVB-DAD,SVO-CXR,SVO-DAD,SVO-HAN,SVO-SGN,TAS-CXR,TAS-DAD,TAS-PQC,TAS-SGN,VKO-CXR,VKO-DAD,VVO-CXR,VVO-HAN → raw/routes/2026-03-12_2026-03-25/c38d9f/
+[02:55:48] rate-limit wait 3500ms
+[02:55:52] calling FR24 flight-summary/full…
+[02:55:56] failed fr24-routes-actual-2026-03-12-2026-03-25-c38d9f: FR24 API 400: Validation failed
+[error] fr24-routes-actual-2026-03-12-2026-03-25-c38d9f: FR24 API 400: Validation failed
+
+--- job 13/24 ---
+[02:55:57] fetch actual 2026-03-26..2026-04-08 routes=ALA-CXR,ALA-DAD,ALA-PQC,DME-CXR,GYD-HAN,IKT-CXR,KHV-CXR,KHV-HAN,KJA-CXR,KJA-DAD,LED-CXR,MSQ-CXR,NQZ-CXR,NQZ-DAD,OVB-CXR → raw/routes/2026-03-26_2026-04-08/2f81c2/
+[02:55:57] rate-limit wait 3500ms
+[02:56:01] calling FR24 flight-summary/full…
+[02:56:05] failed fr24-routes-actual-2026-03-26-2026-04-08-2f81c2: FR24 API 400: Validation failed
+[error] fr24-routes-actual-2026-03-26-2026-04-08-2f81c2: FR24 API 400: Validation failed
+
+--- job 14/24 ---
+[02:56:06] fetch actual 2026-03-26..2026-04-08 routes=OVB-DAD,SVO-CXR,SVO-DAD,SVO-HAN,SVO-SGN,TAS-CXR,TAS-DAD,TAS-PQC,TAS-SGN,VKO-CXR,VKO-DAD,VVO-CXR,VVO-HAN → raw/routes/2026-03-26_2026-04-08/c38d9f/
+[02:56:06] rate-limit wait 3500ms
+[02:56:09] calling FR24 flight-summary/full…
+[02:56:13] failed fr24-routes-actual-2026-03-26-2026-04-08-c38d9f: FR24 API 400: Validation failed
+[error] fr24-routes-actual-2026-03-26-2026-04-08-c38d9f: FR24 API 400: Validation failed
+
+--- job 15/24 ---
+[02:56:14] fetch actual 2026-04-09..2026-04-22 routes=ALA-CXR,ALA-DAD,ALA-PQC,DME-CXR,GYD-HAN,IKT-CXR,KHV-CXR,KHV-HAN,KJA-CXR,KJA-DAD,LED-CXR,MSQ-CXR,NQZ-CXR,NQZ-DAD,OVB-CXR → raw/routes/2026-04-09_2026-04-22/2f81c2/
+[02:56:14] rate-limit wait 3500ms
+[02:56:17] calling FR24 flight-summary/full…
+[02:56:22] failed fr24-routes-actual-2026-04-09-2026-04-22-2f81c2: FR24 API 400: Validation failed
+[error] fr24-routes-actual-2026-04-09-2026-04-22-2f81c2: FR24 API 400: Validation failed
+
+--- job 16/24 ---
+[02:56:23] fetch actual 2026-04-09..2026-04-22 routes=OVB-DAD,SVO-CXR,SVO-DAD,SVO-HAN,SVO-SGN,TAS-CXR,TAS-DAD,TAS-PQC,TAS-SGN,VKO-CXR,VKO-DAD,VVO-CXR,VVO-HAN → raw/routes/2026-04-09_2026-04-22/c38d9f/
+[02:56:23] rate-limit wait 3500ms
+[02:56:27] calling FR24 flight-summary/full…
+[02:56:31] failed fr24-routes-actual-2026-04-09-2026-04-22-c38d9f: FR24 API 400: Validation failed
+[error] fr24-routes-actual-2026-04-09-2026-04-22-c38d9f: FR24 API 400: Validation failed
+
+--- job 17/24 ---
+[02:56:32] fetch actual 2026-04-23..2026-05-06 routes=ALA-CXR,ALA-DAD,ALA-PQC,DME-CXR,GYD-HAN,IKT-CXR,KHV-CXR,KHV-HAN,KJA-CXR,KJA-DAD,LED-CXR,MSQ-CXR,NQZ-CXR,NQZ-DAD,OVB-CXR → raw/routes/2026-04-23_2026-05-06/2f81c2/
+[02:56:32] rate-limit wait 3500ms
+[02:56:36] calling FR24 flight-summary/full…
+[02:56:40] failed fr24-routes-actual-2026-04-23-2026-05-06-2f81c2: FR24 API 400: Validation failed
+[error] fr24-routes-actual-2026-04-23-2026-05-06-2f81c2: FR24 API 400: Validation failed
+
+--- job 18/24 ---
+[02:56:41] fetch actual 2026-04-23..2026-05-06 routes=OVB-DAD,SVO-CXR,SVO-DAD,SVO-HAN,SVO-SGN,TAS-CXR,TAS-DAD,TAS-PQC,TAS-SGN,VKO-CXR,VKO-DAD,VVO-CXR,VVO-HAN → raw/routes/2026-04-23_2026-05-06/c38d9f/
+[02:56:41] rate-limit wait 3500ms
+[02:56:44] calling FR24 flight-summary/full…
+[02:56:48] failed fr24-routes-actual-2026-04-23-2026-05-06-c38d9f: FR24 API 400: Validation failed
+[error] fr24-routes-actual-2026-04-23-2026-05-06-c38d9f: FR24 API 400: Validation failed
+
+--- job 19/24 ---
+[02:56:49] fetch actual 2026-05-07..2026-05-20 routes=ALA-CXR,ALA-DAD,ALA-PQC,DME-CXR,GYD-HAN,IKT-CXR,KHV-CXR,KHV-HAN,KJA-CXR,KJA-DAD,LED-CXR,MSQ-CXR,NQZ-CXR,NQZ-DAD,OVB-CXR → raw/routes/2026-05-07_2026-05-20/2f81c2/
+[02:56:49] rate-limit wait 3500ms
+[02:56:52] calling FR24 flight-summary/full…
+[02:56:57] saved raw/routes/2026-05-07_2026-05-20/2f81c2/response.json (20 flights)
+[02:56:58] done fr24-routes-actual-2026-05-07-2026-05-20-2f81c2 status=completed rows=20
+
+--- job 20/24 ---
+[02:56:58] fetch actual 2026-05-07..2026-05-20 routes=OVB-DAD,SVO-CXR,SVO-DAD,SVO-HAN,SVO-SGN,TAS-CXR,TAS-DAD,TAS-PQC,TAS-SGN,VKO-CXR,VKO-DAD,VVO-CXR,VVO-HAN → raw/routes/2026-05-07_2026-05-20/c38d9f/
+[02:56:58] rate-limit wait 3500ms
+[02:57:02] calling FR24 flight-summary/full…
+[02:57:06] saved raw/routes/2026-05-07_2026-05-20/c38d9f/response.json (20 flights)
+[02:57:06] done fr24-routes-actual-2026-05-07-2026-05-20-c38d9f status=completed rows=20
+
+--- job 21/24 ---
+[02:57:07] fetch actual 2026-05-21..2026-06-03 routes=ALA-CXR,ALA-DAD,ALA-PQC,DME-CXR,GYD-HAN,IKT-CXR,KHV-CXR,KHV-HAN,KJA-CXR,KJA-DAD,LED-CXR,MSQ-CXR,NQZ-CXR,NQZ-DAD,OVB-CXR → raw/routes/2026-05-21_2026-06-03/2f81c2/
+[02:57:07] rate-limit wait 3500ms
+[02:57:11] calling FR24 flight-summary/full…
+[02:57:15] saved raw/routes/2026-05-21_2026-06-03/2f81c2/response.json (20 flights)
+[02:57:15] done fr24-routes-actual-2026-05-21-2026-06-03-2f81c2 status=completed rows=20
+
+--- job 22/24 ---
+[02:57:16] fetch actual 2026-05-21..2026-06-03 routes=OVB-DAD,SVO-CXR,SVO-DAD,SVO-HAN,SVO-SGN,TAS-CXR,TAS-DAD,TAS-PQC,TAS-SGN,VKO-CXR,VKO-DAD,VVO-CXR,VVO-HAN → raw/routes/2026-05-21_2026-06-03/c38d9f/
+[02:57:16] rate-limit wait 3500ms
+[02:57:20] calling FR24 flight-summary/full…
+[02:57:25] saved raw/routes/2026-05-21_2026-06-03/c38d9f/response.json (20 flights)
+[02:57:25] done fr24-routes-actual-2026-05-21-2026-06-03-c38d9f status=completed rows=20
+
+--- job 23/24 ---
+[02:57:26] fetch actual 2026-06-04..2026-06-05 routes=ALA-CXR,ALA-DAD,ALA-PQC,DME-CXR,GYD-HAN,IKT-CXR,KHV-CXR,KHV-HAN,KJA-CXR,KJA-DAD,LED-CXR,MSQ-CXR,NQZ-CXR,NQZ-DAD,OVB-CXR → raw/routes/2026-06-04_2026-06-05/2f81c2/
+[02:57:26] rate-limit wait 3500ms
+[02:57:29] calling FR24 flight-summary/full…
+[02:57:34] saved raw/routes/2026-06-04_2026-06-05/2f81c2/response.json (13 flights)
+[02:57:34] done fr24-routes-actual-2026-06-04-2026-06-05-2f81c2 status=completed rows=13
+
+--- job 24/24 ---
+[02:57:35] fetch actual 2026-06-04..2026-06-05 routes=OVB-DAD,SVO-CXR,SVO-DAD,SVO-HAN,SVO-SGN,TAS-CXR,TAS-DAD,TAS-PQC,TAS-SGN,VKO-CXR,VKO-DAD,VVO-CXR,VVO-HAN → raw/routes/2026-06-04_2026-06-05/c38d9f/
+[02:57:35] rate-limit wait 3500ms
+[02:57:38] calling FR24 flight-summary/full…
+[02:57:42] saved raw/routes/2026-06-04_2026-06-05/c38d9f/response.json (1 flights)
+[02:57:43] done fr24-routes-actual-2026-06-04-2026-06-05-c38d9f status=completed rows=1
+
+{
+  "ok": false,
+  "jobs": 24,
+  "completed": 6,
+  "skipped": 0,
+  "skippedFuture": 0,
+  "failed": 18,
+  "totalRows": 94,
+  "failures": [
+    {
+      "jobId": "fr24-routes-actual-2026-01-01-2026-01-14-2f81c2",
+      "error": "FR24 API 400: Validation failed"
+    },
+    {
+      "jobId": "fr24-routes-actual-2026-01-01-2026-01-14-c38d9f",
+      "error": "FR24 API 400: Validation failed"
+    },
+    {
+      "jobId": "fr24-routes-actual-2026-01-15-2026-01-28-2f81c2",
+      "error": "FR24 API 400: Validation failed"
+    },
+    {
+      "jobId": "fr24-routes-actual-2026-01-15-2026-01-28-c38d9f",
+      "error": "FR24 API 400: Validation failed"
+    },
+    {
+      "jobId": "fr24-routes-actual-2026-01-29-2026-02-11-2f81c2",
+      "error": "FR24 API 400: Validation failed"
+    },
+    {
+      "jobId": "fr24-routes-actual-2026-01-29-2026-02-11-c38d9f",
+      "error": "FR24 API 400: Validation failed"
+    },
+    {
+      "jobId": "fr24-routes-actual-2026-02-12-2026-02-25-2f81c2",
+      "error": "FR24 API 400: Validation failed"
+    },
+    {
+      "jobId": "fr24-routes-actual-2026-02-12-2026-02-25-c38d9f",
+      "error": "FR24 API 400: Validation failed"
+    },
+    {
+      "jobId": "fr24-routes-actual-2026-02-26-2026-03-11-2f81c2",
+      "error": "FR24 API 400: Validation failed"
+    },
+    {
+      "jobId": "fr24-routes-actual-2026-02-26-2026-03-11-c38d9f",
+      "error": "FR24 API 400: Validation failed"
+    },
+    {
+      "jobId": "fr24-routes-actual-2026-03-12-2026-03-25-2f81c2",
+      "error": "FR24 API 400: Validation failed"
+    },
+    {
+      "jobId": "fr24-routes-actual-2026-03-12-2026-03-25-c38d9f",
+      "error": "FR24 API 400: Validation failed"
+    },
+    {
+      "jobId": "fr24-routes-actual-2026-03-26-2026-04-08-2f81c2",
+      "error": "FR24 API 400: Validation failed"
+    },
+    {
+      "jobId": "fr24-routes-actual-2026-03-26-2026-04-08-c38d9f",
+      "error": "FR24 API 400: Validation failed"
+    },
+    {
+      "jobId": "fr24-routes-actual-2026-04-09-2026-04-22-2f81c2",
+      "error": "FR24 API 400: Validation failed"
+    },
+    {
+      "jobId": "fr24-routes-actual-2026-04-09-2026-04-22-c38d9f",
+      "error": "FR24 API 400: Validation failed"
+    },
+    {
+      "jobId": "fr24-routes-actual-2026-04-23-2026-05-06-2f81c2",
+      "error": "FR24 API 400: Validation failed"
+    },
+    {
+      "jobId": "fr24-routes-actual-2026-04-23-2026-05-06-c38d9f",
+      "error": "FR24 API 400: Validation failed"
+    }
+  ]
+}
+
+> flight-scheduler-v2@2.0.0 v2:download-routes
+> node scripts/v2-download-routes.mjs --data-kind actual --date-from 2026-01-01 --date-to 2026-06-05
+
+note: clamping date_from 2026-01-01 → 2026-05-06 (FR24 plan data starts 2026-05-06; Jan–Apr not available on this subscription)
+download: actual 2026-01-01..2026-06-05 | 2 batch(es) × 3 fetchable chunk(s) = 6 job(s)
+
+--- job 1/6 ---
+[03:00:43] fetch actual 2026-05-06..2026-05-19 routes=ALA-CXR,ALA-DAD,ALA-PQC,DME-CXR,GYD-HAN,IKT-CXR,KHV-CXR,KHV-HAN,KJA-CXR,KJA-DAD,LED-CXR,MSQ-CXR,NQZ-CXR,NQZ-DAD,OVB-CXR → raw/routes/2026-05-06_2026-05-19/2f81c2/
+[03:00:43] rate-limit wait 3500ms
+[03:00:47] calling FR24 flight-summary/full…
+[03:00:51] failed fr24-routes-actual-2026-05-06-2026-05-19-2f81c2: FR24 API 400: Validation failed
+[error] fr24-routes-actual-2026-05-06-2026-05-19-2f81c2: FR24 API 400: Validation failed
+
+--- job 2/6 ---
+[03:00:52] fetch actual 2026-05-06..2026-05-19 routes=OVB-DAD,SVO-CXR,SVO-DAD,SVO-HAN,SVO-SGN,TAS-CXR,TAS-DAD,TAS-PQC,TAS-SGN,VKO-CXR,VKO-DAD,VVO-CXR,VVO-HAN → raw/routes/2026-05-06_2026-05-19/c38d9f/
+[03:00:52] rate-limit wait 3500ms
+[03:00:56] calling FR24 flight-summary/full…
+[03:01:01] failed fr24-routes-actual-2026-05-06-2026-05-19-c38d9f: FR24 API 400: Validation failed
+[error] fr24-routes-actual-2026-05-06-2026-05-19-c38d9f: FR24 API 400: Validation failed
+
+--- job 3/6 ---
+[03:01:02] fetch actual 2026-05-20..2026-06-02 routes=ALA-CXR,ALA-DAD,ALA-PQC,DME-CXR,GYD-HAN,IKT-CXR,KHV-CXR,KHV-HAN,KJA-CXR,KJA-DAD,LED-CXR,MSQ-CXR,NQZ-CXR,NQZ-DAD,OVB-CXR → raw/routes/2026-05-20_2026-06-02/2f81c2/
+[03:01:02] rate-limit wait 3500ms
+[03:01:05] calling FR24 flight-summary/full…
+[03:01:10] saved raw/routes/2026-05-20_2026-06-02/2f81c2/response.json (20 flights)
+[03:01:10] done fr24-routes-actual-2026-05-20-2026-06-02-2f81c2 status=completed rows=20
+
+--- job 4/6 ---
+[03:01:11] fetch actual 2026-05-20..2026-06-02 routes=OVB-DAD,SVO-CXR,SVO-DAD,SVO-HAN,SVO-SGN,TAS-CXR,TAS-DAD,TAS-PQC,TAS-SGN,VKO-CXR,VKO-DAD,VVO-CXR,VVO-HAN → raw/routes/2026-05-20_2026-06-02/c38d9f/
+[03:01:11] rate-limit wait 3500ms
+[03:01:15] calling FR24 flight-summary/full…
+[03:01:20] saved raw/routes/2026-05-20_2026-06-02/c38d9f/response.json (20 flights)
+[03:01:20] done fr24-routes-actual-2026-05-20-2026-06-02-c38d9f status=completed rows=20
+
+--- job 5/6 ---
+[03:01:21] fetch actual 2026-06-03..2026-06-05 routes=ALA-CXR,ALA-DAD,ALA-PQC,DME-CXR,GYD-HAN,IKT-CXR,KHV-CXR,KHV-HAN,KJA-CXR,KJA-DAD,LED-CXR,MSQ-CXR,NQZ-CXR,NQZ-DAD,OVB-CXR → raw/routes/2026-06-03_2026-06-05/2f81c2/
+[03:01:21] rate-limit wait 3500ms
+[03:01:24] calling FR24 flight-summary/full…
+[03:01:28] saved raw/routes/2026-06-03_2026-06-05/2f81c2/response.json (20 flights)
+[03:01:29] done fr24-routes-actual-2026-06-03-2026-06-05-2f81c2 status=completed rows=20
+
+--- job 6/6 ---
+[03:01:29] fetch actual 2026-06-03..2026-06-05 routes=OVB-DAD,SVO-CXR,SVO-DAD,SVO-HAN,SVO-SGN,TAS-CXR,TAS-DAD,TAS-PQC,TAS-SGN,VKO-CXR,VKO-DAD,VVO-CXR,VVO-HAN → raw/routes/2026-06-03_2026-06-05/c38d9f/
+[03:01:29] rate-limit wait 3500ms
+[03:01:33] calling FR24 flight-summary/full…
+[03:01:37] saved raw/routes/2026-06-03_2026-06-05/c38d9f/response.json (9 flights)
+[03:01:37] done fr24-routes-actual-2026-06-03-2026-06-05-c38d9f status=completed rows=9
+
+{
+  "ok": false,
+  "jobs": 6,
+  "completed": 4,
+  "skipped": 0,
+  "skippedFuture": 0,
+  "failed": 2,
+  "totalRows": 69,
+  "failures": [
+    {
+      "jobId": "fr24-routes-actual-2026-05-06-2026-05-19-2f81c2",
+      "error": "FR24 API 400: Validation failed"
+    },
+    {
+      "jobId": "fr24-routes-actual-2026-05-06-2026-05-19-c38d9f",
+      "error": "FR24 API 400: Validation failed"
+    }
+  ]
+}

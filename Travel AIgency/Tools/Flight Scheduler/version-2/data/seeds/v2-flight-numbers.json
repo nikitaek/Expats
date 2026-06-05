@@ -1,0 +1,13 @@
+[
+  { "flightNumber": "VJ8924", "airlineIata": "VJ", "knownRoutes": ["SVO-DAD"], "monitor": true },
+  { "flightNumber": "VJ8932", "airlineIata": "VJ", "knownRoutes": ["SVO-DAD"], "monitor": true },
+  { "flightNumber": "VJ52", "airlineIata": "VJ", "knownRoutes": ["ALA-DAD"], "monitor": true },
+  { "flightNumber": "DV5328", "airlineIata": "DV", "knownRoutes": ["ALA-DAD"], "monitor": true },
+  { "flightNumber": "DV5340", "airlineIata": "DV", "knownRoutes": ["ALA-DAD"], "monitor": true },
+  { "flightNumber": "VN62", "airlineIata": "VN", "knownRoutes": ["SVO-HAN"], "monitor": true },
+  { "flightNumber": "SU292", "airlineIata": "SU", "knownRoutes": ["SVO-SGN"], "monitor": true },
+  { "flightNumber": "SU294", "airlineIata": "SU", "knownRoutes": ["SVO-CXR"], "monitor": true },
+  { "flightNumber": "SU298", "airlineIata": "SU", "knownRoutes": ["SVO-CXR"], "monitor": true },
+  { "flightNumber": "N43545", "airlineIata": "N4", "knownRoutes": ["SVO-CXR"], "monitor": true },
+  { "flightNumber": "VJ7989", "airlineIata": "VJ", "knownRoutes": ["VVO-HAN"], "monitor": true }
+]

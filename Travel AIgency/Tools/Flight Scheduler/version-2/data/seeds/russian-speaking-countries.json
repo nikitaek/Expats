@@ -1,0 +1,77 @@
+[
+  {
+    "iso2": "RU",
+    "nameEn": "Russia",
+    "nameRu": "Россия"
+  },
+  {
+    "iso2": "BY",
+    "nameEn": "Belarus",
+    "nameRu": "Беларусь"
+  },
+  {
+    "iso2": "KZ",
+    "nameEn": "Kazakhstan",
+    "nameRu": "Казахстан"
+  },
+  {
+    "iso2": "UA",
+    "nameEn": "Ukraine",
+    "nameRu": "Украина"
+  },
+  {
+    "iso2": "UZ",
+    "nameEn": "Uzbekistan",
+    "nameRu": "Узбекистан"
+  },
+  {
+    "iso2": "KG",
+    "nameEn": "Kyrgyzstan",
+    "nameRu": "Кыргызстан"
+  },
+  {
+    "iso2": "TJ",
+    "nameEn": "Tajikistan",
+    "nameRu": "Таджикистан"
+  },
+  {
+    "iso2": "TM",
+    "nameEn": "Turkmenistan",
+    "nameRu": "Туркменистан"
+  },
+  {
+    "iso2": "AM",
+    "nameEn": "Armenia",
+    "nameRu": "Армения"
+  },
+  {
+    "iso2": "MD",
+    "nameEn": "Moldova",
+    "nameRu": "Молдова"
+  },
+  {
+    "iso2": "AZ",
+    "nameEn": "Azerbaijan",
+    "nameRu": "Азербайджан"
+  },
+  {
+    "iso2": "LV",
+    "nameEn": "Latvia",
+    "nameRu": "Латвия"
+  },
+  {
+    "iso2": "EE",
+    "nameEn": "Estonia",
+    "nameRu": "Эстония"
+  },
+  {
+    "iso2": "LT",
+    "nameEn": "Lithuania",
+    "nameRu": "Литва"
+  },
+  {
+    "iso2": "GE",
+    "nameEn": "Georgia",
+    "nameRu": "Грузия"
+  }
+]
