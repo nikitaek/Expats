@@ -51,18 +51,6 @@ export function buildDueWindows(policy, now = new Date()) {
     });
   }
 
-  if (policy.forecast?.enabled !== false) {
-    const start = policy.forecast?.startDaysAhead ?? 4;
-    const end = policy.forecast?.endDaysAhead ?? 14;
-    windows.push({
-      kind: "forecast",
-      dataKind: "forecast",
-      dateFrom: daysAhead(start, tz),
-      dateTo: daysAhead(end, tz),
-      priority: policy.priorityOrder?.indexOf("forecast") ?? 3,
-    });
-  }
-
   return windows.sort((a, b) => a.priority - b.priority);
 }
 

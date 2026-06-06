@@ -1,0 +1,770 @@
+[
+  {
+    "hotel_name": "Palm Garden Beach Resort & Spa Hoi An",
+    "city": "Hoi An",
+    "operator_mention_count": 11,
+    "operators_confirmed_in_scan": "ANEX, Art Tour, BG, Coral, FUN&SUN, PACS, Pegas, PSG, R-Express, Sunmar, TEZ",
+    "hotel_stars": 5,
+    "price_segment_1_10": 7
+  },
+  {
+    "hotel_name": "Sheraton Grand Danang Resort",
+    "city": "Da Nang",
+    "operator_mention_count": 10,
+    "operators_confirmed_in_scan": "ANEX, Art Tour, Coral, FUN&SUN, PACS, Pegas, PSG, R-Express, Sunmar, TEZ",
+    "hotel_stars": 5,
+    "price_segment_1_10": 8
+  },
+  {
+    "hotel_name": "Furama Resort Danang",
+    "city": "Da Nang",
+    "operator_mention_count": 9,
+    "operators_confirmed_in_scan": "ANEX, Coral, FUN&SUN, PACS, Pegas, Planeta Travel, R-Express, Sunmar, TEZ",
+    "hotel_stars": 5,
+    "price_segment_1_10": 8
+  },
+  {
+    "hotel_name": "Hoi An Beach Resort",
+    "city": "Hoi An",
+    "operator_mention_count": 9,
+    "operators_confirmed_in_scan": "ANEX, Coral, FUN&SUN, PACS, Pegas, Planeta Travel, R-Express, Sunmar, TEZ",
+    "hotel_stars": 4,
+    "price_segment_1_10": 6
+  },
+  {
+    "hotel_name": "Hyatt Regency Danang Resort & Spa",
+    "city": "Da Nang",
+    "operator_mention_count": 9,
+    "operators_confirmed_in_scan": "ANEX, Coral, FUN&SUN, ICS, PACS, Pegas, R-Express, Sunmar, TEZ",
+    "hotel_stars": 5,
+    "price_segment_1_10": 9
+  },
+  {
+    "hotel_name": "Pullman Danang Beach Resort",
+    "city": "Da Nang",
+    "operator_mention_count": 9,
+    "operators_confirmed_in_scan": "ANEX, Coral, FUN&SUN, Pegas, Planeta Travel, PSG, Space Travel, Sunmar, TEZ",
+    "hotel_stars": 5,
+    "price_segment_1_10": 7
+  },
+  {
+    "hotel_name": "Muong Thanh Luxury Da Nang Hotel",
+    "city": "Da Nang",
+    "operator_mention_count": 8,
+    "operators_confirmed_in_scan": "ANEX, BG, Coral, FUN&SUN, PACS, Pegas, Sunmar, TEZ",
+    "hotel_stars": 4,
+    "price_segment_1_10": 5
+  },
+  {
+    "hotel_name": "New World Hoiana Beach & Resort",
+    "city": "Hoiana",
+    "operator_mention_count": 8,
+    "operators_confirmed_in_scan": "ANEX, Coral, FUN&SUN, Pegas, PSG, R-Express, Sunmar, TEZ",
+    "hotel_stars": 5,
+    "price_segment_1_10": 7
+  },
+  {
+    "hotel_name": "Radisson Hotel Danang",
+    "city": "Da Nang",
+    "operator_mention_count": 8,
+    "operators_confirmed_in_scan": "ANEX, Art Tour, Coral, FUN&SUN, ICS, Pegas, Sunmar, TEZ",
+    "hotel_stars": 5,
+    "price_segment_1_10": 7
+  },
+  {
+    "hotel_name": "Vinpearl Resort & Golf Nam Hoi An",
+    "city": "Hoiana / Nam Hoi An",
+    "operator_mention_count": 8,
+    "operators_confirmed_in_scan": "ANEX, Coral, FUN&SUN, Pegas, PSG, R-Express, Sunmar, TEZ",
+    "hotel_stars": 5,
+    "price_segment_1_10": 8
+  },
+  {
+    "hotel_name": "Wyndham Hoi An Royal Beachfront Resort & Villas",
+    "city": "Hoiana",
+    "operator_mention_count": 8,
+    "operators_confirmed_in_scan": "ANEX, Coral, FUN&SUN, Pegas, PSG, R-Express, Sunmar, TEZ",
+    "hotel_stars": 5,
+    "price_segment_1_10": 6
+  },
+  {
+    "hotel_name": "Anantara Hoi An Resort",
+    "city": "Hoi An",
+    "operator_mention_count": 7,
+    "operators_confirmed_in_scan": "ANEX, Coral, FUN&SUN, PACS, Pegas, Space Travel, TEZ",
+    "hotel_stars": 4,
+    "price_segment_1_10": 9
+  },
+  {
+    "hotel_name": "Holiday Beach Danang Hotel & Spa",
+    "city": "Da Nang",
+    "operator_mention_count": 7,
+    "operators_confirmed_in_scan": "ANEX, BG, Coral, FUN&SUN, Pegas, Sunmar, TEZ",
+    "hotel_stars": 4,
+    "price_segment_1_10": 4
+  },
+  {
+    "hotel_name": "TMS Hotel Da Nang Beach",
+    "city": "Da Nang",
+    "operator_mention_count": 7,
+    "operators_confirmed_in_scan": "ANEX, Coral, FUN&SUN, Pegas, PSG, Sunmar, TEZ",
+    "hotel_stars": 4,
+    "price_segment_1_10": 6
+  },
+  {
+    "hotel_name": "Four Seasons Resort The Nam Hai",
+    "city": "Ha My / Dien Duong",
+    "operator_mention_count": 6,
+    "operators_confirmed_in_scan": "ANEX, Art Tour, BG, ICS, R-Express, TEZ",
+    "hotel_stars": 5,
+    "price_segment_1_10": 9
+  },
+  {
+    "hotel_name": "InterContinental Danang Sun Peninsula Resort",
+    "city": "Da Nang",
+    "operator_mention_count": 5,
+    "operators_confirmed_in_scan": "ANEX, Coral, PACS, Pegas, PSG",
+    "hotel_stars": 5,
+    "price_segment_1_10": 10
+  },
+  {
+    "hotel_name": "Maximilan Danang Beach Hotel",
+    "city": "Da Nang",
+    "operator_mention_count": 5,
+    "operators_confirmed_in_scan": "ANEX, BG, PACS, Pegas, PSG",
+    "hotel_stars": 4,
+    "price_segment_1_10": 5
+  },
+  {
+    "hotel_name": "Premier Village Danang Resort Managed by Accor",
+    "city": "Da Nang",
+    "operator_mention_count": 5,
+    "operators_confirmed_in_scan": "BG, Coral, ICS, Pegas, R-Express",
+    "hotel_stars": 5,
+    "price_segment_1_10": 9
+  },
+  {
+    "hotel_name": "Bliss Hoi An Beach Resort & Wellness",
+    "city": "Hoi An",
+    "operator_mention_count": 4,
+    "operators_confirmed_in_scan": "ANEX, FUN&SUN, PSG, Space Travel",
+    "hotel_stars": 5,
+    "price_segment_1_10": 8
+  },
+  {
+    "hotel_name": "Danang Marriott Resort & Spa",
+    "city": "Da Nang",
+    "operator_mention_count": 4,
+    "operators_confirmed_in_scan": "ANEX, Art Tour, PSG, R-Express",
+    "hotel_stars": 5,
+    "price_segment_1_10": 8
+  },
+  {
+    "hotel_name": "DLG Hotel Danang",
+    "city": "Da Nang",
+    "operator_mention_count": 4,
+    "operators_confirmed_in_scan": "ANEX, FUN&SUN, ICS, R-Express",
+    "hotel_stars": 5,
+    "price_segment_1_10": 6
+  },
+  {
+    "hotel_name": "Hoiana Residences",
+    "city": "Hoiana",
+    "operator_mention_count": 4,
+    "operators_confirmed_in_scan": "ANEX, Pegas, PSG, R-Express",
+    "hotel_stars": 5,
+    "price_segment_1_10": 7
+  },
+  {
+    "hotel_name": "Koi Resort & Residence Da Nang",
+    "city": "Da Nang",
+    "operator_mention_count": 4,
+    "operators_confirmed_in_scan": "ANEX, BG, PACS, PSG",
+    "hotel_stars": 5,
+    "price_segment_1_10": 6
+  },
+  {
+    "hotel_name": "M Hotel Danang",
+    "city": "Da Nang",
+    "operator_mention_count": 4,
+    "operators_confirmed_in_scan": "ANEX, FUN&SUN, Pegas, R-Express",
+    "hotel_stars": 5,
+    "price_segment_1_10": 6
+  },
+  {
+    "hotel_name": "Mandila Beach Hotel",
+    "city": "Da Nang",
+    "operator_mention_count": 4,
+    "operators_confirmed_in_scan": "ANEX, BG, PACS, PSG",
+    "hotel_stars": 4,
+    "price_segment_1_10": 4
+  },
+  {
+    "hotel_name": "Minh Toan Safi Ocean Hotel",
+    "city": "Da Nang",
+    "operator_mention_count": 4,
+    "operators_confirmed_in_scan": "ANEX, BG, PACS, PSG",
+    "hotel_stars": 4,
+    "price_segment_1_10": 3
+  },
+  {
+    "hotel_name": "Non Nuoc Beach Villas",
+    "city": "Da Nang",
+    "operator_mention_count": 4,
+    "operators_confirmed_in_scan": "ANEX, Art Tour, PSG, R-Express",
+    "hotel_stars": 5,
+    "price_segment_1_10": 9
+  },
+  {
+    "hotel_name": "Victoria Hoi An Beach Resort & Spa",
+    "city": "Hoi An",
+    "operator_mention_count": 4,
+    "operators_confirmed_in_scan": "ANEX, BG, PACS, PSG",
+    "hotel_stars": 5,
+    "price_segment_1_10": 7
+  },
+  {
+    "hotel_name": "Wyndham Garden Hoi An",
+    "city": "Hoi An",
+    "operator_mention_count": 4,
+    "operators_confirmed_in_scan": "ANEX, BG, PACS, PSG",
+    "hotel_stars": 4,
+    "price_segment_1_10": 5
+  },
+  {
+    "hotel_name": "A La Carte Danang Beach",
+    "city": "Da Nang",
+    "operator_mention_count": 3,
+    "operators_confirmed_in_scan": "ANEX, PSG, R-Express",
+    "hotel_stars": 5,
+    "price_segment_1_10": 7
+  },
+  {
+    "hotel_name": "Angel Hotel",
+    "city": "Da Nang",
+    "operator_mention_count": 3,
+    "operators_confirmed_in_scan": "FUN&SUN, ICS, PSG",
+    "hotel_stars": 3,
+    "price_segment_1_10": 1
+  },
+  {
+    "hotel_name": "Avatar Da Nang Hotel",
+    "city": "Da Nang",
+    "operator_mention_count": 3,
+    "operators_confirmed_in_scan": "FUN&SUN, ICS, PSG",
+    "hotel_stars": 4,
+    "price_segment_1_10": 2
+  },
+  {
+    "hotel_name": "Blue Ocean 2 Hotel",
+    "city": "Da Nang",
+    "operator_mention_count": 3,
+    "operators_confirmed_in_scan": "FUN&SUN, ICS, PSG",
+    "hotel_stars": 3,
+    "price_segment_1_10": 1
+  },
+  {
+    "hotel_name": "King's Finger Hotel",
+    "city": "Da Nang",
+    "operator_mention_count": 3,
+    "operators_confirmed_in_scan": "FUN&SUN, ICS, PSG",
+    "hotel_stars": 3,
+    "price_segment_1_10": 1
+  },
+  {
+    "hotel_name": "Renaissance Hoi An Resort & Spa",
+    "city": "Hoi An",
+    "operator_mention_count": 3,
+    "operators_confirmed_in_scan": "Art Tour, PSG, R-Express",
+    "hotel_stars": 5,
+    "price_segment_1_10": 7
+  },
+  {
+    "hotel_name": "Belle Maison Parosand Danang",
+    "city": "Da Nang",
+    "operator_mention_count": 2,
+    "operators_confirmed_in_scan": "Coral, Pegas",
+    "hotel_stars": 4,
+    "price_segment_1_10": 3
+  },
+  {
+    "hotel_name": "Fivitel Hoi An Hotel",
+    "city": "Hoi An",
+    "operator_mention_count": 2,
+    "operators_confirmed_in_scan": "ANEX, PSG",
+    "hotel_stars": 4,
+    "price_segment_1_10": 4
+  },
+  {
+    "hotel_name": "Four Seasons Nam Hai",
+    "city": "Hoi An",
+    "operator_mention_count": 2,
+    "operators_confirmed_in_scan": "ANEX, TEZ",
+    "hotel_stars": 4,
+    "price_segment_1_10": 10
+  },
+  {
+    "hotel_name": "Naman Retreat",
+    "city": "Hoi An",
+    "operator_mention_count": 2,
+    "operators_confirmed_in_scan": "KOMPAS, Pegas",
+    "hotel_stars": 5,
+    "price_segment_1_10": 8
+  },
+  {
+    "hotel_name": "Serene Nature Boutique Resort & Spa",
+    "city": "Hoi An",
+    "operator_mention_count": 2,
+    "operators_confirmed_in_scan": "ANEX, R-Express",
+    "hotel_stars": 4,
+    "price_segment_1_10": 6
+  },
+  {
+    "hotel_name": "Wyndham Danang Golden Bay",
+    "city": "Da Nang",
+    "operator_mention_count": 2,
+    "operators_confirmed_in_scan": "ANEX, Pegas",
+    "hotel_stars": 5,
+    "price_segment_1_10": 5
+  },
+  {
+    "hotel_name": "Ancient House Resort Hoi An",
+    "city": "Hoi An",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "FUN&SUN",
+    "hotel_stars": 4,
+    "price_segment_1_10": 5
+  },
+  {
+    "hotel_name": "Bamboo Green Central Hotel",
+    "city": "Da Nang",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "TEZ",
+    "hotel_stars": 3,
+    "price_segment_1_10": 1
+  },
+  {
+    "hotel_name": "Beautiful Beach Hotel",
+    "city": "Da Nang",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "TEZ",
+    "hotel_stars": 3,
+    "price_segment_1_10": 3
+  },
+  {
+    "hotel_name": "Bellerive Hoi An Resort & Spa",
+    "city": "Hoi An",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "FUN&SUN",
+    "hotel_stars": 5,
+    "price_segment_1_10": 7
+  },
+  {
+    "hotel_name": "Centara Sandy Beach Resort Danang",
+    "city": "Da Nang",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "TEZ",
+    "hotel_stars": 4,
+    "price_segment_1_10": 7
+  },
+  {
+    "hotel_name": "Centre Point Hotel and Residence",
+    "city": "Da Nang",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "ANEX",
+    "hotel_stars": 5,
+    "price_segment_1_10": 5
+  },
+  {
+    "hotel_name": "Century Hotel Da Nang",
+    "city": "Da Nang",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "ANEX",
+    "hotel_stars": 4,
+    "price_segment_1_10": 4
+  },
+  {
+    "hotel_name": "Chicland Danang Beach Hotel",
+    "city": "Da Nang",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "Pegas",
+    "hotel_stars": 4,
+    "price_segment_1_10": 7
+  },
+  {
+    "hotel_name": "Diamond Sea Hotel",
+    "city": "Da Nang",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "ANEX",
+    "hotel_stars": 4,
+    "price_segment_1_10": 6
+  },
+  {
+    "hotel_name": "Dylan Hotel Da Nang",
+    "city": "Da Nang",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "TEZ",
+    "hotel_stars": 3,
+    "price_segment_1_10": 3
+  },
+  {
+    "hotel_name": "Fansipan Da Nang Hotel",
+    "city": "Da Nang",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "TEZ",
+    "hotel_stars": 3,
+    "price_segment_1_10": 1
+  },
+  {
+    "hotel_name": "Furama Villas Danang",
+    "city": "Da Nang",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "China Travel",
+    "hotel_stars": 5,
+    "price_segment_1_10": 9
+  },
+  {
+    "hotel_name": "Fusion Resort & Villas Da Nang",
+    "city": "Da Nang",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "ANEX",
+    "hotel_stars": 5,
+    "price_segment_1_10": 7
+  },
+  {
+    "hotel_name": "Golden Sand Resort & Spa",
+    "city": "Hoi An",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "TEZ",
+    "hotel_stars": 5,
+    "price_segment_1_10": 4
+  },
+  {
+    "hotel_name": "Grand Mercure Danang",
+    "city": "Da Nang",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "China Travel",
+    "hotel_stars": 5,
+    "price_segment_1_10": 6
+  },
+  {
+    "hotel_name": "Grandvrio Ocean Resort Danang",
+    "city": "Da Nang",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "ANEX",
+    "hotel_stars": 5,
+    "price_segment_1_10": 5
+  },
+  {
+    "hotel_name": "Green Heaven Resort & Spa",
+    "city": "Hoi An",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "TEZ",
+    "hotel_stars": 4,
+    "price_segment_1_10": 2
+  },
+  {
+    "hotel_name": "Green Hotel Danang",
+    "city": "Da Nang",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "TEZ",
+    "hotel_stars": 3,
+    "price_segment_1_10": 4
+  },
+  {
+    "hotel_name": "Hoi An Field Villa & Spa",
+    "city": "Hoi An",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "R-Express",
+    "hotel_stars": 3,
+    "price_segment_1_10": 1
+  },
+  {
+    "hotel_name": "Hoi An Memories Land",
+    "city": "Hoi An",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "ANEX",
+    "hotel_stars": 5,
+    "price_segment_1_10": 7
+  },
+  {
+    "hotel_name": "Hoi An Odyssey Hotel",
+    "city": "Hoi An",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "FUN&SUN",
+    "hotel_stars": 4,
+    "price_segment_1_10": 4
+  },
+  {
+    "hotel_name": "Hoi An Rose Garden Hotel",
+    "city": "Hoi An",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "R-Express",
+    "hotel_stars": 3,
+    "price_segment_1_10": 1
+  },
+  {
+    "hotel_name": "Hotel Royal Hoi An - MGallery",
+    "city": "Hoi An",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "R-Express",
+    "hotel_stars": 5,
+    "price_segment_1_10": 8
+  },
+  {
+    "hotel_name": "Hyatt Regency Danang",
+    "city": "Da Nang",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "China Travel",
+    "hotel_stars": 5,
+    "price_segment_1_10": 7
+  },
+  {
+    "hotel_name": "Indochine Hoi An Hotel",
+    "city": "Hoi An",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "TEZ",
+    "hotel_stars": 3,
+    "price_segment_1_10": 3
+  },
+  {
+    "hotel_name": "Kay Hotel",
+    "city": "Da Nang",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "TEZ",
+    "hotel_stars": 3,
+    "price_segment_1_10": 1
+  },
+  {
+    "hotel_name": "Koi Resort & Spa Hoi An",
+    "city": "Hoi An",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "TEZ",
+    "hotel_stars": 5,
+    "price_segment_1_10": 5
+  },
+  {
+    "hotel_name": "La Charm Hoi An Hotel & Spa",
+    "city": "Hoi An",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "FUN&SUN",
+    "hotel_stars": 4,
+    "price_segment_1_10": 5
+  },
+  {
+    "hotel_name": "Laluna Riverside Hoi An",
+    "city": "Hoi An",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "FUN&SUN",
+    "hotel_stars": 4,
+    "price_segment_1_10": 5
+  },
+  {
+    "hotel_name": "Lion Sea Hotel",
+    "city": "Da Nang",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "TEZ",
+    "hotel_stars": 3,
+    "price_segment_1_10": 1
+  },
+  {
+    "hotel_name": "Melia Danang Beach Resort",
+    "city": "Da Nang",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "Pegas",
+    "hotel_stars": 5,
+    "price_segment_1_10": 7
+  },
+  {
+    "hotel_name": "Namia River Retreat",
+    "city": "Hoi An",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "ANEX",
+    "hotel_stars": 5,
+    "price_segment_1_10": 9
+  },
+  {
+    "hotel_name": "Nesta Hoian Resort and Spa",
+    "city": "Hoi An",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "ANEX",
+    "hotel_stars": 5,
+    "price_segment_1_10": 5
+  },
+  {
+    "hotel_name": "Orange Hotel",
+    "city": "Da Nang",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "TEZ",
+    "hotel_stars": 3,
+    "price_segment_1_10": 3
+  },
+  {
+    "hotel_name": "Palm Garden Beach Resort & Spa",
+    "city": "Hoi An",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "TEZ",
+    "hotel_stars": 5,
+    "price_segment_1_10": 8
+  },
+  {
+    "hotel_name": "Peninsula Hotel Danang",
+    "city": "Da Nang",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "ANEX",
+    "hotel_stars": 5,
+    "price_segment_1_10": 6
+  },
+  {
+    "hotel_name": "Phuc Long Luxury Hotel Danang",
+    "city": "Da Nang",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "TEZ",
+    "hotel_stars": 4,
+    "price_segment_1_10": 8
+  },
+  {
+    "hotel_name": "Pulchra Resort Danang",
+    "city": "Da Nang",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "China Travel",
+    "hotel_stars": 5,
+    "price_segment_1_10": 8
+  },
+  {
+    "hotel_name": "River Suites Hoi An",
+    "city": "Hoi An",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "TEZ",
+    "hotel_stars": 4,
+    "price_segment_1_10": 2
+  },
+  {
+    "hotel_name": "RiverTown Hoi An Resort & Spa",
+    "city": "Hoi An",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "FUN&SUN",
+    "hotel_stars": 4,
+    "price_segment_1_10": 5
+  },
+  {
+    "hotel_name": "Royal Lotus Hotel Danang",
+    "city": "Da Nang",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "ANEX",
+    "hotel_stars": 4,
+    "price_segment_1_10": 5
+  },
+  {
+    "hotel_name": "Royal Riverside Hoi An Hotel",
+    "city": "Hoi An",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "TEZ",
+    "hotel_stars": 4,
+    "price_segment_1_10": 2
+  },
+  {
+    "hotel_name": "Sabina Hotel & Apartment",
+    "city": "Da Nang",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "TEZ",
+    "hotel_stars": 3,
+    "price_segment_1_10": 3
+  },
+  {
+    "hotel_name": "Samdi Hotel",
+    "city": "Da Nang",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "TEZ",
+    "hotel_stars": 4,
+    "price_segment_1_10": 3
+  },
+  {
+    "hotel_name": "Sandy Beach Non Nuoc Resort Danang",
+    "city": "Da Nang",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "Pegas",
+    "hotel_stars": 4,
+    "price_segment_1_10": 5
+  },
+  {
+    "hotel_name": "Shilla Monogram Danang",
+    "city": "Da Nang",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "ANEX",
+    "hotel_stars": 5,
+    "price_segment_1_10": 8
+  },
+  {
+    "hotel_name": "Silk River Hoi An Hotel & Spa",
+    "city": "Hoi An",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "FUN&SUN",
+    "hotel_stars": 4,
+    "price_segment_1_10": 5
+  },
+  {
+    "hotel_name": "Sunrise Premium Resort & Spa Hoi An",
+    "city": "Hoi An",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "TEZ",
+    "hotel_stars": 5,
+    "price_segment_1_10": 5
+  },
+  {
+    "hotel_name": "The Nature Villas & Resort",
+    "city": "Da Nang",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "TEZ",
+    "hotel_stars": 3,
+    "price_segment_1_10": 3
+  },
+  {
+    "hotel_name": "TIA Wellness Resort",
+    "city": "Da Nang",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "PSG",
+    "hotel_stars": 5,
+    "price_segment_1_10": 9
+  },
+  {
+    "hotel_name": "Vinpearl Da Nang Resort & Villas",
+    "city": "Da Nang",
+    "operator_mention_count": 1,
+    "operators_confirmed_in_scan": "China Travel",
+    "hotel_stars": 5,
+    "price_segment_1_10": 8
+  },
+  {
+    "hotel_name": "Boutique Hoi An Resort",
+    "city": "Hoi An",
+    "operator_mention_count": 0,
+    "operators_confirmed_in_scan": "n/a",
+    "hotel_stars": 4,
+    "price_segment_1_10": 6
+  },
+  {
+    "hotel_name": "Four Points by Sheraton Danang",
+    "city": "Da Nang",
+    "operator_mention_count": 0,
+    "operators_confirmed_in_scan": "n/a",
+    "hotel_stars": 5,
+    "price_segment_1_10": 6
+  },
+  {
+    "hotel_name": "New Orient Hotel Danang",
+    "city": "Da Nang",
+    "operator_mention_count": 0,
+    "operators_confirmed_in_scan": "n/a",
+    "hotel_stars": 4,
+    "price_segment_1_10": 4
+  },
+  {
+    "hotel_name": "Wyndham Soleil Danang",
+    "city": "Da Nang",
+    "operator_mention_count": 0,
+    "operators_confirmed_in_scan": "n/a",
+    "hotel_stars": 5,
+    "price_segment_1_10": 6
+  }
+]

@@ -1,4 +1,4 @@
-/** @typedef {'actual' | 'upcoming' | 'forecast'} DataKind */
+/** @typedef {'actual' | 'upcoming'} DataKind */
 
 /**
  * @typedef {Object} CanonicalFlight
@@ -18,13 +18,12 @@
  * @property {number|null} paxEst
  */
 
-export const DATA_KINDS = ["actual", "upcoming", "forecast"];
+export const DATA_KINDS = ["actual", "upcoming"];
 
 export function tableForDataKind(dataKind) {
   const map = {
     actual: "flights_actual",
     upcoming: "flights_upcoming",
-    forecast: "flights_forecast",
   };
   const table = map[dataKind];
   if (!table) throw new Error(`Unknown dataKind: ${dataKind}`);

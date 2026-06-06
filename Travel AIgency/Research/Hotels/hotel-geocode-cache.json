@@ -1,0 +1,686 @@
+{
+  "anantara hoi an resort": {
+    "latitude": 15.87706,
+    "longitude": 108.33699,
+    "geocoded_address": "Anantara Hoi An Resort, Hoi An, Vietnam",
+    "geocode_query": "Geoapify: Anantara Hoi An Resort",
+    "geocode_source": "geoapify",
+    "geocode_confidence": 1.0
+  },
+  "furama resort danang": {
+    "latitude": 16.0397489,
+    "longitude": 108.2513386,
+    "geocoded_address": "Furama Resort, 105, Võ Nguyên Giáp, Phường Ngũ Hành Sơn, Thành phố Đà Nẵng, 50507, Việt Nam",
+    "geocode_query": "Web research: Furama Resort Danang",
+    "geocode_source": "web research"
+  },
+  "muong thanh luxury da nang hotel": {
+    "latitude": 16.053936,
+    "longitude": 108.24746,
+    "geocoded_address": "270 Vo Nguyen Giap, Ngu Hanh Son, Da Nang, Vietnam",
+    "geocode_source": "official/booking",
+    "geocode_query": "verified: muong thanh"
+  },
+  "four seasons resort the nam hai": {
+    "latitude": 15.872039,
+    "longitude": 108.345833,
+    "geocoded_address": "Block Ha My Dong B, Dien Duong, Dien Ban, Quang Nam, Vietnam",
+    "geocode_source": "fourseasons/official",
+    "geocode_query": "verified: four seasons nam hai"
+  },
+  "hoi an beach resort": {
+    "latitude": 15.8964889,
+    "longitude": 108.3672024,
+    "geocoded_address": "Hoi An Beach Resort, Âu Cơ, Phường Hội An Đông, Thành phố Đà Nẵng, 51313, Việt Nam",
+    "geocode_query": "Web research: Hoi An Beach Resort",
+    "geocode_source": "web research"
+  },
+  "pullman danang beach resort": {
+    "latitude": 16.04058,
+    "longitude": 108.25012,
+    "geocoded_address": "Pullman Danang Beach Resort, Đà Nẵng, DA 50507, Vietnam",
+    "geocode_query": "Geoapify: Pullman Danang Beach Resort",
+    "geocode_source": "geoapify",
+    "geocode_confidence": 1.0
+  },
+  "sheraton grand danang resort": {
+    "latitude": 15.9814271,
+    "longitude": 108.2789535,
+    "geocoded_address": "Sheraton Grand Danang Resort & Spa, 35, Đường Trường Sa, Phường Ngũ Hành Sơn, Thành phố Đà Nẵng, 50510, Việt Nam",
+    "geocode_query": "Web research: Sheraton Grand Danang Resort",
+    "geocode_source": "web research"
+  },
+  "vinpearl resort golf nam hoi an": {
+    "latitude": 15.793379,
+    "longitude": 108.412104,
+    "geocoded_address": "Vo Chi Cong, Binh Minh, Thang Binh, Quang Nam, Vietnam",
+    "geocode_source": "vinpearl/where2golf",
+    "geocode_query": "verified: vinpearl nam hoi an"
+  },
+  "hyatt regency danang resort spa": {
+    "latitude": 16.0125,
+    "longitude": 108.263611,
+    "geocoded_address": "5 Truong Sa, Hoa Hai, Ngu Hanh Son, Da Nang, Vietnam",
+    "geocode_source": "wikimapia/hyatt",
+    "geocode_query": "verified: hyatt regency"
+  },
+  "intercontinental danang sun peninsula resort": {
+    "latitude": 16.1210876,
+    "longitude": 108.3061358,
+    "geocoded_address": "InterContinental Danang Sun Peninsula Resort, Đường Hoàng Sa, Phường Sơn Trà, Thành phố Đà Nẵng, Việt Nam",
+    "geocode_query": "Web research: InterContinental Danang Sun Peninsula Resort",
+    "geocode_source": "web research"
+  },
+  "new world hoiana beach resort": {
+    "latitude": 15.821574,
+    "longitude": 108.404568,
+    "geocoded_address": "Tay Son Tay, Duy Hai, Duy Xuyen, Quang Nam, Vietnam",
+    "geocode_source": "hoiana.com",
+    "geocode_query": "verified: new world hoiana"
+  },
+  "palm garden beach resort spa hoi an": {
+    "latitude": 15.8976157,
+    "longitude": 108.3640426,
+    "geocoded_address": "Lac Long Quan, Cua Dai Beach, Hoi An, Quang Nam, Vietnam",
+    "geocode_source": "photon address",
+    "geocode_query": "photon: palm garden cua dai"
+  },
+  "premier village danang resort": {
+    "latitude": 16.0436238,
+    "longitude": 108.2496571,
+    "geocoded_address": "99 Vo Nguyen Giap, Ngu Hanh Son, Da Nang, Vietnam",
+    "geocode_source": "photon address",
+    "geocode_query": "photon: premier village 99 vng"
+  },
+  "radisson hotel danang": {
+    "latitude": 16.0738839,
+    "longitude": 108.2446681,
+    "geocoded_address": "Radisson, Đường Loseby, Phường An Hải, Thành phố Đà Nẵng, 50408, Việt Nam",
+    "geocode_query": "Web research: Radisson Hotel Danang",
+    "geocode_source": "web research"
+  },
+  "tms hotel da nang beach": {
+    "latitude": 16.051152,
+    "longitude": 108.2480701,
+    "geocoded_address": "TMS Hotel Da Nang Beach, 292, Đường Võ Nguyên Giáp, Phường Ngũ Hành Sơn, Thành phố Đà Nẵng, 50507, Việt Nam",
+    "geocode_query": "Web research: TMS Hotel Da Nang Beach",
+    "geocode_source": "web research"
+  },
+  "wyndham hoi an royal beachfront resort villas": {
+    "latitude": 15.82,
+    "longitude": 108.403,
+    "geocoded_address": "Hoiana, Duy Xuyen, Quang Nam, Vietnam",
+    "geocode_source": "hoiana/wyndham",
+    "geocode_query": "verified: wyndham hoiana"
+  },
+  "bliss hoi an beach resort wellness": {
+    "latitude": 15.778785,
+    "longitude": 108.4294673,
+    "geocoded_address": "Bliss Hoi An Beach Resort & Wellness, Đường tỉnh 613, Xã Thăng An, Thành phố Đà Nẵng, Việt Nam",
+    "geocode_query": "Web research: Bliss Hoi An Beach Resort & Wellness",
+    "geocode_source": "web research"
+  },
+  "danang marriott resort spa": {
+    "latitude": 16.0073852,
+    "longitude": 108.266296,
+    "geocoded_address": "Danang Marriott Resort & Spa, 7, Đường Trường Sa, Phường Ngũ Hành Sơn, Thành phố Đà Nẵng, 50507, Việt Nam",
+    "geocode_query": "Web research: Danang Marriott Resort & Spa",
+    "geocode_source": "web research"
+  },
+  "dlg hotel danang": {
+    "latitude": 16.0579365,
+    "longitude": 108.2461526,
+    "geocoded_address": "DLG Hotel, 258, Đường Võ Nguyên Giáp, Phường An Hải, Thành phố Đà Nẵng, 50408, Việt Nam",
+    "geocode_query": "Web research: DLG Hotel Danang",
+    "geocode_source": "web research"
+  },
+  "hoiana residences": {
+    "latitude": 15.821574,
+    "longitude": 108.404568,
+    "geocoded_address": "Tay Son Tay, Duy Hai, Hoiana, Quang Nam, Vietnam",
+    "geocode_source": "web research",
+    "geocode_query": "Web: hoiana residences"
+  },
+  "holiday beach danang hotel spa": {
+    "latitude": 16.0485,
+    "longitude": 108.2488,
+    "geocoded_address": "300 Vo Nguyen Giap, Ngu Hanh Son, Da Nang, Vietnam",
+    "geocode_source": "official website",
+    "geocode_query": "verified: holiday beach"
+  },
+  "m hotel danang": {
+    "latitude": 16.0517939,
+    "longitude": 108.2479104,
+    "geocoded_address": "M Hotel Da Nang, 286, Đường Võ Nguyên Giáp, Phường Ngũ Hành Sơn, Thành phố Đà Nẵng, 50507, Việt Nam",
+    "geocode_query": "Web research: M Hotel Danang",
+    "geocode_source": "web research"
+  },
+  "non nuoc beach villas": {
+    "latitude": 15.9938706,
+    "longitude": 108.2702536,
+    "geocoded_address": "Danang Marriott Resort & Spa, Non Nuoc Beach Villas, 23, Đường Trường Sa, Ngũ Hành Sơn Ward, Đà Nẵng, Vietnam",
+    "geocode_query": "Geoapify: Non Nuoc Beach Villas",
+    "geocode_source": "geoapify",
+    "geocode_confidence": 1.0
+  },
+  "renaissance hoi an resort spa": {
+    "latitude": 15.880556,
+    "longitude": 108.388611,
+    "geocoded_address": "Block 6, Phuoc Hai, Cua Dai, Hoi An, Quang Nam, Vietnam",
+    "geocode_source": "marriott/wikimapia",
+    "geocode_query": "verified: renaissance hoi an"
+  },
+  "a la carte danang beach": {
+    "latitude": 16.0687157,
+    "longitude": 108.2446388,
+    "geocoded_address": "A La Carte Danang Beach, 200, Đường Võ Nguyên Giáp, Phường An Hải, Thành phố Đà Nẵng, 50408, Việt Nam",
+    "geocode_query": "Web research: A La Carte Danang Beach",
+    "geocode_source": "web research"
+  },
+  "belle maison parosand danang": {
+    "latitude": 16.0674697,
+    "longitude": 108.2448548,
+    "geocoded_address": "Belle Maison Parosand Hotel, 216, Đường Võ Nguyên Giáp, Phường An Hải, Thành phố Đà Nẵng, 50408, Việt Nam",
+    "geocode_query": "Web research: Belle Maison Parosand Danang",
+    "geocode_source": "web research"
+  },
+  "fivitel hoi an hotel": {
+    "latitude": 15.879,
+    "longitude": 108.335,
+    "geocoded_address": "135 Tran Hung Dao, Hoi An, Quang Nam, Vietnam",
+    "geocode_source": "booking/trip",
+    "geocode_query": "verified: fivitel"
+  },
+  "four seasons nam hai": {
+    "latitude": 15.872039,
+    "longitude": 108.345833,
+    "geocoded_address": "Block Ha My Dong B, Dien Duong, Dien Ban, Quang Nam, Vietnam",
+    "geocode_source": "fourseasons/official",
+    "geocode_query": "verified: four seasons nam hai"
+  },
+  "grand mercure danang": {
+    "latitude": 15.9202798,
+    "longitude": 108.3285347,
+    "geocoded_address": "Grand Mercure Hoi An, Phường Hội An Tây, Thành phố Đà Nẵng, Việt Nam",
+    "geocode_query": "Web research: Grand Mercure Danang",
+    "geocode_source": "web research"
+  },
+  "maximilan danang beach hotel": {
+    "latitude": 16.0455,
+    "longitude": 108.2482,
+    "geocoded_address": "222 Vo Nguyen Giap, Phuoc My, Son Tra, Da Nang, Vietnam",
+    "geocode_source": "official/booking",
+    "geocode_query": "verified: maximilan"
+  },
+  "naman retreat": {
+    "latitude": 15.96915,
+    "longitude": 108.2847535,
+    "geocoded_address": "Naman Retreat, Truong Sa, Ngu Hanh Son, Da Nang, Vietnam",
+    "geocode_query": "Web research final: naman retreat",
+    "geocode_source": "geoapify/web research"
+  },
+  "rivertown hoi an resort spa": {
+    "latitude": 15.888,
+    "longitude": 108.368,
+    "geocoded_address": "30 Le Dai Hanh, Cua Dai, Hoi An, Quang Nam, Vietnam",
+    "geocode_source": "official/booking + map",
+    "geocode_query": "verified: rivertown cua dai"
+  },
+  "serene nature boutique resort spa": {
+    "latitude": 15.865,
+    "longitude": 108.32,
+    "geocoded_address": "Thanh Nien Road, Cam Ha, Hoi An, Quang Nam, Vietnam",
+    "geocode_source": "anex/intourist",
+    "geocode_query": "verified: serene nature"
+  },
+  "ancient house resort hoi an": {
+    "latitude": 15.8802989,
+    "longitude": 108.3428569,
+    "geocoded_address": "Ancient House Resort, Hoi An, Vietnam",
+    "geocode_query": "address-verify: Ancient House Resort, Hoi An, Vietnam",
+    "geocode_source": "nominatim-address",
+    "address_verified": true
+  },
+  "angel hotel": {
+    "latitude": 16.0486026,
+    "longitude": 108.2481857,
+    "geocoded_address": "Angel Hotels, Ngô Thì Sĩ, Phường Ngũ Hành Sơn, Thành phố Đà Nẵng, 50507, Việt Nam",
+    "geocode_query": "Web research: Angel Hotel",
+    "geocode_source": "web research"
+  },
+  "avatar da nang hotel": {
+    "latitude": 16.052,
+    "longitude": 108.248,
+    "geocoded_address": "46-48 Hoang Ke Viem, Bac My An, Ngu Hanh Son, Da Nang, Vietnam",
+    "geocode_source": "booking",
+    "geocode_query": "verified: avatar"
+  },
+  "bamboo green central hotel": {
+    "latitude": 16.06345,
+    "longitude": 108.21978,
+    "geocoded_address": "Bamboo Green Central Hotel, Thanh Khe, Da Nang, Vietnam",
+    "geocode_query": "Web research final: bamboo green central hotel",
+    "geocode_source": "geoapify/web research"
+  },
+  "beautiful beach hotel": {
+    "latitude": 16.062,
+    "longitude": 108.245,
+    "geocoded_address": "12 Hoang Ke Viem, Bac My An, Ngu Hanh Son, Da Nang, Vietnam",
+    "geocode_source": "tez/booking",
+    "geocode_query": "verified: beautiful beach"
+  },
+  "bellerive hoi an resort spa": {
+    "latitude": 15.888542,
+    "longitude": 108.375666,
+    "geocoded_address": "33 Le Dai Hanh Street, Cua Dai Ward, Hoi An, Quang Nam, Vietnam",
+    "geocode_source": "bellerivehoian.com",
+    "geocode_query": "verified: bellerive"
+  },
+  "grandvrio ocean resort danang": {
+    "latitude": 15.9062,
+    "longitude": 108.3414,
+    "geocoded_address": "Lac Long Quan Street, Dien Ngoc Ward, Dien Ban, Quang Nam, Vietnam",
+    "geocode_source": "official site",
+    "geocode_query": "verified: grandvrio"
+  },
+  "blue ocean 2 hotel": {
+    "latitude": 16.052,
+    "longitude": 108.245,
+    "geocoded_address": "51 Hoang Ke Viem, Bac My An, Ngu Hanh Son, Da Nang, Vietnam",
+    "geocode_source": "kayak/booking web research",
+    "geocode_query": "web: blue ocean 2 hoang ke viem"
+  },
+  "centara sandy beach resort danang": {
+    "latitude": 15.99683,
+    "longitude": 108.27111,
+    "geocoded_address": "Sandy Beach Non Nuoc Resort Danang By Centara, Da Nang, Vietnam",
+    "geocode_query": "Web research final: centara sandy beach resort danang",
+    "geocode_source": "geoapify/web research"
+  },
+  "century hotel da nang": {
+    "latitude": 16.0626108,
+    "longitude": 108.2418096,
+    "geocoded_address": "Century Hotel, 105, Đường Võ Văn Kiệt, Phường An Hải, Thành phố Đà Nẵng, 50408, Việt Nam",
+    "geocode_query": "Web research: Century Hotel Da Nang",
+    "geocode_source": "web research"
+  },
+  "chicland danang beach hotel": {
+    "latitude": 16.04979,
+    "longitude": 108.2486,
+    "geocoded_address": "105 Vo Nguyen Giap, Khue My, Ngu Hanh Son, Da Nang, Vietnam",
+    "geocode_source": "official website",
+    "geocode_query": "verified: chicland"
+  },
+  "diamond sea hotel": {
+    "latitude": 16.0665111,
+    "longitude": 108.2448813,
+    "geocoded_address": "Diamond Sea, Đường Võ Nguyên Giáp, Phường An Hải, Thành phố Đà Nẵng, 50408, Việt Nam",
+    "geocode_query": "Web research: Diamond Sea Hotel",
+    "geocode_source": "web research"
+  },
+  "dylan hotel da nang": {
+    "latitude": 16.093698,
+    "longitude": 108.144566,
+    "geocoded_address": "Mikazuki Đà Nẵng Hotel, Da Nang, DA 84236, Vietnam",
+    "geocode_query": "Geoapify: Dylan Hotel Da Nang",
+    "geocode_source": "geoapify",
+    "geocode_confidence": 1.0
+  },
+  "fansipan da nang hotel": {
+    "latitude": 16.0415643,
+    "longitude": 108.2483774,
+    "geocoded_address": "Fansipan Hotel, Vo Nguyen Giap, Ngu Hanh Son, Da Nang, Vietnam",
+    "geocode_source": "photon",
+    "geocode_query": "photon: fansipan danang"
+  },
+  "furama villas danang": {
+    "latitude": 16.036257,
+    "longitude": 108.252374,
+    "geocoded_address": "Furama Villas, 107, Võ Nguyên Giáp, Phường Ngũ Hành Sơn, Thành phố Đà Nẵng, 50507, Việt Nam",
+    "geocode_query": "Web research: Furama Villas Danang",
+    "geocode_source": "web research"
+  },
+  "golden sand resort spa": {
+    "latitude": 15.905,
+    "longitude": 108.352,
+    "geocoded_address": "Cua Dai, Hoi An, Quang Nam, Vietnam",
+    "geocode_source": "beach corridor estimate",
+    "geocode_query": "verified: golden sand cua dai"
+  },
+  "green heaven resort spa": {
+    "latitude": 15.868,
+    "longitude": 108.34,
+    "geocoded_address": "81 Nguyen Duy Hieu, Cam Chau, Hoi An, Quang Nam, Vietnam",
+    "geocode_source": "tez/booking",
+    "geocode_query": "verified: green heaven"
+  },
+  "green hotel danang": {
+    "latitude": 16.0634262,
+    "longitude": 108.2236979,
+    "geocoded_address": "Khách sạn Green Plaza, 238, Đường Lê Hồng Phong, Phước Ninh, Phường Hải Châu, Thành phố Đà Nẵng, 02363, Việt Nam",
+    "geocode_query": "Web research: Green Hotel Danang",
+    "geocode_source": "web research"
+  },
+  "hoi an field villa spa": {
+    "latitude": 15.88,
+    "longitude": 108.35,
+    "geocoded_address": "Lac Long Quan, Cam Ha, Hoi An, Quang Nam, Vietnam",
+    "geocode_source": "tez",
+    "geocode_query": "verified: hoi an field villa"
+  },
+  "hoi an memories land": {
+    "latitude": 15.8751381,
+    "longitude": 108.3398096,
+    "geocoded_address": "Hoi An Memories Land, Phường Hội An, Thành phố Đà Nẵng, Việt Nam",
+    "geocode_query": "Web research: Hoi An Memories Land",
+    "geocode_source": "web research"
+  },
+  "hoi an odyssey hotel": {
+    "latitude": 15.8719982,
+    "longitude": 108.3299675,
+    "geocoded_address": "Hoi An Odyssey Hotel & Spa, Lương Như Bích, An Hội, Phố cổ Hội An, Phường Hội An, Thành phố Đà Nẵng, 64000, Việt Nam",
+    "geocode_query": "Web research: Hoi An Odyssey Hotel",
+    "geocode_source": "web research"
+  },
+  "hoi an rose garden hotel": {
+    "latitude": 15.8802989,
+    "longitude": 108.3428569,
+    "geocoded_address": "576 Cua Dai, Cam Chau, Hoi An, Quang Nam, Vietnam",
+    "geocode_source": "nominatim",
+    "geocode_query": "verified: rose garden address"
+  },
+  "hotel royal hoi an mgallery": {
+    "latitude": 15.8766,
+    "longitude": 108.3199,
+    "geocoded_address": "39 Dao Duy Tu Street, Hoi An, Quang Nam, Vietnam",
+    "geocode_source": "accor/official",
+    "geocode_query": "web: hotel royal 39 dao duy tu"
+  },
+  "hyatt regency danang": {
+    "latitude": 16.0125892,
+    "longitude": 108.2637747,
+    "geocoded_address": "Hyatt Regency Resort and Spa, 5, Đường Trường Sa, Phường Ngũ Hành Sơn, Thành phố Đà Nẵng, 50507, Việt Nam",
+    "geocode_query": "Web research: Hyatt Regency Danang",
+    "geocode_source": "web research"
+  },
+  "indochine hoi an hotel": {
+    "latitude": 15.875,
+    "longitude": 108.336,
+    "geocoded_address": "Hoi An Indochine Hotel, Cua Dai area, Hoi An, Vietnam",
+    "geocode_source": "geoapify + riverfront",
+    "geocode_query": "verified: indochine (riverfront)"
+  },
+  "kay hotel": {
+    "latitude": 16.0651724,
+    "longitude": 108.2192072,
+    "geocoded_address": "Kay Hotel, Hai Chau, Da Nang, Vietnam",
+    "geocode_query": "address-verify: Kay Hotel, Hai Chau, Da Nang, Vietnam",
+    "geocode_source": "photon-address",
+    "address_verified": true
+  },
+  "king s finger hotel": {
+    "latitude": 16.055,
+    "longitude": 108.242,
+    "geocoded_address": "187 Ho Nghinh, Son Tra, Da Nang, Vietnam",
+    "geocode_source": "ics/booking",
+    "geocode_query": "verified: kings finger"
+  },
+  "koi resort residence da nang": {
+    "latitude": 16.004841,
+    "longitude": 108.268918,
+    "geocoded_address": "11 Truong Sa, Hoa Hai, Ngu Hanh Son, Da Nang, Vietnam",
+    "geocode_source": "koiresortdanang.com",
+    "geocode_query": "verified: koi resort danang"
+  },
+  "koi resort spa": {
+    "latitude": 15.8941233,
+    "longitude": 108.3685679,
+    "geocoded_address": "KOI Resort & Spa, Âu Cơ, Phường Hội An Đông, Thành phố Đà Nẵng, 51313, Việt Nam",
+    "geocode_query": "Web research: Koi Resort & Spa",
+    "geocode_source": "web research"
+  },
+  "la charm hoi an hotel spa": {
+    "latitude": 15.8771622,
+    "longitude": 108.3201341,
+    "geocoded_address": "La Charm Hoi An Hotel & Spa, 64, Đào Duy Từ, An Hội, Phố cổ Hội An, Phường Hội An, Thành phố Đà Nẵng, 51309, Việt Nam",
+    "geocode_query": "Web research: La Charm Hoi An Hotel & Spa",
+    "geocode_source": "web research"
+  },
+  "laluna riverside hoi an": {
+    "latitude": 15.8764762,
+    "longitude": 108.3216752,
+    "geocoded_address": "Laluna Hoi An Riverside Hotel & Spa, 12, Nguyễn Du, An Hội, Phố cổ Hội An, Phường Hội An Tây, Phường Hội An, Thành phố Đà Nẵng, 51309, Việt Nam",
+    "geocode_query": "Web research: Laluna Riverside Hoi An",
+    "geocode_source": "web research"
+  },
+  "lion sea hotel": {
+    "latitude": 16.052,
+    "longitude": 108.243,
+    "geocoded_address": "268 Vo Nguyen Giap, Bac My An, Ngu Hanh Son, Da Nang, Vietnam",
+    "geocode_source": "kayak/polomap web research",
+    "geocode_query": "web: lion sea 268 vo nguyen giap"
+  },
+  "mandila beach hotel": {
+    "latitude": 16.0674704,
+    "longitude": 108.2449031,
+    "geocoded_address": "Mandila Beach, 216, Đường Võ Nguyên Giáp, Phường An Hải, Thành phố Đà Nẵng, 50408, Việt Nam",
+    "geocode_query": "Web research: Mandila Beach Hotel",
+    "geocode_source": "web research"
+  },
+  "melia danang beach resort": {
+    "latitude": 16.0010848,
+    "longitude": 108.2691135,
+    "geocoded_address": "Meliá Danang Beach Resort, Đường Mộc Sơn 7, Phường Ngũ Hành Sơn, Thành phố Đà Nẵng, 50510, Việt Nam",
+    "geocode_query": "Web research: Melia Danang Beach Resort",
+    "geocode_source": "web research"
+  },
+  "minh toan safi ocean hotel": {
+    "latitude": 16.0670601,
+    "longitude": 108.244862,
+    "geocoded_address": "Minh Toan Safi Ocean, Đường Võ Nguyên Giáp, Phường An Hải, Thành phố Đà Nẵng, 50408, Việt Nam",
+    "geocode_query": "Web research: Minh Toan Safi Ocean Hotel",
+    "geocode_source": "web research"
+  },
+  "namia river retreat": {
+    "latitude": 15.8740909,
+    "longitude": 108.3520378,
+    "geocoded_address": "Namia River Retreat - Wellness Inclusive Resort, 232, Trần Nhân Tông, Phường Hội An Đông, Thành phố Đà Nẵng, 64000, Việt Nam",
+    "geocode_query": "Web research: Namia River Retreat",
+    "geocode_source": "web research"
+  },
+  "nesta hoian resort and spa": {
+    "latitude": 15.865,
+    "longitude": 108.33,
+    "geocoded_address": "135 Tran Hung Dao, Cam Chau, Hoi An, Quang Nam, Vietnam",
+    "geocode_source": "anex",
+    "geocode_query": "verified: nesta hoian"
+  },
+  "orange hotel": {
+    "latitude": 16.06517,
+    "longitude": 108.21933,
+    "geocoded_address": "Orange Hotel, Thanh Khe, Da Nang, Vietnam",
+    "geocode_source": "tez/generic thanh khe",
+    "geocode_query": "verified: orange hotel thanh khe"
+  },
+  "palm garden beach resort spa": {
+    "latitude": 15.8976157,
+    "longitude": 108.3640426,
+    "geocoded_address": "Lac Long Quan, Cua Dai Beach, Hoi An, Quang Nam, Vietnam",
+    "geocode_source": "photon address",
+    "geocode_query": "photon: palm garden cua dai"
+  },
+  "phuc long luxury hotel danang": {
+    "latitude": 16.045,
+    "longitude": 108.246,
+    "geocoded_address": "81 Vo Nguyen Giap, Khue My, Ngu Hanh Son, Da Nang, Vietnam",
+    "geocode_source": "tez",
+    "geocode_query": "verified: phuc long"
+  },
+  "pulchra resort danang": {
+    "latitude": 15.9889721,
+    "longitude": 108.2742601,
+    "geocoded_address": "Pulchra Resort Da Nang, Trường Sa, Phường Ngũ Hành Sơn, Thành phố Đà Nẵng, 50510, Việt Nam",
+    "geocode_query": "Web research: Pulchra Resort Danang",
+    "geocode_source": "web research"
+  },
+  "river suites hoi an": {
+    "latitude": 15.8766425,
+    "longitude": 108.3225638,
+    "geocoded_address": "River Suites Hoi An, 4, Nguyễn Du, Hoi An Old Town, Phường Hội An Tây, Phường Hội An, Thành phố Đà Nẵng, 51309, Việt Nam",
+    "geocode_query": "Web research: River Suites Hoi An",
+    "geocode_source": "web research"
+  },
+  "royal lotus hotel danang": {
+    "latitude": 16.0546393,
+    "longitude": 108.2434155,
+    "geocoded_address": "Royal Lotus Hotel, 120, Đường Lê Quang Đạo, Phường Ngũ Hành Sơn, Thành phố Đà Nẵng, 50507, Việt Nam",
+    "geocode_query": "Web research: Royal Lotus Hotel Danang",
+    "geocode_source": "web research"
+  },
+  "royal riverside hoi an hotel": {
+    "latitude": 15.878,
+    "longitude": 108.335,
+    "geocoded_address": "04 Nguyen Phuc Chu, Hoi An, Quang Nam, Vietnam",
+    "geocode_source": "tez/booking",
+    "geocode_query": "verified: royal riverside"
+  },
+  "sabina hotel apartment": {
+    "latitude": 16.0687168,
+    "longitude": 108.2423129,
+    "geocoded_address": "63 Duong Dinh Nghe, An Hai Bac, Son Tra, Da Nang, Vietnam",
+    "geocode_source": "amazingo.vn + nominatim",
+    "geocode_query": "nominatim: 63 duong dinh nghe"
+  },
+  "samdi hotel": {
+    "latitude": 16.0598789,
+    "longitude": 108.210489,
+    "geocoded_address": "331 Nguyen Van Linh, Thanh Khe, Da Nang, Vietnam",
+    "geocode_source": "samdihotel.vn official",
+    "geocode_query": "nominatim: 331 nguyen van linh"
+  },
+  "sandy beach non nuoc resort danang": {
+    "latitude": 15.9980738,
+    "longitude": 108.2698245,
+    "geocoded_address": "Sandy Beach Non Nuoc Resort, Đường Trường Sa, Phường Ngũ Hành Sơn, Thành phố Đà Nẵng, 50510, Việt Nam",
+    "geocode_query": "Web research: Sandy Beach Non Nuoc Resort Danang",
+    "geocode_source": "web research"
+  },
+  "silk river hoi an hotel spa": {
+    "latitude": 15.8765,
+    "longitude": 108.3217,
+    "geocoded_address": "222 Tran Hung Dao, Cam Pho, Hoi An, Quang Nam, Vietnam",
+    "geocode_source": "fun&sun/booking",
+    "geocode_query": "verified: silk river old town"
+  },
+  "sunrise premium resort spa hoi an": {
+    "latitude": 15.8895283,
+    "longitude": 108.3788268,
+    "geocoded_address": "Thon 1, Au Co, Cua Dai, Hoi An, Quang Nam, Vietnam",
+    "geocode_source": "photon",
+    "geocode_query": "photon: sunrise premium hoi an"
+  },
+  "the nature villas resort": {
+    "latitude": 16.09497,
+    "longitude": 108.14611,
+    "geocoded_address": "The Nature Villas and Resort, Lien Chieu, Da Nang, Vietnam",
+    "geocode_query": "Web research final: the nature villas resort",
+    "geocode_source": "geoapify/web research"
+  },
+  "victoria hoi an beach resort spa": {
+    "latitude": 15.895326,
+    "longitude": 108.369756,
+    "geocoded_address": "Au Co, Cua Dai Beach, Hoi An, Quang Nam, Vietnam",
+    "geocode_source": "official/booking",
+    "geocode_query": "verified: victoria hoi an"
+  },
+  "vinpearl da nang resort villas": {
+    "latitude": 16.0217,
+    "longitude": 108.2558,
+    "geocoded_address": "23 Truong Sa, Hoa Hai, Ngu Hanh Son, Da Nang, Vietnam",
+    "geocode_source": "vinpearl/official",
+    "geocode_query": "verified: vinpearl danang"
+  },
+  "wyndham danang golden bay": {
+    "latitude": 16.0980621,
+    "longitude": 108.2243797,
+    "geocoded_address": "Wyndham Danang Golden Bay Hotel, 01, Đường Lê Văn Duyệt, Phường Sơn Trà, Thành phố Đà Nẵng, 50207, Việt Nam",
+    "geocode_query": "Web research: Wyndham Danang Golden Bay",
+    "geocode_source": "web research"
+  },
+  "wyndham garden hoi an": {
+    "latitude": 15.8975,
+    "longitude": 108.3525,
+    "geocoded_address": "19 Lac Long Quan, Cam An, Hoi An, Quang Nam, Vietnam",
+    "geocode_source": "wyndham official",
+    "geocode_query": "verified: wyndham garden"
+  },
+  "centre point hotel and residence": {
+    "latitude": 16.0766799,
+    "longitude": 108.2174776,
+    "geocoded_address": "Centre Point Hotel and Residence, Đường Nguyễn Thị Minh Khai, Thanh Bình, Phường Hải Châu, Thành phố Đà Nẵng, 50207, Việt Nam",
+    "geocode_query": "Centre Point Hotel and Residence, Da Nang, Vietnam"
+  },
+  "fusion resort villas da nang": {
+    "latitude": 15.9724202,
+    "longitude": 108.2822877,
+    "geocoded_address": "Fusion Resort & Villas, Ocean Drive, Ngu Hanh Son, Da Nang, Vietnam",
+    "geocode_source": "nominatim",
+    "geocode_query": "verified: fusion resort danang"
+  },
+  "koi resort spa hoi an": {
+    "latitude": 15.8941233,
+    "longitude": 108.3685679,
+    "geocoded_address": "KOI Resort & Spa, Âu Cơ, Phường Hội An Đông, Thành phố Đà Nẵng, 51313, Việt Nam",
+    "geocode_query": "nominatim: Koi Resort & Spa Hoi An, Hoi An, Vietnam",
+    "geocode_source": "nominatim"
+  },
+  "peninsula hotel danang": {
+    "latitude": 16.0815678,
+    "longitude": 108.2470677,
+    "geocoded_address": "Peninsula, Đường Lê Bôi, Phường Sơn Trà, Thành phố Đà Nẵng, 50408, Việt Nam",
+    "geocode_query": "Peninsula Hotel Danang, Da Nang, Vietnam"
+  },
+  "shilla monogram danang": {
+    "latitude": 15.9634716,
+    "longitude": 108.2893823,
+    "geocoded_address": "Shilla Monogram, Đường Võ Nguyên Giáp, Phường Điện Bàn Đông, Thành phố Đà Nẵng, Việt Nam",
+    "geocode_query": "Shilla Monogram Danang, Da Nang, Vietnam"
+  },
+  "tia wellness resort": {
+    "latitude": 16.03117,
+    "longitude": 108.2551994,
+    "geocoded_address": "Tia Wellness Resort, Đường Võ Nguyên Giáp, Phường Ngũ Hành Sơn, Thành phố Đà Nẵng, 50507, Việt Nam",
+    "geocode_query": "TIA Wellness Resort, Da Nang, Vietnam"
+  },
+  "boutique hoi an resort": {
+    "latitude": 15.9035576,
+    "longitude": 108.3540871,
+    "geocoded_address": "Boutique Hội An Resort, Võ Nguyên Giáp, Trà Quế, Phường Hội An Tây, Thành phố Đà Nẵng, 51313, Việt Nam",
+    "geocode_query": "Boutique Hoi An Resort, Hoi An, Vietnam"
+  },
+  "four points by sheraton danang": {
+    "latitude": 16.0778724,
+    "longitude": 108.2451737,
+    "geocoded_address": "Four Points by Sheraton Danang, 118-120, Đường Võ Nguyên Giáp, Phường An Hải, Thành phố Đà Nẵng, 50408, Việt Nam",
+    "geocode_query": "Four Points by Sheraton Danang, Da Nang, Vietnam"
+  },
+  "new orient hotel danang": {
+    "latitude": 16.0825866,
+    "longitude": 108.2214313,
+    "geocoded_address": "New Orient Hotel, 20, Đường Đống Đa, Thanh Bình, Phường Hải Châu, Thành phố Đà Nẵng, 50207, Việt Nam",
+    "geocode_query": "New Orient Hotel Danang, Da Nang, Vietnam"
+  },
+  "wyndham soleil danang": {
+    "latitude": 16.0710756,
+    "longitude": 108.2436243,
+    "geocoded_address": "Wyndham Soleil Danang, Phường An Hải, Thành phố Đà Nẵng, Việt Nam",
+    "geocode_query": "Wyndham Soleil Danang, Da Nang, Vietnam"
+  },
+  "premier village danang resort managed by accor": {
+    "latitude": 16.0436238,
+    "longitude": 108.2496571,
+    "geocoded_address": "99 Vo Nguyen Giap, Ngu Hanh Son, Da Nang, Vietnam",
+    "geocode_source": "photon address",
+    "geocode_query": "photon: premier village 99 vng"
+  }
+}

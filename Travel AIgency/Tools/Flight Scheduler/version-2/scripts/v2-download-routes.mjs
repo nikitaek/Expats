@@ -34,13 +34,9 @@ if (args.routes) {
   routeBatches = batchRoutes(routes, policy.routesPerRequest || 15);
 }
 
-// FR24 has no scheduled/timetable endpoint. "upcoming" is sourced from live
-// flight-positions (aircraft airborne right now on our routes, each with an
-// ETA). "forecast" (days-ahead) cannot be produced from FR24 at all.
-if (dataKind === "forecast") {
+if (!["actual", "upcoming"].includes(dataKind)) {
   console.error(
-    "forecast is not available: FR24 exposes no scheduled/timetable endpoint. " +
-      "Use --data-kind upcoming for in-air arrivals, or actual for history.",
+    `Unknown --data-kind ${dataKind}. Use actual (history) or upcoming (live in-air snapshot).`,
   );
   process.exit(1);
 }

@@ -22,18 +22,7 @@ export function defaultPolicy() {
     minRequestDelayMs: 3500,
     actual: { enabled: true, yesterday: true, repairDays: 7 },
     upcoming: { enabled: true, hoursAhead: 72, cron: "0 */6 * * *" },
-    forecast: {
-      enabled: true,
-      startDaysAhead: 4,
-      endDaysAhead: 14,
-      cron: "0 5 * * *",
-    },
-    priorityOrder: [
-      "upcoming",
-      "actual_yesterday",
-      "actual_repair",
-      "forecast",
-    ],
+    priorityOrder: ["upcoming", "actual_yesterday", "actual_repair"],
     retry: { maxAttempts: 3, forceRequiresDebugFlag: true },
   };
 }

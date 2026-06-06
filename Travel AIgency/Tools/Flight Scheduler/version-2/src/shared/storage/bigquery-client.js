@@ -147,7 +147,7 @@ export async function queryFlightsCurrent({
 /**
  * Create dataset, tables, and flights_current view.
  */
-export async function setupBigQuery({ forecastExpiryDays = 21, upcomingExpiryDays = 7 } = {}) {
+export async function setupBigQuery({ upcomingExpiryDays = 7 } = {}) {
   const bq = getClient();
   const schema = await loadSchema();
 
@@ -157,16 +157,12 @@ export async function setupBigQuery({ forecastExpiryDays = 21, upcomingExpiryDay
     await dataset.create({ location: "US" });
   }
 
-  for (const tableId of ["flights_actual", "flights_upcoming", "flights_forecast"]) {
+  for (const tableId of ["flights_actual", "flights_upcoming"]) {
     const table = dataset.table(tableId);
     const [tableExists] = await table.exists();
     if (!tableExists) {
       const expiry =
-        tableId === "flights_forecast"
-          ? forecastExpiryDays
-          : tableId === "flights_upcoming"
-            ? upcomingExpiryDays
-            : null;
+        tableId === "flights_upcoming" ? upcomingExpiryDays : null;
 
       await table.create({
         schema,
@@ -185,15 +181,12 @@ export async function setupBigQuery({ forecastExpiryDays = 21, upcomingExpiryDay
     SELECT * EXCEPT(trust),
       CASE trust
         WHEN 1 THEN 'actual'
-        WHEN 2 THEN 'upcoming'
-        ELSE 'forecast'
+        ELSE 'upcoming'
       END AS data_kind
     FROM (
       SELECT *, 1 AS trust FROM ${fqTable("flights_actual")}
       UNION ALL
       SELECT *, 2 AS trust FROM ${fqTable("flights_upcoming")}
-      UNION ALL
-      SELECT *, 3 AS trust FROM ${fqTable("flights_forecast")}
     )
     QUALIFY ROW_NUMBER() OVER (
       PARTITION BY fr24_id
@@ -202,5 +195,5 @@ export async function setupBigQuery({ forecastExpiryDays = 21, upcomingExpiryDay
   `;
 
   await bq.query({ query: viewSql });
-  return { dataset: bqConfig.dataset, tables: 3, view: "flights_current" };
+  return { dataset: bqConfig.dataset, tables: 2, view: "flights_current" };
 }

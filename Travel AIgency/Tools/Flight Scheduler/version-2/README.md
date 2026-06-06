@@ -32,15 +32,19 @@ npm run v2:report -- --data-kind actual --date-from 2026-05-20 --date-to 2026-05
 
 ### Data kinds & FR24 source endpoints
 
-FR24 has **no scheduled/timetable endpoint** ("we do not provide flight scheduling information via our API"). Each `--data-kind` maps to a different FR24 source:
+FR24 has **no scheduled/timetable endpoint** for multi-day outlooks. The pipeline uses two `data_kind` values:
 
-| `--data-kind` | FR24 endpoint | Coverage | Notes |
-|---------------|---------------|----------|-------|
-| `actual` | `flight-summary/full` | history → today | Date range required (`date_from` ≤ today UTC); future chunks auto-skipped. |
-| `upcoming` | `live/flight-positions/full` | airborne **right now** | Snapshot, no date window. Each row carries an `eta` → `scheduledArrivalAt`. Raw stored under `raw/live/<capture-date>/`. Idempotent per capture day. |
-| `forecast` | — | days ahead | **Not available** — FR24 exposes no timetable; the command exits with an error. |
+| `data_kind` | FR24 endpoint | What it answers |
+|-------------|---------------|-----------------|
+| `actual` | `flight-summary/full` | **What already happened** — completed flights in a past date range (yesterday + rolling repair window in cron). |
+| `upcoming` | `live/flight-positions/full` (manual download) or `flight-summary/full` (cron window) | **What is in motion soon** — see below. |
 
-For a forward view, run `--data-kind upcoming` on a schedule (e.g. hourly) to accumulate in-air arrivals heading to Vietnam.
+**`upcoming` has two modes:**
+
+1. **Cron / `v2:daily`** — `flight-summary/full` over today through the next **72 hours** (`hoursAhead` in `scheduler-policy.json`). Finds flights FR24 already knows about in that near-term window (including ones that departed recently and have not landed yet).
+2. **Manual `v2:download-routes --data-kind upcoming`** — `live/flight-positions/full` snapshot of aircraft **airborne right now** on monitored routes, each with an ETA. Stored under `raw/live/<capture-date>/`. Run on a schedule (e.g. hourly) to build an operational “who is landing soon” picture.
+
+There is no separate forecast/timetable fetch — FR24 does not expose one on this API plan.
 
 Without `R2_ACCESS_KEY_ID` + `R2_SECRET_ACCESS_KEY`, objects are stored under `data/local-r2/`.
 

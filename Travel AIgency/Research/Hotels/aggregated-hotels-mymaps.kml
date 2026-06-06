@@ -1,0 +1,852 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+<name>Russian Tour Operator Hotels - Da Nang &amp; Hoi An</name>
+<description>Marker colors: green = cheap, red = expensive (price segment 1-10)</description>
+<Style id="price-1">
+<IconStyle>
+<color>ff205e1b</color>
+<scale>1.1</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon>
+</IconStyle>
+</Style>
+<Style id="price-2">
+<IconStyle>
+<color>ff327d2e</color>
+<scale>1.1</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon>
+</IconStyle>
+</Style>
+<Style id="price-3">
+<IconStyle>
+<color>ff47a043</color>
+<scale>1.1</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon>
+</IconStyle>
+</Style>
+<Style id="price-4">
+<IconStyle>
+<color>ff42b37c</color>
+<scale>1.1</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon>
+</IconStyle>
+</Style>
+<Style id="price-5">
+<IconStyle>
+<color>ff33cac0</color>
+<scale>1.1</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon>
+</IconStyle>
+</Style>
+<Style id="price-6">
+<IconStyle>
+<color>ff35d8fd</color>
+<scale>1.1</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon>
+</IconStyle>
+</Style>
+<Style id="price-7">
+<IconStyle>
+<color>ff008cfb</color>
+<scale>1.1</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon>
+</IconStyle>
+</Style>
+<Style id="price-8">
+<IconStyle>
+<color>ff1e51f4</color>
+<scale>1.1</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon>
+</IconStyle>
+</Style>
+<Style id="price-9">
+<IconStyle>
+<color>ff3539e5</color>
+<scale>1.1</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon>
+</IconStyle>
+</Style>
+<Style id="price-10">
+<IconStyle>
+<color>ff1c1cb7</color>
+<scale>1.1</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon>
+</IconStyle>
+</Style>
+<Style id="price-unknown">
+<IconStyle>
+<color>ff9e9e9e</color>
+<scale>1.0</scale>
+<Icon><href>http://maps.google.com/mapfiles/kml/paddle/wht-blank.png</href></Icon>
+</IconStyle>
+</Style>
+<Placemark>
+<name>Palm Garden Beach Resort &amp; Spa Hoi An</name>
+<description>City: Hoi An\nPrice tier: 7 - Upscale\nPrice segment: 7/10\nStars: 5\nOperators (11): ANEX, Art Tour, BG, Coral, FUN&amp;SUN, PACS, Pegas, PSG, R-Express, Sunmar, TEZ</description>
+<styleUrl>#price-7</styleUrl>
+<Point>
+<coordinates>108.3640426,15.8976157,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Sheraton Grand Danang Resort</name>
+<description>City: Da Nang\nPrice tier: 8 - Premium\nPrice segment: 8/10\nStars: 5\nOperators (10): ANEX, Art Tour, Coral, FUN&amp;SUN, PACS, Pegas, PSG, R-Express, Sunmar, TEZ</description>
+<styleUrl>#price-8</styleUrl>
+<Point>
+<coordinates>108.2789535,15.9814271,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Furama Resort Danang</name>
+<description>City: Da Nang\nPrice tier: 8 - Premium\nPrice segment: 8/10\nStars: 5\nOperators (9): ANEX, Coral, FUN&amp;SUN, PACS, Pegas, Planeta Travel, R-Express, Sunmar, TEZ</description>
+<styleUrl>#price-8</styleUrl>
+<Point>
+<coordinates>108.2513386,16.0397489,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Hoi An Beach Resort</name>
+<description>City: Hoi An\nPrice tier: 6 - Upper mid-range\nPrice segment: 6/10\nStars: 4\nOperators (9): ANEX, Coral, FUN&amp;SUN, PACS, Pegas, Planeta Travel, R-Express, Sunmar, TEZ</description>
+<styleUrl>#price-6</styleUrl>
+<Point>
+<coordinates>108.3672024,15.8964889,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Hyatt Regency Danang Resort &amp; Spa</name>
+<description>City: Da Nang\nPrice tier: 9 - Luxury\nPrice segment: 9/10\nStars: 5\nOperators (9): ANEX, Coral, FUN&amp;SUN, ICS, PACS, Pegas, R-Express, Sunmar, TEZ</description>
+<styleUrl>#price-9</styleUrl>
+<Point>
+<coordinates>108.263611,16.0125,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Pullman Danang Beach Resort</name>
+<description>City: Da Nang\nPrice tier: 7 - Upscale\nPrice segment: 7/10\nStars: 5\nOperators (9): ANEX, Coral, FUN&amp;SUN, Pegas, Planeta Travel, PSG, Space Travel, Sunmar, TEZ</description>
+<styleUrl>#price-7</styleUrl>
+<Point>
+<coordinates>108.25012,16.04058,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Muong Thanh Luxury Da Nang Hotel</name>
+<description>City: Da Nang\nPrice tier: 5 - Mid-range\nPrice segment: 5/10\nStars: 4\nOperators (8): ANEX, BG, Coral, FUN&amp;SUN, PACS, Pegas, Sunmar, TEZ</description>
+<styleUrl>#price-5</styleUrl>
+<Point>
+<coordinates>108.24746,16.053936,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>New World Hoiana Beach &amp; Resort</name>
+<description>City: Hoiana\nPrice tier: 7 - Upscale\nPrice segment: 7/10\nStars: 5\nOperators (8): ANEX, Coral, FUN&amp;SUN, Pegas, PSG, R-Express, Sunmar, TEZ</description>
+<styleUrl>#price-7</styleUrl>
+<Point>
+<coordinates>108.404568,15.821574,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Radisson Hotel Danang</name>
+<description>City: Da Nang\nPrice tier: 7 - Upscale\nPrice segment: 7/10\nStars: 5\nOperators (8): ANEX, Art Tour, Coral, FUN&amp;SUN, ICS, Pegas, Sunmar, TEZ</description>
+<styleUrl>#price-7</styleUrl>
+<Point>
+<coordinates>108.2446681,16.0738839,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Vinpearl Resort &amp; Golf Nam Hoi An</name>
+<description>City: Hoiana / Nam Hoi An\nPrice tier: 8 - Premium\nPrice segment: 8/10\nStars: 5\nOperators (8): ANEX, Coral, FUN&amp;SUN, Pegas, PSG, R-Express, Sunmar, TEZ</description>
+<styleUrl>#price-8</styleUrl>
+<Point>
+<coordinates>108.412104,15.793379,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Wyndham Hoi An Royal Beachfront Resort &amp; Villas</name>
+<description>City: Hoiana\nPrice tier: 6 - Upper mid-range\nPrice segment: 6/10\nStars: 5\nOperators (8): ANEX, Coral, FUN&amp;SUN, Pegas, PSG, R-Express, Sunmar, TEZ</description>
+<styleUrl>#price-6</styleUrl>
+<Point>
+<coordinates>108.403,15.82,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Anantara Hoi An Resort</name>
+<description>City: Hoi An\nPrice tier: 9 - Luxury\nPrice segment: 9/10\nStars: 4\nOperators (7): ANEX, Coral, FUN&amp;SUN, PACS, Pegas, Space Travel, TEZ</description>
+<styleUrl>#price-9</styleUrl>
+<Point>
+<coordinates>108.33699,15.87706,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Holiday Beach Danang Hotel &amp; Spa</name>
+<description>City: Da Nang\nPrice tier: 4 - Value\nPrice segment: 4/10\nStars: 4\nOperators (7): ANEX, BG, Coral, FUN&amp;SUN, Pegas, Sunmar, TEZ</description>
+<styleUrl>#price-4</styleUrl>
+<Point>
+<coordinates>108.2488,16.0485,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>TMS Hotel Da Nang Beach</name>
+<description>City: Da Nang\nPrice tier: 6 - Upper mid-range\nPrice segment: 6/10\nStars: 4\nOperators (7): ANEX, Coral, FUN&amp;SUN, Pegas, PSG, Sunmar, TEZ</description>
+<styleUrl>#price-6</styleUrl>
+<Point>
+<coordinates>108.2480701,16.051152,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Four Seasons Resort The Nam Hai</name>
+<description>City: Ha My / Dien Duong\nPrice tier: 9 - Luxury\nPrice segment: 9/10\nStars: 5\nOperators (6): ANEX, Art Tour, BG, ICS, R-Express, TEZ</description>
+<styleUrl>#price-9</styleUrl>
+<Point>
+<coordinates>108.345833,15.872039,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>InterContinental Danang Sun Peninsula Resort</name>
+<description>City: Da Nang\nPrice tier: 10 - Ultra luxury\nPrice segment: 10/10\nStars: 5\nOperators (5): ANEX, Coral, PACS, Pegas, PSG</description>
+<styleUrl>#price-10</styleUrl>
+<Point>
+<coordinates>108.3061358,16.1210876,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Maximilan Danang Beach Hotel</name>
+<description>City: Da Nang\nPrice tier: 5 - Mid-range\nPrice segment: 5/10\nStars: 4\nOperators (5): ANEX, BG, PACS, Pegas, PSG</description>
+<styleUrl>#price-5</styleUrl>
+<Point>
+<coordinates>108.2482,16.0455,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Premier Village Danang Resort Managed by Accor</name>
+<description>City: Da Nang\nPrice tier: 9 - Luxury\nPrice segment: 9/10\nStars: 5\nOperators (5): BG, Coral, ICS, Pegas, R-Express</description>
+<styleUrl>#price-9</styleUrl>
+<Point>
+<coordinates>108.2496571,16.0436238,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Bliss Hoi An Beach Resort &amp; Wellness</name>
+<description>City: Hoi An\nPrice tier: 8 - Premium\nPrice segment: 8/10\nStars: 5\nOperators (4): ANEX, FUN&amp;SUN, PSG, Space Travel</description>
+<styleUrl>#price-8</styleUrl>
+<Point>
+<coordinates>108.4294673,15.778785,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Danang Marriott Resort &amp; Spa</name>
+<description>City: Da Nang\nPrice tier: 8 - Premium\nPrice segment: 8/10\nStars: 5\nOperators (4): ANEX, Art Tour, PSG, R-Express</description>
+<styleUrl>#price-8</styleUrl>
+<Point>
+<coordinates>108.266296,16.0073852,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>DLG Hotel Danang</name>
+<description>City: Da Nang\nPrice tier: 6 - Upper mid-range\nPrice segment: 6/10\nStars: 5\nOperators (4): ANEX, FUN&amp;SUN, ICS, R-Express</description>
+<styleUrl>#price-6</styleUrl>
+<Point>
+<coordinates>108.2461526,16.0579365,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Hoiana Residences</name>
+<description>City: Hoiana\nPrice tier: 7 - Upscale\nPrice segment: 7/10\nStars: 5\nOperators (4): ANEX, Pegas, PSG, R-Express</description>
+<styleUrl>#price-7</styleUrl>
+<Point>
+<coordinates>108.404568,15.821574,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Koi Resort &amp; Residence Da Nang</name>
+<description>City: Da Nang\nPrice tier: 6 - Upper mid-range\nPrice segment: 6/10\nStars: 5\nOperators (4): ANEX, BG, PACS, PSG</description>
+<styleUrl>#price-6</styleUrl>
+<Point>
+<coordinates>108.268918,16.004841,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>M Hotel Danang</name>
+<description>City: Da Nang\nPrice tier: 6 - Upper mid-range\nPrice segment: 6/10\nStars: 5\nOperators (4): ANEX, FUN&amp;SUN, Pegas, R-Express</description>
+<styleUrl>#price-6</styleUrl>
+<Point>
+<coordinates>108.2479104,16.0517939,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Mandila Beach Hotel</name>
+<description>City: Da Nang\nPrice tier: 4 - Value\nPrice segment: 4/10\nStars: 4\nOperators (4): ANEX, BG, PACS, PSG</description>
+<styleUrl>#price-4</styleUrl>
+<Point>
+<coordinates>108.2449031,16.0674704,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Minh Toan Safi Ocean Hotel</name>
+<description>City: Da Nang\nPrice tier: 3 - Cheap\nPrice segment: 3/10\nStars: 4\nOperators (4): ANEX, BG, PACS, PSG</description>
+<styleUrl>#price-3</styleUrl>
+<Point>
+<coordinates>108.244862,16.0670601,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Non Nuoc Beach Villas</name>
+<description>City: Da Nang\nPrice tier: 9 - Luxury\nPrice segment: 9/10\nStars: 5\nOperators (4): ANEX, Art Tour, PSG, R-Express</description>
+<styleUrl>#price-9</styleUrl>
+<Point>
+<coordinates>108.2702536,15.9938706,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Victoria Hoi An Beach Resort &amp; Spa</name>
+<description>City: Hoi An\nPrice tier: 7 - Upscale\nPrice segment: 7/10\nStars: 5\nOperators (4): ANEX, BG, PACS, PSG</description>
+<styleUrl>#price-7</styleUrl>
+<Point>
+<coordinates>108.369756,15.895326,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Wyndham Garden Hoi An</name>
+<description>City: Hoi An\nPrice tier: 5 - Mid-range\nPrice segment: 5/10\nStars: 4\nOperators (4): ANEX, BG, PACS, PSG</description>
+<styleUrl>#price-5</styleUrl>
+<Point>
+<coordinates>108.3525,15.8975,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>A La Carte Danang Beach</name>
+<description>City: Da Nang\nPrice tier: 7 - Upscale\nPrice segment: 7/10\nStars: 5\nOperators (3): ANEX, PSG, R-Express</description>
+<styleUrl>#price-7</styleUrl>
+<Point>
+<coordinates>108.2446388,16.0687157,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Angel Hotel</name>
+<description>City: Da Nang\nPrice tier: 1 - Budget\nPrice segment: 1/10\nStars: 3\nOperators (3): FUN&amp;SUN, ICS, PSG</description>
+<styleUrl>#price-1</styleUrl>
+<Point>
+<coordinates>108.2481857,16.0486026,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Avatar Da Nang Hotel</name>
+<description>City: Da Nang\nPrice tier: 2 - Very cheap\nPrice segment: 2/10\nStars: 4\nOperators (3): FUN&amp;SUN, ICS, PSG</description>
+<styleUrl>#price-2</styleUrl>
+<Point>
+<coordinates>108.248,16.052,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Blue Ocean 2 Hotel</name>
+<description>City: Da Nang\nPrice tier: 1 - Budget\nPrice segment: 1/10\nStars: 3\nOperators (3): FUN&amp;SUN, ICS, PSG</description>
+<styleUrl>#price-1</styleUrl>
+<Point>
+<coordinates>108.245,16.052,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>King's Finger Hotel</name>
+<description>City: Da Nang\nPrice tier: 1 - Budget\nPrice segment: 1/10\nStars: 3\nOperators (3): FUN&amp;SUN, ICS, PSG</description>
+<styleUrl>#price-1</styleUrl>
+<Point>
+<coordinates>108.242,16.055,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Renaissance Hoi An Resort &amp; Spa</name>
+<description>City: Hoi An\nPrice tier: 7 - Upscale\nPrice segment: 7/10\nStars: 5\nOperators (3): Art Tour, PSG, R-Express</description>
+<styleUrl>#price-7</styleUrl>
+<Point>
+<coordinates>108.388611,15.880556,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Belle Maison Parosand Danang</name>
+<description>City: Da Nang\nPrice tier: 3 - Cheap\nPrice segment: 3/10\nStars: 4\nOperators (2): Coral, Pegas</description>
+<styleUrl>#price-3</styleUrl>
+<Point>
+<coordinates>108.2448548,16.0674697,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Fivitel Hoi An Hotel</name>
+<description>City: Hoi An\nPrice tier: 4 - Value\nPrice segment: 4/10\nStars: 4\nOperators (2): ANEX, PSG</description>
+<styleUrl>#price-4</styleUrl>
+<Point>
+<coordinates>108.335,15.879,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Four Seasons Nam Hai</name>
+<description>City: Hoi An\nPrice tier: 10 - Ultra luxury\nPrice segment: 10/10\nStars: 4\nOperators (2): ANEX, TEZ</description>
+<styleUrl>#price-10</styleUrl>
+<Point>
+<coordinates>108.345833,15.872039,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Naman Retreat</name>
+<description>City: Hoi An\nPrice tier: 8 - Premium\nPrice segment: 8/10\nStars: 5\nOperators (2): KOMPAS, Pegas</description>
+<styleUrl>#price-8</styleUrl>
+<Point>
+<coordinates>108.2847535,15.96915,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Serene Nature Boutique Resort &amp; Spa</name>
+<description>City: Hoi An\nPrice tier: 6 - Upper mid-range\nPrice segment: 6/10\nStars: 4\nOperators (2): ANEX, R-Express</description>
+<styleUrl>#price-6</styleUrl>
+<Point>
+<coordinates>108.32,15.865,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Wyndham Danang Golden Bay</name>
+<description>City: Da Nang\nPrice tier: 5 - Mid-range\nPrice segment: 5/10\nStars: 5\nOperators (2): ANEX, Pegas</description>
+<styleUrl>#price-5</styleUrl>
+<Point>
+<coordinates>108.2243797,16.0980621,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Ancient House Resort Hoi An</name>
+<description>City: Hoi An\nPrice tier: 5 - Mid-range\nPrice segment: 5/10\nStars: 4\nOperators (1): FUN&amp;SUN</description>
+<styleUrl>#price-5</styleUrl>
+<Point>
+<coordinates>108.3428569,15.8802989,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Bamboo Green Central Hotel</name>
+<description>City: Da Nang\nPrice tier: 1 - Budget\nPrice segment: 1/10\nStars: 3\nOperators (1): TEZ</description>
+<styleUrl>#price-1</styleUrl>
+<Point>
+<coordinates>108.21978,16.06345,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Beautiful Beach Hotel</name>
+<description>City: Da Nang\nPrice tier: 3 - Cheap\nPrice segment: 3/10\nStars: 3\nOperators (1): TEZ</description>
+<styleUrl>#price-3</styleUrl>
+<Point>
+<coordinates>108.245,16.062,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Bellerive Hoi An Resort &amp; Spa</name>
+<description>City: Hoi An\nPrice tier: 7 - Upscale\nPrice segment: 7/10\nStars: 5\nOperators (1): FUN&amp;SUN</description>
+<styleUrl>#price-7</styleUrl>
+<Point>
+<coordinates>108.375666,15.888542,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Centara Sandy Beach Resort Danang</name>
+<description>City: Da Nang\nPrice tier: 7 - Upscale\nPrice segment: 7/10\nStars: 4\nOperators (1): TEZ</description>
+<styleUrl>#price-7</styleUrl>
+<Point>
+<coordinates>108.27111,15.99683,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Centre Point Hotel and Residence</name>
+<description>City: Da Nang\nPrice tier: 5 - Mid-range\nPrice segment: 5/10\nStars: 5\nOperators (1): ANEX</description>
+<styleUrl>#price-5</styleUrl>
+<Point>
+<coordinates>108.2174776,16.0766799,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Century Hotel Da Nang</name>
+<description>City: Da Nang\nPrice tier: 4 - Value\nPrice segment: 4/10\nStars: 4\nOperators (1): ANEX</description>
+<styleUrl>#price-4</styleUrl>
+<Point>
+<coordinates>108.2418096,16.0626108,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Chicland Danang Beach Hotel</name>
+<description>City: Da Nang\nPrice tier: 7 - Upscale\nPrice segment: 7/10\nStars: 4\nOperators (1): Pegas</description>
+<styleUrl>#price-7</styleUrl>
+<Point>
+<coordinates>108.2486,16.04979,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Diamond Sea Hotel</name>
+<description>City: Da Nang\nPrice tier: 6 - Upper mid-range\nPrice segment: 6/10\nStars: 4\nOperators (1): ANEX</description>
+<styleUrl>#price-6</styleUrl>
+<Point>
+<coordinates>108.2448813,16.0665111,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Dylan Hotel Da Nang</name>
+<description>City: Da Nang\nPrice tier: 3 - Cheap\nPrice segment: 3/10\nStars: 3\nOperators (1): TEZ</description>
+<styleUrl>#price-3</styleUrl>
+<Point>
+<coordinates>108.144566,16.093698,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Fansipan Da Nang Hotel</name>
+<description>City: Da Nang\nPrice tier: 1 - Budget\nPrice segment: 1/10\nStars: 3\nOperators (1): TEZ</description>
+<styleUrl>#price-1</styleUrl>
+<Point>
+<coordinates>108.2483774,16.0415643,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Furama Villas Danang</name>
+<description>City: Da Nang\nPrice tier: 9 - Luxury\nPrice segment: 9/10\nStars: 5\nOperators (1): China Travel</description>
+<styleUrl>#price-9</styleUrl>
+<Point>
+<coordinates>108.252374,16.036257,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Fusion Resort &amp; Villas Da Nang</name>
+<description>City: Da Nang\nPrice tier: 7 - Upscale\nPrice segment: 7/10\nStars: 5\nOperators (1): ANEX</description>
+<styleUrl>#price-7</styleUrl>
+<Point>
+<coordinates>108.2822877,15.9724202,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Golden Sand Resort &amp; Spa</name>
+<description>City: Hoi An\nPrice tier: 4 - Value\nPrice segment: 4/10\nStars: 5\nOperators (1): TEZ</description>
+<styleUrl>#price-4</styleUrl>
+<Point>
+<coordinates>108.352,15.905,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Grand Mercure Danang</name>
+<description>City: Da Nang\nPrice tier: 6 - Upper mid-range\nPrice segment: 6/10\nStars: 5\nOperators (1): China Travel</description>
+<styleUrl>#price-6</styleUrl>
+<Point>
+<coordinates>108.3285347,15.9202798,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Grandvrio Ocean Resort Danang</name>
+<description>City: Da Nang\nPrice tier: 5 - Mid-range\nPrice segment: 5/10\nStars: 5\nOperators (1): ANEX</description>
+<styleUrl>#price-5</styleUrl>
+<Point>
+<coordinates>108.3414,15.9062,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Green Heaven Resort &amp; Spa</name>
+<description>City: Hoi An\nPrice tier: 2 - Very cheap\nPrice segment: 2/10\nStars: 4\nOperators (1): TEZ</description>
+<styleUrl>#price-2</styleUrl>
+<Point>
+<coordinates>108.34,15.868,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Green Hotel Danang</name>
+<description>City: Da Nang\nPrice tier: 4 - Value\nPrice segment: 4/10\nStars: 3\nOperators (1): TEZ</description>
+<styleUrl>#price-4</styleUrl>
+<Point>
+<coordinates>108.2236979,16.0634262,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Hoi An Field Villa &amp; Spa</name>
+<description>City: Hoi An\nPrice tier: 1 - Budget\nPrice segment: 1/10\nStars: 3\nOperators (1): R-Express</description>
+<styleUrl>#price-1</styleUrl>
+<Point>
+<coordinates>108.35,15.88,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Hoi An Memories Land</name>
+<description>City: Hoi An\nPrice tier: 7 - Upscale\nPrice segment: 7/10\nStars: 5\nOperators (1): ANEX</description>
+<styleUrl>#price-7</styleUrl>
+<Point>
+<coordinates>108.3398096,15.8751381,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Hoi An Odyssey Hotel</name>
+<description>City: Hoi An\nPrice tier: 4 - Value\nPrice segment: 4/10\nStars: 4\nOperators (1): FUN&amp;SUN</description>
+<styleUrl>#price-4</styleUrl>
+<Point>
+<coordinates>108.3299675,15.8719982,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Hoi An Rose Garden Hotel</name>
+<description>City: Hoi An\nPrice tier: 1 - Budget\nPrice segment: 1/10\nStars: 3\nOperators (1): R-Express</description>
+<styleUrl>#price-1</styleUrl>
+<Point>
+<coordinates>108.3428569,15.8802989,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Hotel Royal Hoi An - MGallery</name>
+<description>City: Hoi An\nPrice tier: 8 - Premium\nPrice segment: 8/10\nStars: 5\nOperators (1): R-Express</description>
+<styleUrl>#price-8</styleUrl>
+<Point>
+<coordinates>108.3199,15.8766,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Hyatt Regency Danang</name>
+<description>City: Da Nang\nPrice tier: 7 - Upscale\nPrice segment: 7/10\nStars: 5\nOperators (1): China Travel</description>
+<styleUrl>#price-7</styleUrl>
+<Point>
+<coordinates>108.2637747,16.0125892,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Indochine Hoi An Hotel</name>
+<description>City: Hoi An\nPrice tier: 3 - Cheap\nPrice segment: 3/10\nStars: 3\nOperators (1): TEZ</description>
+<styleUrl>#price-3</styleUrl>
+<Point>
+<coordinates>108.336,15.875,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Kay Hotel</name>
+<description>City: Da Nang\nPrice tier: 1 - Budget\nPrice segment: 1/10\nStars: 3\nOperators (1): TEZ</description>
+<styleUrl>#price-1</styleUrl>
+<Point>
+<coordinates>108.2192072,16.0651724,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Koi Resort &amp; Spa Hoi An</name>
+<description>City: Hoi An\nPrice tier: 5 - Mid-range\nPrice segment: 5/10\nStars: 5\nOperators (1): TEZ</description>
+<styleUrl>#price-5</styleUrl>
+<Point>
+<coordinates>108.3685679,15.8941233,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>La Charm Hoi An Hotel &amp; Spa</name>
+<description>City: Hoi An\nPrice tier: 5 - Mid-range\nPrice segment: 5/10\nStars: 4\nOperators (1): FUN&amp;SUN</description>
+<styleUrl>#price-5</styleUrl>
+<Point>
+<coordinates>108.3201341,15.8771622,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Laluna Riverside Hoi An</name>
+<description>City: Hoi An\nPrice tier: 5 - Mid-range\nPrice segment: 5/10\nStars: 4\nOperators (1): FUN&amp;SUN</description>
+<styleUrl>#price-5</styleUrl>
+<Point>
+<coordinates>108.3216752,15.8764762,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Lion Sea Hotel</name>
+<description>City: Da Nang\nPrice tier: 1 - Budget\nPrice segment: 1/10\nStars: 3\nOperators (1): TEZ</description>
+<styleUrl>#price-1</styleUrl>
+<Point>
+<coordinates>108.243,16.052,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Melia Danang Beach Resort</name>
+<description>City: Da Nang\nPrice tier: 7 - Upscale\nPrice segment: 7/10\nStars: 5\nOperators (1): Pegas</description>
+<styleUrl>#price-7</styleUrl>
+<Point>
+<coordinates>108.2691135,16.0010848,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Namia River Retreat</name>
+<description>City: Hoi An\nPrice tier: 9 - Luxury\nPrice segment: 9/10\nStars: 5\nOperators (1): ANEX</description>
+<styleUrl>#price-9</styleUrl>
+<Point>
+<coordinates>108.3520378,15.8740909,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Nesta Hoian Resort and Spa</name>
+<description>City: Hoi An\nPrice tier: 5 - Mid-range\nPrice segment: 5/10\nStars: 5\nOperators (1): ANEX</description>
+<styleUrl>#price-5</styleUrl>
+<Point>
+<coordinates>108.33,15.865,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Orange Hotel</name>
+<description>City: Da Nang\nPrice tier: 3 - Cheap\nPrice segment: 3/10\nStars: 3\nOperators (1): TEZ</description>
+<styleUrl>#price-3</styleUrl>
+<Point>
+<coordinates>108.21933,16.06517,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Palm Garden Beach Resort &amp; Spa</name>
+<description>City: Hoi An\nPrice tier: 8 - Premium\nPrice segment: 8/10\nStars: 5\nOperators (1): TEZ</description>
+<styleUrl>#price-8</styleUrl>
+<Point>
+<coordinates>108.3640426,15.8976157,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Peninsula Hotel Danang</name>
+<description>City: Da Nang\nPrice tier: 6 - Upper mid-range\nPrice segment: 6/10\nStars: 5\nOperators (1): ANEX</description>
+<styleUrl>#price-6</styleUrl>
+<Point>
+<coordinates>108.2470677,16.0815678,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Phuc Long Luxury Hotel Danang</name>
+<description>City: Da Nang\nPrice tier: 8 - Premium\nPrice segment: 8/10\nStars: 4\nOperators (1): TEZ</description>
+<styleUrl>#price-8</styleUrl>
+<Point>
+<coordinates>108.246,16.045,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Pulchra Resort Danang</name>
+<description>City: Da Nang\nPrice tier: 8 - Premium\nPrice segment: 8/10\nStars: 5\nOperators (1): China Travel</description>
+<styleUrl>#price-8</styleUrl>
+<Point>
+<coordinates>108.2742601,15.9889721,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>River Suites Hoi An</name>
+<description>City: Hoi An\nPrice tier: 2 - Very cheap\nPrice segment: 2/10\nStars: 4\nOperators (1): TEZ</description>
+<styleUrl>#price-2</styleUrl>
+<Point>
+<coordinates>108.3225638,15.8766425,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>RiverTown Hoi An Resort &amp; Spa</name>
+<description>City: Hoi An\nPrice tier: 5 - Mid-range\nPrice segment: 5/10\nStars: 4\nOperators (1): FUN&amp;SUN</description>
+<styleUrl>#price-5</styleUrl>
+<Point>
+<coordinates>108.368,15.888,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Royal Lotus Hotel Danang</name>
+<description>City: Da Nang\nPrice tier: 5 - Mid-range\nPrice segment: 5/10\nStars: 4\nOperators (1): ANEX</description>
+<styleUrl>#price-5</styleUrl>
+<Point>
+<coordinates>108.2434155,16.0546393,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Royal Riverside Hoi An Hotel</name>
+<description>City: Hoi An\nPrice tier: 2 - Very cheap\nPrice segment: 2/10\nStars: 4\nOperators (1): TEZ</description>
+<styleUrl>#price-2</styleUrl>
+<Point>
+<coordinates>108.335,15.878,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Sabina Hotel &amp; Apartment</name>
+<description>City: Da Nang\nPrice tier: 3 - Cheap\nPrice segment: 3/10\nStars: 3\nOperators (1): TEZ</description>
+<styleUrl>#price-3</styleUrl>
+<Point>
+<coordinates>108.2423129,16.0687168,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Samdi Hotel</name>
+<description>City: Da Nang\nPrice tier: 3 - Cheap\nPrice segment: 3/10\nStars: 4\nOperators (1): TEZ</description>
+<styleUrl>#price-3</styleUrl>
+<Point>
+<coordinates>108.210489,16.0598789,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Sandy Beach Non Nuoc Resort Danang</name>
+<description>City: Da Nang\nPrice tier: 5 - Mid-range\nPrice segment: 5/10\nStars: 4\nOperators (1): Pegas</description>
+<styleUrl>#price-5</styleUrl>
+<Point>
+<coordinates>108.2698245,15.9980738,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Shilla Monogram Danang</name>
+<description>City: Da Nang\nPrice tier: 8 - Premium\nPrice segment: 8/10\nStars: 5\nOperators (1): ANEX</description>
+<styleUrl>#price-8</styleUrl>
+<Point>
+<coordinates>108.2893823,15.9634716,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Silk River Hoi An Hotel &amp; Spa</name>
+<description>City: Hoi An\nPrice tier: 5 - Mid-range\nPrice segment: 5/10\nStars: 4\nOperators (1): FUN&amp;SUN</description>
+<styleUrl>#price-5</styleUrl>
+<Point>
+<coordinates>108.3217,15.8765,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Sunrise Premium Resort &amp; Spa Hoi An</name>
+<description>City: Hoi An\nPrice tier: 5 - Mid-range\nPrice segment: 5/10\nStars: 5\nOperators (1): TEZ</description>
+<styleUrl>#price-5</styleUrl>
+<Point>
+<coordinates>108.3788268,15.8895283,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>The Nature Villas &amp; Resort</name>
+<description>City: Da Nang\nPrice tier: 3 - Cheap\nPrice segment: 3/10\nStars: 3\nOperators (1): TEZ</description>
+<styleUrl>#price-3</styleUrl>
+<Point>
+<coordinates>108.14611,16.09497,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>TIA Wellness Resort</name>
+<description>City: Da Nang\nPrice tier: 9 - Luxury\nPrice segment: 9/10\nStars: 5\nOperators (1): PSG</description>
+<styleUrl>#price-9</styleUrl>
+<Point>
+<coordinates>108.2551994,16.03117,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Vinpearl Da Nang Resort &amp; Villas</name>
+<description>City: Da Nang\nPrice tier: 8 - Premium\nPrice segment: 8/10\nStars: 5\nOperators (1): China Travel</description>
+<styleUrl>#price-8</styleUrl>
+<Point>
+<coordinates>108.2558,16.0217,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Boutique Hoi An Resort</name>
+<description>City: Hoi An\nPrice tier: 6 - Upper mid-range\nPrice segment: 6/10\nStars: 4\nOperators (0): n/a</description>
+<styleUrl>#price-6</styleUrl>
+<Point>
+<coordinates>108.3540871,15.9035576,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Four Points by Sheraton Danang</name>
+<description>City: Da Nang\nPrice tier: 6 - Upper mid-range\nPrice segment: 6/10\nStars: 5\nOperators (0): n/a</description>
+<styleUrl>#price-6</styleUrl>
+<Point>
+<coordinates>108.2451737,16.0778724,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>New Orient Hotel Danang</name>
+<description>City: Da Nang\nPrice tier: 4 - Value\nPrice segment: 4/10\nStars: 4\nOperators (0): n/a</description>
+<styleUrl>#price-4</styleUrl>
+<Point>
+<coordinates>108.2214313,16.0825866,0</coordinates>
+</Point>
+</Placemark>
+<Placemark>
+<name>Wyndham Soleil Danang</name>
+<description>City: Da Nang\nPrice tier: 6 - Upper mid-range\nPrice segment: 6/10\nStars: 5\nOperators (0): n/a</description>
+<styleUrl>#price-6</styleUrl>
+<Point>
+<coordinates>108.2436243,16.0710756,0</coordinates>
+</Point>
+</Placemark>
+</Document>
+</kml>

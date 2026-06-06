@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-05T03:23:57.556Z",
+  "generatedAt": "2026-06-06T11:23:44.317Z",
   "dateFrom": "2026-05-07",
   "dateTo": "2026-06-05",
   "planDataFrom": "2026-05-07",
@@ -9,76 +9,76 @@
     "disclaimer": "Estimated capacity, not actual load factor. Same aircraft type uses fleet-average seats; duplicates removed by fr24_id."
   },
   "totals": {
-    "flightsRaw": 421,
-    "flightsUnique": 311,
-    "duplicatesRemoved": 110,
-    "paxEstTotal": 78121,
-    "avgPaxPerFlight": 251
+    "flightsRaw": 466,
+    "flightsUnique": 316,
+    "duplicatesRemoved": 150,
+    "paxEstTotal": 79531,
+    "avgPaxPerFlight": 252
   },
   "enabledRoutes": 28,
-  "canonicalFiles": 39,
+  "canonicalFiles": 44,
   "routesWithFlights": [
     {
       "route": "SVO-CXR",
       "flights": 43,
       "paxEst": 13825,
       "avgPaxPerFlight": 322,
-      "sharePct": 17.7
+      "sharePct": 17.4
     },
     {
       "route": "ALA-CXR",
       "flights": 52,
       "paxEst": 9334,
       "avgPaxPerFlight": 180,
-      "sharePct": 11.9
+      "sharePct": 11.7
     },
     {
       "route": "OVB-CXR",
-      "flights": 23,
-      "paxEst": 7050,
-      "avgPaxPerFlight": 307,
-      "sharePct": 9
+      "flights": 24,
+      "paxEst": 7350,
+      "avgPaxPerFlight": 306,
+      "sharePct": 9.2
     },
     {
       "route": "TAS-CXR",
-      "flights": 31,
-      "paxEst": 6880,
+      "flights": 32,
+      "paxEst": 7100,
       "avgPaxPerFlight": 222,
-      "sharePct": 8.8
+      "sharePct": 8.9
     },
     {
       "route": "NQZ-CXR",
       "flights": 27,
       "paxEst": 5894,
       "avgPaxPerFlight": 218,
-      "sharePct": 7.5
+      "sharePct": 7.4
     },
     {
       "route": "KJA-CXR",
       "flights": 15,
       "paxEst": 4650,
       "avgPaxPerFlight": 310,
-      "sharePct": 6
+      "sharePct": 5.8
     },
     {
       "route": "NQZ-DAD",
       "flights": 13,
       "paxEst": 3220,
       "avgPaxPerFlight": 248,
-      "sharePct": 4.1
+      "sharePct": 4
+    },
+    {
+      "route": "SVO-HAN",
+      "flights": 10,
+      "paxEst": 2900,
+      "avgPaxPerFlight": 290,
+      "sharePct": 3.6
     },
     {
       "route": "ALA-DAD",
       "flights": 13,
       "paxEst": 2624,
       "avgPaxPerFlight": 202,
-      "sharePct": 3.4
-    },
-    {
-      "route": "SVO-HAN",
-      "flights": 9,
-      "paxEst": 2610,
-      "avgPaxPerFlight": 290,
       "sharePct": 3.3
     },
     {
@@ -86,7 +86,7 @@
       "flights": 10,
       "paxEst": 2500,
       "avgPaxPerFlight": 250,
-      "sharePct": 3.2
+      "sharePct": 3.1
     },
     {
       "route": "DME-CXR",
@@ -97,10 +97,10 @@
     },
     {
       "route": "VVO-CXR",
-      "flights": 7,
-      "paxEst": 2100,
+      "flights": 8,
+      "paxEst": 2400,
       "avgPaxPerFlight": 300,
-      "sharePct": 2.7
+      "sharePct": 3
     },
     {
       "route": "IKT-CXR",
@@ -111,6 +111,13 @@
     },
     {
       "route": "SVO-SGN",
+      "flights": 6,
+      "paxEst": 1800,
+      "avgPaxPerFlight": 300,
+      "sharePct": 2.3
+    },
+    {
+      "route": "SVO-DAD",
       "flights": 6,
       "paxEst": 1800,
       "avgPaxPerFlight": 300,
@@ -128,13 +135,6 @@
       "flights": 7,
       "paxEst": 1540,
       "avgPaxPerFlight": 220,
-      "sharePct": 2
-    },
-    {
-      "route": "SVO-DAD",
-      "flights": 5,
-      "paxEst": 1500,
-      "avgPaxPerFlight": 300,
       "sharePct": 1.9
     },
     {
@@ -222,12 +222,12 @@
       "paxEst": 55603
     },
     "2026-06": {
-      "flights": 63,
-      "paxEst": 15579
+      "flights": 67,
+      "paxEst": 16689
     },
     "unknown": {
-      "flights": 25,
-      "paxEst": 6939
+      "flights": 26,
+      "paxEst": 7239
     }
   },
   "tables": {
@@ -237,62 +237,62 @@
         "flights": 43,
         "paxEst": 13825,
         "avgPaxPerFlight": 322,
-        "sharePct": 17.7
+        "sharePct": 17.4
       },
       {
         "route": "ALA-CXR",
         "flights": 52,
         "paxEst": 9334,
         "avgPaxPerFlight": 180,
-        "sharePct": 11.9
+        "sharePct": 11.7
       },
       {
         "route": "OVB-CXR",
-        "flights": 23,
-        "paxEst": 7050,
-        "avgPaxPerFlight": 307,
-        "sharePct": 9
+        "flights": 24,
+        "paxEst": 7350,
+        "avgPaxPerFlight": 306,
+        "sharePct": 9.2
       },
       {
         "route": "TAS-CXR",
-        "flights": 31,
-        "paxEst": 6880,
+        "flights": 32,
+        "paxEst": 7100,
         "avgPaxPerFlight": 222,
-        "sharePct": 8.8
+        "sharePct": 8.9
       },
       {
         "route": "NQZ-CXR",
         "flights": 27,
         "paxEst": 5894,
         "avgPaxPerFlight": 218,
-        "sharePct": 7.5
+        "sharePct": 7.4
       },
       {
         "route": "KJA-CXR",
         "flights": 15,
         "paxEst": 4650,
         "avgPaxPerFlight": 310,
-        "sharePct": 6
+        "sharePct": 5.8
       },
       {
         "route": "NQZ-DAD",
         "flights": 13,
         "paxEst": 3220,
         "avgPaxPerFlight": 248,
-        "sharePct": 4.1
+        "sharePct": 4
+      },
+      {
+        "route": "SVO-HAN",
+        "flights": 10,
+        "paxEst": 2900,
+        "avgPaxPerFlight": 290,
+        "sharePct": 3.6
       },
       {
         "route": "ALA-DAD",
         "flights": 13,
         "paxEst": 2624,
         "avgPaxPerFlight": 202,
-        "sharePct": 3.4
-      },
-      {
-        "route": "SVO-HAN",
-        "flights": 9,
-        "paxEst": 2610,
-        "avgPaxPerFlight": 290,
         "sharePct": 3.3
       },
       {
@@ -300,7 +300,7 @@
         "flights": 10,
         "paxEst": 2500,
         "avgPaxPerFlight": 250,
-        "sharePct": 3.2
+        "sharePct": 3.1
       },
       {
         "route": "DME-CXR",
@@ -311,10 +311,10 @@
       },
       {
         "route": "VVO-CXR",
-        "flights": 7,
-        "paxEst": 2100,
+        "flights": 8,
+        "paxEst": 2400,
         "avgPaxPerFlight": 300,
-        "sharePct": 2.7
+        "sharePct": 3
       },
       {
         "route": "IKT-CXR",
@@ -325,6 +325,13 @@
       },
       {
         "route": "SVO-SGN",
+        "flights": 6,
+        "paxEst": 1800,
+        "avgPaxPerFlight": 300,
+        "sharePct": 2.3
+      },
+      {
+        "route": "SVO-DAD",
         "flights": 6,
         "paxEst": 1800,
         "avgPaxPerFlight": 300,
@@ -342,13 +349,6 @@
         "flights": 7,
         "paxEst": 1540,
         "avgPaxPerFlight": 220,
-        "sharePct": 2
-      },
-      {
-        "route": "SVO-DAD",
-        "flights": 5,
-        "paxEst": 1500,
-        "avgPaxPerFlight": 300,
         "sharePct": 1.9
       },
       {
@@ -433,10 +433,10 @@
       {
         "code": "SVO",
         "label": "SVO — Moscow, Russia",
-        "flights": 63,
-        "paxEst": 19735,
+        "flights": 65,
+        "paxEst": 20325,
         "avgPaxPerFlight": 313,
-        "sharePct": 25.3
+        "sharePct": 25.6
       },
       {
         "code": "ALA",
@@ -444,7 +444,7 @@
         "flights": 69,
         "paxEst": 12768,
         "avgPaxPerFlight": 185,
-        "sharePct": 16.3
+        "sharePct": 16.1
       },
       {
         "code": "NQZ",
@@ -452,23 +452,23 @@
         "flights": 40,
         "paxEst": 9114,
         "avgPaxPerFlight": 228,
-        "sharePct": 11.7
+        "sharePct": 11.5
       },
       {
         "code": "TAS",
         "label": "TAS — Tashkent, Uzbekistan",
-        "flights": 38,
-        "paxEst": 8350,
+        "flights": 39,
+        "paxEst": 8570,
         "avgPaxPerFlight": 220,
-        "sharePct": 10.7
+        "sharePct": 10.8
       },
       {
         "code": "OVB",
         "label": "OVB — Novosibirsk, Russia",
-        "flights": 25,
-        "paxEst": 7650,
+        "flights": 26,
+        "paxEst": 7950,
         "avgPaxPerFlight": 306,
-        "sharePct": 9.8
+        "sharePct": 10
       },
       {
         "code": "KJA",
@@ -476,15 +476,15 @@
         "flights": 16,
         "paxEst": 4950,
         "avgPaxPerFlight": 309,
-        "sharePct": 6.3
+        "sharePct": 6.2
       },
       {
         "code": "VVO",
         "label": "VVO — Vladivostok, Russia",
-        "flights": 14,
-        "paxEst": 3640,
-        "avgPaxPerFlight": 260,
-        "sharePct": 4.7
+        "flights": 15,
+        "paxEst": 3940,
+        "avgPaxPerFlight": 263,
+        "sharePct": 5
       },
       {
         "code": "MSQ",
@@ -492,7 +492,7 @@
         "flights": 10,
         "paxEst": 2500,
         "avgPaxPerFlight": 250,
-        "sharePct": 3.2
+        "sharePct": 3.1
       },
       {
         "code": "DME",
@@ -524,7 +524,7 @@
         "flights": 7,
         "paxEst": 1700,
         "avgPaxPerFlight": 243,
-        "sharePct": 2.2
+        "sharePct": 2.1
       },
       {
         "code": "LED",
@@ -547,26 +547,26 @@
       {
         "code": "CXR",
         "label": "CXR — Nha Trang (Cam Ranh)",
-        "flights": 236,
-        "paxEst": 60373,
+        "flights": 239,
+        "paxEst": 61193,
         "avgPaxPerFlight": 256,
-        "sharePct": 77.3
+        "sharePct": 76.9
       },
       {
         "code": "DAD",
         "label": "DAD — Da Nang",
-        "flights": 39,
-        "paxEst": 9274,
-        "avgPaxPerFlight": 238,
-        "sharePct": 11.9
+        "flights": 40,
+        "paxEst": 9574,
+        "avgPaxPerFlight": 239,
+        "sharePct": 12
       },
       {
         "code": "HAN",
         "label": "HAN — Hanoi",
-        "flights": 23,
-        "paxEst": 5274,
-        "avgPaxPerFlight": 229,
-        "sharePct": 6.8
+        "flights": 24,
+        "paxEst": 5564,
+        "avgPaxPerFlight": 232,
+        "sharePct": 7
       },
       {
         "code": "SGN",

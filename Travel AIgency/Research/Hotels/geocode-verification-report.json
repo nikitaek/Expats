@@ -1,0 +1,667 @@
+{
+  "checked": 96,
+  "address_checked": 96,
+  "address_mismatches": 37,
+  "suspicious_other": 0,
+  "fixed": 30,
+  "still_uncertain": 7,
+  "address_mismatch_threshold_m": 350,
+  "fixes": [
+    {
+      "hotel": "Hyatt Regency Danang Resort & Spa",
+      "city": "Da Nang",
+      "reasons": [
+        "reverse_address_mismatch(overlap=1)",
+        "address_distance_2705m"
+      ],
+      "old": [
+        16.0125,
+        108.263611
+      ],
+      "new": [
+        15.9896594,
+        108.2723335
+      ],
+      "address": "5 Truong Sa, Hoa Hai, Ngu Hanh Son, Da Nang, Vietnam",
+      "source": "photon-address",
+      "distance_m": 2705.475282229884,
+      "reverse_overlap": 1
+    },
+    {
+      "hotel": "Muong Thanh Luxury Da Nang Hotel",
+      "city": "Da Nang",
+      "reasons": [
+        "reverse_address_mismatch(overlap=1)"
+      ],
+      "old": [
+        16.053936,
+        108.24746
+      ],
+      "new": [
+        16.0534593,
+        108.2481303
+      ],
+      "address": "270 Vo Nguyen Giap, Ngu Hanh Son, Da Nang, Vietnam",
+      "source": "nominatim-address",
+      "distance_m": 89.10768676498301,
+      "reverse_overlap": 1
+    },
+    {
+      "hotel": "Wyndham Hoi An Royal Beachfront Resort & Villas",
+      "city": "Hoiana",
+      "reasons": [
+        "address_distance_11645m"
+      ],
+      "old": [
+        15.82,
+        108.403
+      ],
+      "new": [
+        15.8417528,
+        108.2965176
+      ],
+      "address": "Hoiana, Duy Xuyen, Quang Nam, Vietnam",
+      "source": "photon-address",
+      "distance_m": 11645.184993041477,
+      "reverse_overlap": 1
+    },
+    {
+      "hotel": "Holiday Beach Danang Hotel & Spa",
+      "city": "Da Nang",
+      "reasons": [
+        "reverse_address_mismatch(overlap=0)"
+      ],
+      "old": [
+        16.0485,
+        108.2488
+      ],
+      "new": [
+        16.0497468,
+        108.2483553
+      ],
+      "address": "300 Vo Nguyen Giap, Ngu Hanh Son, Da Nang, Vietnam",
+      "source": "photon-address",
+      "distance_m": 146.55615768916738,
+      "reverse_overlap": 0
+    },
+    {
+      "hotel": "Four Seasons Resort The Nam Hai",
+      "city": "Ha My / Dien Duong",
+      "reasons": [
+        "address_distance_9091m"
+      ],
+      "old": [
+        15.872039,
+        108.345833
+      ],
+      "new": [
+        15.9106666,
+        108.2709146
+      ],
+      "address": "Block Ha My Dong B, Dien Duong, Dien Ban, Quang Nam, Vietnam",
+      "source": "photon-address",
+      "distance_m": 9090.853735926574,
+      "reverse_overlap": 0
+    },
+    {
+      "hotel": "Maximilan Danang Beach Hotel",
+      "city": "Da Nang",
+      "reasons": [
+        "reverse_address_mismatch(overlap=0)",
+        "address_distance_3406m"
+      ],
+      "old": [
+        16.0455,
+        108.2482
+      ],
+      "new": [
+        16.0759643,
+        108.2449034
+      ],
+      "address": "222 Vo Nguyen Giap, Phuoc My, Son Tra, Da Nang, Vietnam",
+      "source": "photon-address",
+      "distance_m": 3405.7416973578083,
+      "reverse_overlap": 0
+    },
+    {
+      "hotel": "Premier Village Danang Resort Managed by Accor",
+      "city": "Da Nang",
+      "reasons": [
+        "reverse_address_mismatch(overlap=0)"
+      ],
+      "old": [
+        16.0436238,
+        108.2496571
+      ],
+      "new": [
+        16.0436238,
+        108.2496571
+      ],
+      "address": "Premier Village Danang Resort, 99 Vo Nguyen Giap, Ngu Hanh Son, Da Nang, Vietnam",
+      "source": "photon-address",
+      "distance_m": 0.0,
+      "reverse_overlap": 0
+    },
+    {
+      "hotel": "Koi Resort & Residence Da Nang",
+      "city": "Da Nang",
+      "reasons": [
+        "reverse_address_mismatch(overlap=0)",
+        "address_distance_1727m"
+      ],
+      "old": [
+        16.004841,
+        108.268918
+      ],
+      "new": [
+        15.9896594,
+        108.2723335
+      ],
+      "address": "11 Truong Sa, Hoa Hai, Ngu Hanh Son, Da Nang, Vietnam",
+      "source": "photon-address",
+      "distance_m": 1727.1425395739573,
+      "reverse_overlap": 0
+    },
+    {
+      "hotel": "Victoria Hoi An Beach Resort & Spa",
+      "city": "Hoi An",
+      "reasons": [
+        "address_distance_2741m"
+      ],
+      "old": [
+        15.895326,
+        108.369756
+      ],
+      "new": [
+        15.8782122,
+        108.3882042
+      ],
+      "address": "Au Co, Cua Dai Beach, Hoi An, Quang Nam, Vietnam",
+      "source": "photon-address",
+      "distance_m": 2741.166187862793,
+      "reverse_overlap": 1
+    },
+    {
+      "hotel": "Wyndham Garden Hoi An",
+      "city": "Hoi An",
+      "reasons": [
+        "reverse_address_mismatch(overlap=0)",
+        "address_distance_3951m"
+      ],
+      "old": [
+        15.8975,
+        108.3525
+      ],
+      "new": [
+        15.877577,
+        108.3219123
+      ],
+      "address": "19 Lac Long Quan, Cam An, Hoi An, Quang Nam, Vietnam",
+      "source": "photon-address",
+      "distance_m": 3950.816531339554,
+      "reverse_overlap": 0
+    },
+    {
+      "hotel": "Fivitel Hoi An Hotel",
+      "city": "Hoi An",
+      "reasons": [
+        "reverse_address_mismatch(overlap=0)",
+        "address_distance_2728m"
+      ],
+      "old": [
+        15.879,
+        108.335
+      ],
+      "new": [
+        15.8906649,
+        108.3574366
+      ],
+      "address": "135 Tran Hung Dao, Hoi An, Quang Nam, Vietnam",
+      "source": "photon-address",
+      "distance_m": 2727.6979411026255,
+      "reverse_overlap": 0
+    },
+    {
+      "hotel": "Four Seasons Nam Hai",
+      "city": "Hoi An",
+      "reasons": [
+        "address_distance_9091m"
+      ],
+      "old": [
+        15.872039,
+        108.345833
+      ],
+      "new": [
+        15.9106666,
+        108.2709146
+      ],
+      "address": "Block Ha My Dong B, Dien Duong, Dien Ban, Quang Nam, Vietnam",
+      "source": "photon-address",
+      "distance_m": 9090.853735926574,
+      "reverse_overlap": 0
+    },
+    {
+      "hotel": "Serene Nature Boutique Resort & Spa",
+      "city": "Hoi An",
+      "reasons": [
+        "address_distance_2254m"
+      ],
+      "old": [
+        15.865,
+        108.32
+      ],
+      "new": [
+        15.8847804,
+        108.32459
+      ],
+      "address": "Thanh Nien Road, Cam Ha, Hoi An, Quang Nam, Vietnam",
+      "source": "photon-address",
+      "distance_m": 2253.6003591289355,
+      "reverse_overlap": 0
+    },
+    {
+      "hotel": "Ancient House Resort Hoi An",
+      "city": "Hoi An",
+      "reasons": [
+        "address_distance_523m"
+      ],
+      "old": [
+        15.8756,
+        108.3431
+      ],
+      "new": [
+        15.8802989,
+        108.3428569
+      ],
+      "address": "Ancient House Resort, Hoi An, Vietnam",
+      "source": "nominatim-address",
+      "distance_m": 523.1403456536708,
+      "reverse_overlap": 0
+    },
+    {
+      "hotel": "Chicland Danang Beach Hotel",
+      "city": "Da Nang",
+      "reasons": [
+        "reverse_address_mismatch(overlap=0)",
+        "address_distance_1154m"
+      ],
+      "old": [
+        16.04979,
+        108.2486
+      ],
+      "new": [
+        16.0397489,
+        108.2513386
+      ],
+      "address": "105 Vo Nguyen Giap, Khue My, Ngu Hanh Son, Da Nang, Vietnam",
+      "source": "photon-address",
+      "distance_m": 1154.2370580307445,
+      "reverse_overlap": 0
+    },
+    {
+      "hotel": "Grandvrio Ocean Resort Danang",
+      "city": "Da Nang",
+      "reasons": [
+        "address_distance_3101m"
+      ],
+      "old": [
+        15.9062,
+        108.3414
+      ],
+      "new": [
+        15.9270149,
+        108.3221055
+      ],
+      "address": "Lac Long Quan Street, Dien Ngoc Ward, Dien Ban, Quang Nam, Vietnam",
+      "source": "photon-address",
+      "distance_m": 3100.604473820286,
+      "reverse_overlap": 0
+    },
+    {
+      "hotel": "Green Heaven Resort & Spa",
+      "city": "Hoi An",
+      "reasons": [
+        "reverse_address_mismatch(overlap=0)",
+        "address_distance_1904m"
+      ],
+      "old": [
+        15.868,
+        108.34
+      ],
+      "new": [
+        15.8666552,
+        108.3222578
+      ],
+      "address": "81 Nguyen Duy Hieu, Cam Chau, Hoi An, Quang Nam, Vietnam",
+      "source": "photon-address",
+      "distance_m": 1903.5546409061521,
+      "reverse_overlap": 0
+    },
+    {
+      "hotel": "Hoi An Rose Garden Hotel",
+      "city": "Hoi An",
+      "reasons": [
+        "reverse_address_mismatch(overlap=0)"
+      ],
+      "old": [
+        15.8802989,
+        108.3428569
+      ],
+      "new": [
+        15.8802989,
+        108.3428569
+      ],
+      "address": "576 Cua Dai, Cam Chau, Hoi An, Quang Nam, Vietnam",
+      "source": "photon-address",
+      "distance_m": 0.0,
+      "reverse_overlap": 0
+    },
+    {
+      "hotel": "Indochine Hoi An Hotel",
+      "city": "Hoi An",
+      "reasons": [
+        "address_distance_477m"
+      ],
+      "old": [
+        15.875,
+        108.336
+      ],
+      "new": [
+        15.8792805,
+        108.336309
+      ],
+      "address": "Hoi An Indochine Hotel, Cua Dai area, Hoi An, Vietnam",
+      "source": "photon-address",
+      "distance_m": 477.11584524858523,
+      "reverse_overlap": 0
+    },
+    {
+      "hotel": "Kay Hotel",
+      "city": "Da Nang",
+      "reasons": [
+        "address_distance_1097m"
+      ],
+      "old": [
+        16.06784,
+        108.22909
+      ],
+      "new": [
+        16.0651724,
+        108.2192072
+      ],
+      "address": "Kay Hotel, Hai Chau, Da Nang, Vietnam",
+      "source": "photon-address",
+      "distance_m": 1096.8638981400795,
+      "reverse_overlap": 0
+    },
+    {
+      "hotel": "Lion Sea Hotel",
+      "city": "Da Nang",
+      "reasons": [
+        "reverse_address_mismatch(overlap=0)",
+        "address_distance_646m"
+      ],
+      "old": [
+        16.052,
+        108.243
+      ],
+      "new": [
+        16.0506227,
+        108.2488739
+      ],
+      "address": "268 Vo Nguyen Giap, Bac My An, Ngu Hanh Son, Da Nang, Vietnam",
+      "source": "photon-address",
+      "distance_m": 646.0978654448047,
+      "reverse_overlap": 0
+    },
+    {
+      "hotel": "Nesta Hoian Resort and Spa",
+      "city": "Hoi An",
+      "reasons": [
+        "reverse_address_mismatch(overlap=0)",
+        "address_distance_4093m"
+      ],
+      "old": [
+        15.865,
+        108.33
+      ],
+      "new": [
+        15.8906649,
+        108.3574366
+      ],
+      "address": "135 Tran Hung Dao, Cam Chau, Hoi An, Quang Nam, Vietnam",
+      "source": "photon-address",
+      "distance_m": 4093.286817729575,
+      "reverse_overlap": 0
+    },
+    {
+      "hotel": "Orange Hotel",
+      "city": "Da Nang",
+      "reasons": [
+        "address_distance_3952m"
+      ],
+      "old": [
+        16.06517,
+        108.21933
+      ],
+      "new": [
+        16.0664101,
+        108.1823684
+      ],
+      "address": "Orange Hotel, Thanh Khe, Da Nang, Vietnam",
+      "source": "photon-address",
+      "distance_m": 3951.8332964315105,
+      "reverse_overlap": 0
+    },
+    {
+      "hotel": "Phuc Long Luxury Hotel Danang",
+      "city": "Da Nang",
+      "reasons": [
+        "reverse_address_mismatch(overlap=0)",
+        "address_distance_697m"
+      ],
+      "old": [
+        16.045,
+        108.246
+      ],
+      "new": [
+        16.0506227,
+        108.2488739
+      ],
+      "address": "81 Vo Nguyen Giap, Khue My, Ngu Hanh Son, Da Nang, Vietnam",
+      "source": "photon-address",
+      "distance_m": 696.5711290792132,
+      "reverse_overlap": 0
+    },
+    {
+      "hotel": "RiverTown Hoi An Resort & Spa",
+      "city": "Hoi An",
+      "reasons": [
+        "reverse_address_mismatch(overlap=0)",
+        "address_distance_23575m"
+      ],
+      "old": [
+        15.888,
+        108.368
+      ],
+      "new": [
+        16.0203854,
+        108.1957647
+      ],
+      "address": "30 Le Dai Hanh, Cua Dai, Hoi An, Quang Nam, Vietnam",
+      "source": "photon-address",
+      "distance_m": 23574.79337039782,
+      "reverse_overlap": 0
+    },
+    {
+      "hotel": "Royal Riverside Hoi An Hotel",
+      "city": "Hoi An",
+      "reasons": [
+        "reverse_address_mismatch(overlap=0)",
+        "address_distance_1014m"
+      ],
+      "old": [
+        15.878,
+        108.335
+      ],
+      "new": [
+        15.8761329,
+        108.3257167
+      ],
+      "address": "04 Nguyen Phuc Chu, Hoi An, Quang Nam, Vietnam",
+      "source": "photon-address",
+      "distance_m": 1014.3500127942862,
+      "reverse_overlap": 0
+    },
+    {
+      "hotel": "Sabina Hotel & Apartment",
+      "city": "Da Nang",
+      "reasons": [
+        "reverse_address_mismatch(overlap=1)"
+      ],
+      "old": [
+        16.0687168,
+        108.2423129
+      ],
+      "new": [
+        16.0687168,
+        108.2423129
+      ],
+      "address": "63 Duong Dinh Nghe, An Hai Bac, Son Tra, Da Nang, Vietnam",
+      "source": "nominatim-address",
+      "distance_m": 0.0,
+      "reverse_overlap": 1
+    },
+    {
+      "hotel": "Samdi Hotel",
+      "city": "Da Nang",
+      "reasons": [
+        "reverse_address_mismatch(overlap=1)"
+      ],
+      "old": [
+        16.0598789,
+        108.210489
+      ],
+      "new": [
+        16.0601965,
+        108.2125595
+      ],
+      "address": "331 Nguyen Van Linh, Thanh Khe, Da Nang, Vietnam",
+      "source": "nominatim-address",
+      "distance_m": 224.04464063792045,
+      "reverse_overlap": 1
+    },
+    {
+      "hotel": "Silk River Hoi An Hotel & Spa",
+      "city": "Hoi An",
+      "reasons": [
+        "reverse_address_mismatch(overlap=0)",
+        "address_distance_544m"
+      ],
+      "old": [
+        15.8765,
+        108.3217
+      ],
+      "new": [
+        15.8800065,
+        108.3252434
+      ],
+      "address": "222 Tran Hung Dao, Cam Pho, Hoi An, Quang Nam, Vietnam",
+      "source": "photon-address",
+      "distance_m": 543.7350684647128,
+      "reverse_overlap": 0
+    },
+    {
+      "hotel": "Vinpearl Da Nang Resort & Villas",
+      "city": "Da Nang",
+      "reasons": [
+        "reverse_address_mismatch(overlap=0)",
+        "address_distance_3977m"
+      ],
+      "old": [
+        16.0217,
+        108.2558
+      ],
+      "new": [
+        15.9896594,
+        108.2723335
+      ],
+      "address": "23 Truong Sa, Hoa Hai, Ngu Hanh Son, Da Nang, Vietnam",
+      "source": "photon-address",
+      "distance_m": 3976.946471285944,
+      "reverse_overlap": 0
+    }
+  ],
+  "still_bad": [
+    {
+      "hotel": "Avatar Da Nang Hotel",
+      "reasons": [
+        "reverse_address_mismatch(overlap=0)"
+      ],
+      "coords": [
+        16.052,
+        108.248
+      ]
+    },
+    {
+      "hotel": "Blue Ocean 2 Hotel",
+      "reasons": [
+        "reverse_address_mismatch(overlap=0)"
+      ],
+      "coords": [
+        16.052,
+        108.245
+      ]
+    },
+    {
+      "hotel": "King's Finger Hotel",
+      "reasons": [
+        "reverse_address_mismatch(overlap=0)"
+      ],
+      "coords": [
+        16.055,
+        108.242
+      ]
+    },
+    {
+      "hotel": "Renaissance Hoi An Resort & Spa",
+      "reasons": [
+        "reverse_address_mismatch(overlap=0)"
+      ],
+      "coords": [
+        15.880556,
+        108.388611
+      ]
+    },
+    {
+      "hotel": "Beautiful Beach Hotel",
+      "reasons": [
+        "reverse_address_mismatch(overlap=0)"
+      ],
+      "coords": [
+        16.062,
+        108.245
+      ]
+    },
+    {
+      "hotel": "Bellerive Hoi An Resort & Spa",
+      "reasons": [
+        "reverse_address_mismatch(overlap=0)"
+      ],
+      "coords": [
+        15.888542,
+        108.375666
+      ]
+    },
+    {
+      "hotel": "Hotel Royal Hoi An - MGallery",
+      "reasons": [
+        "reverse_address_mismatch(overlap=0)"
+      ],
+      "coords": [
+        15.8766,
+        108.3199
+      ]
+    }
+  ]
+}

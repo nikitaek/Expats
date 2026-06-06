@@ -1,0 +1,242 @@
+{
+  "Muong Thanh Luxury Da Nang Hotel": {
+    "address": "270 Vo Nguyen Giap, Ngu Hanh Son, Da Nang, Vietnam",
+    "latitude": 16.0534593,
+    "longitude": 108.2481303,
+    "source": "nominatim-address"
+  },
+  "Hyatt Regency Danang Resort & Spa": {
+    "address": "5 Truong Sa, Hoa Hai, Ngu Hanh Son, Da Nang, Vietnam",
+    "latitude": 15.9896594,
+    "longitude": 108.2723335,
+    "source": "photon-address"
+  },
+  "Palm Garden Beach Resort & Spa Hoi An": {
+    "address": "Lac Long Quan, Cua Dai Beach, Hoi An, Quang Nam, Vietnam",
+    "source": "photon",
+    "latitude": 15.8976157,
+    "longitude": 108.3640426
+  },
+  "Palm Garden Beach Resort & Spa": {
+    "address": "Lac Long Quan, Cua Dai Beach, Hoi An, Quang Nam, Vietnam",
+    "source": "photon",
+    "latitude": 15.8976157,
+    "longitude": 108.3640426
+  },
+  "Premier Village Danang Resort Managed by Accor": {
+    "address": "Premier Village Danang Resort, 99 Vo Nguyen Giap, Ngu Hanh Son, Da Nang, Vietnam",
+    "source": "photon-address",
+    "latitude": 16.0436238,
+    "longitude": 108.2496571
+  },
+  "Holiday Beach Danang Hotel & Spa": {
+    "address": "300 Vo Nguyen Giap, Ngu Hanh Son, Da Nang, Vietnam",
+    "source": "photon-address",
+    "latitude": 16.0497468,
+    "longitude": 108.2483553
+  },
+  "Renaissance Hoi An Resort & Spa": {
+    "address": "Block 6, Phuoc Hai, Cua Dai, Hoi An, Quang Nam, Vietnam",
+    "latitude": 15.8998415,
+    "longitude": 108.3608058,
+    "source": "photon"
+  },
+  "Fivitel Hoi An Hotel": {
+    "address": "135 Tran Hung Dao, Hoi An, Quang Nam, Vietnam",
+    "source": "photon-address",
+    "latitude": 15.8906649,
+    "longitude": 108.3574366
+  },
+  "Four Seasons Nam Hai": {
+    "address": "Block Ha My Dong B, Dien Duong, Dien Ban, Quang Nam, Vietnam",
+    "latitude": 15.9106666,
+    "longitude": 108.2709146,
+    "source": "photon-address"
+  },
+  "Maximilan Danang Beach Hotel": {
+    "address": "222 Vo Nguyen Giap, Phuoc My, Son Tra, Da Nang, Vietnam",
+    "source": "photon-address",
+    "latitude": 16.0759643,
+    "longitude": 108.2449034
+  },
+  "RiverTown Hoi An Resort & Spa": {
+    "address": "30 Le Dai Hanh, Cua Dai, Hoi An, Quang Nam, Vietnam",
+    "latitude": 15.888,
+    "longitude": 108.368,
+    "source": "official/booking"
+  },
+  "Serene Nature Boutique Resort & Spa": {
+    "address": "Thanh Nien Road, Cam Ha, Hoi An, Quang Nam, Vietnam",
+    "source": "photon-address",
+    "latitude": 15.8847804,
+    "longitude": 108.32459
+  },
+  "Avatar Da Nang Hotel": {
+    "address": "46-48 Hoang Ke Viem, Bac My An, Ngu Hanh Son, Da Nang, Vietnam",
+    "source": "photon",
+    "latitude": 16.0494894,
+    "longitude": 108.2470219
+  },
+  "Beautiful Beach Hotel": {
+    "address": "12 Hoang Ke Viem, Bac My An, Ngu Hanh Son, Da Nang, Vietnam",
+    "source": "photon",
+    "latitude": 16.0525491,
+    "longitude": 108.2458263
+  },
+  "Bellerive Hoi An Resort & Spa": {
+    "address": "33 Le Dai Hanh Street, Cua Dai Ward, Hoi An, Quang Nam, Vietnam",
+    "latitude": 15.8998415,
+    "longitude": 108.3608058,
+    "source": "photon"
+  },
+  "Chicland Danang Beach Hotel": {
+    "address": "105 Vo Nguyen Giap, Khue My, Ngu Hanh Son, Da Nang, Vietnam",
+    "source": "photon-address",
+    "latitude": 16.0397489,
+    "longitude": 108.2513386
+  },
+  "Grandvrio Ocean Resort Danang": {
+    "address": "Lac Long Quan Street, Dien Ngoc Ward, Dien Ban, Quang Nam, Vietnam",
+    "latitude": 15.9270149,
+    "longitude": 108.3221055,
+    "source": "photon-address"
+  },
+  "Sunrise Premium Resort & Spa Hoi An": {
+    "address": "Au Co, Cua Dai, Hoi An, Quang Nam, Vietnam",
+    "source": "photon",
+    "latitude": 15.8895283,
+    "longitude": 108.3788268
+  },
+  "Green Heaven Resort & Spa": {
+    "address": "81 Nguyen Duy Hieu, Cam Chau, Hoi An, Quang Nam, Vietnam",
+    "source": "photon-address",
+    "latitude": 15.8666552,
+    "longitude": 108.3222578
+  },
+  "Hoi An Field Villa & Spa": {
+    "address": "Lac Long Quan, Cam Ha, Hoi An, Quang Nam, Vietnam",
+    "source": "photon",
+    "latitude": 15.8998415,
+    "longitude": 108.3608058
+  },
+  "Hoi An Rose Garden Hotel": {
+    "address": "576 Cua Dai, Cam Chau, Hoi An, Quang Nam, Vietnam",
+    "source": "photon-address",
+    "latitude": 15.8802989,
+    "longitude": 108.3428569
+  },
+  "King's Finger Hotel": {
+    "address": "187 Ho Nghinh, Son Tra, Da Nang, Vietnam",
+    "source": "photon",
+    "latitude": 16.0514417,
+    "longitude": 108.2114422
+  },
+  "Koi Resort & Residence Da Nang": {
+    "address": "11 Truong Sa, Hoa Hai, Ngu Hanh Son, Da Nang, Vietnam",
+    "latitude": 15.9896594,
+    "longitude": 108.2723335,
+    "source": "photon-address"
+  },
+  "Lion Sea Hotel": {
+    "address": "268 Vo Nguyen Giap, Bac My An, Ngu Hanh Son, Da Nang, Vietnam",
+    "latitude": 16.052,
+    "longitude": 108.243,
+    "source": "kayak/polomap"
+  },
+  "Nesta Hoian Resort and Spa": {
+    "address": "135 Tran Hung Dao, Cam Chau, Hoi An, Quang Nam, Vietnam",
+    "source": "photon-address",
+    "latitude": 15.8906649,
+    "longitude": 108.3574366
+  },
+  "Phuc Long Luxury Hotel Danang": {
+    "address": "81 Vo Nguyen Giap, Khue My, Ngu Hanh Son, Da Nang, Vietnam",
+    "source": "photon-address",
+    "latitude": 16.0506227,
+    "longitude": 108.2488739
+  },
+  "Royal Riverside Hoi An Hotel": {
+    "address": "04 Nguyen Phuc Chu, Hoi An, Quang Nam, Vietnam",
+    "source": "photon-address",
+    "latitude": 15.8761329,
+    "longitude": 108.3257167
+  },
+  "Silk River Hoi An Hotel & Spa": {
+    "address": "222 Tran Hung Dao, Cam Pho, Hoi An, Quang Nam, Vietnam",
+    "source": "photon-address",
+    "latitude": 15.8800065,
+    "longitude": 108.3252434
+  },
+  "Victoria Hoi An Beach Resort & Spa": {
+    "address": "Au Co, Cua Dai Beach, Hoi An, Quang Nam, Vietnam",
+    "latitude": 15.895326,
+    "longitude": 108.369756,
+    "source": "official/booking"
+  },
+  "Vinpearl Da Nang Resort & Villas": {
+    "address": "23 Truong Sa, Hoa Hai, Ngu Hanh Son, Da Nang, Vietnam",
+    "latitude": 16.0217,
+    "longitude": 108.2558,
+    "source": "vinpearl/official"
+  },
+  "Wyndham Garden Hoi An": {
+    "address": "19 Lac Long Quan, Cam An, Hoi An, Quang Nam, Vietnam",
+    "latitude": 15.877577,
+    "longitude": 108.3219123,
+    "source": "photon-address"
+  },
+  "Vinpearl Resort & Golf Nam Hoi An": {
+    "address": "Vo Chi Cong, Binh Minh, Thang Binh, Quang Nam, Vietnam",
+    "latitude": 15.8807799,
+    "longitude": 108.389622,
+    "source": "photon"
+  },
+  "New World Hoiana Beach & Resort": {
+    "address": "Tay Son Tay, Duy Hai, Duy Xuyen, Quang Nam, Vietnam",
+    "latitude": 15.8306098,
+    "longitude": 108.4041304,
+    "source": "photon"
+  },
+  "Hoiana Residences": {
+    "address": "Tay Son Tay, Duy Hai, Hoiana, Quang Nam, Vietnam",
+    "latitude": 15.821574,
+    "longitude": 108.404568,
+    "source": "hoiana.com"
+  },
+  "Wyndham Hoi An Royal Beachfront Resort & Villas": {
+    "address": "Hoiana, Duy Xuyen, Quang Nam, Vietnam",
+    "latitude": 15.82,
+    "longitude": 108.403,
+    "source": "hoiana/wyndham"
+  },
+  "Blue Ocean 2 Hotel": {
+    "address": "51 Hoang Ke Viem, Bac My An, Ngu Hanh Son, Da Nang, Vietnam",
+    "latitude": 16.052,
+    "longitude": 108.245,
+    "source": "kayak/booking"
+  },
+  "Samdi Hotel": {
+    "address": "331 Nguyen Van Linh, Thanh Khe, Da Nang, Vietnam",
+    "latitude": 16.0598789,
+    "longitude": 108.210489,
+    "source": "samdihotel.vn"
+  },
+  "Sabina Hotel & Apartment": {
+    "address": "63 Duong Dinh Nghe, An Hai Bac, Son Tra, Da Nang, Vietnam",
+    "latitude": 16.0687168,
+    "longitude": 108.2423129,
+    "source": "amazingo.vn"
+  },
+  "Hotel Royal Hoi An - MGallery": {
+    "address": "39 Dao Duy Tu Street, Hoi An, Quang Nam, Vietnam",
+    "latitude": 15.8766,
+    "longitude": 108.3199,
+    "source": "accor/official"
+  },
+  "Orange Hotel": {
+    "address": "Orange Hotel, Thanh Khe, Da Nang, Vietnam",
+    "latitude": 16.06517,
+    "longitude": 108.21933,
+    "source": "tez/generic thanh khe"
+  }
+}
