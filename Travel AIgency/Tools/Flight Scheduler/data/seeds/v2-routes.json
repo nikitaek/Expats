@@ -1,722 +1,1174 @@
 [
   {
-    "route": "ALA-BMV"
+    "route": "ALA-BMV",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "ALA-CXR"
+    "route": "ALA-CXR",
+    "enabled": true
   },
   {
-    "route": "ALA-DAD"
+    "route": "ALA-DAD",
+    "enabled": true
   },
   {
-    "route": "ALA-DLI"
+    "route": "ALA-DLI",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "ALA-HAN"
+    "route": "ALA-HAN",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "ALA-HPH"
+    "route": "ALA-HPH",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "ALA-HUI"
+    "route": "ALA-HUI",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "ALA-PQC"
+    "route": "ALA-PQC",
+    "enabled": true
   },
   {
-    "route": "ALA-PXU"
+    "route": "ALA-PXU",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "ALA-SGN"
+    "route": "ALA-SGN",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "ALA-THD"
+    "route": "ALA-THD",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "ALA-VCA"
+    "route": "ALA-VCA",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "ALA-VDH"
+    "route": "ALA-VDH",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "ALA-VDO"
+    "route": "ALA-VDO",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "ALA-VII"
+    "route": "ALA-VII",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "DME-BMV"
+    "route": "DME-BMV",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "DME-CXR"
+    "route": "DME-CXR",
+    "enabled": true
   },
   {
-    "route": "DME-DAD"
+    "route": "DME-DAD",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "DME-DLI"
+    "route": "DME-DLI",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "DME-HAN"
+    "route": "DME-HAN",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "DME-HPH"
+    "route": "DME-HPH",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "DME-HUI"
+    "route": "DME-HUI",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "DME-PQC"
+    "route": "DME-PQC",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "DME-PXU"
+    "route": "DME-PXU",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "DME-SGN"
+    "route": "DME-SGN",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "DME-THD"
+    "route": "DME-THD",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "DME-VCA"
+    "route": "DME-VCA",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "DME-VDH"
+    "route": "DME-VDH",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "DME-VDO"
+    "route": "DME-VDO",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "DME-VII"
+    "route": "DME-VII",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "EVN-BMV"
+    "route": "EVN-BMV",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "EVN-CXR"
+    "route": "EVN-CXR",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "EVN-DAD"
+    "route": "EVN-DAD",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "EVN-DLI"
+    "route": "EVN-DLI",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "EVN-HAN"
+    "route": "EVN-HAN",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "EVN-HPH"
+    "route": "EVN-HPH",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "EVN-HUI"
+    "route": "EVN-HUI",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "EVN-PQC"
+    "route": "EVN-PQC",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "EVN-PXU"
+    "route": "EVN-PXU",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "EVN-SGN"
+    "route": "EVN-SGN",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "EVN-THD"
+    "route": "EVN-THD",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "EVN-VCA"
+    "route": "EVN-VCA",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "EVN-VDH"
+    "route": "EVN-VDH",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "EVN-VDO"
+    "route": "EVN-VDO",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "EVN-VII"
+    "route": "EVN-VII",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "FRU-BMV"
+    "route": "FRU-BMV",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "FRU-CXR"
+    "route": "FRU-CXR",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "FRU-DAD"
+    "route": "FRU-DAD",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "FRU-DLI"
+    "route": "FRU-DLI",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "FRU-HAN"
+    "route": "FRU-HAN",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "FRU-HPH"
+    "route": "FRU-HPH",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "FRU-HUI"
+    "route": "FRU-HUI",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "FRU-PQC"
+    "route": "FRU-PQC",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "FRU-PXU"
+    "route": "FRU-PXU",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "FRU-SGN"
+    "route": "FRU-SGN",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "FRU-THD"
+    "route": "FRU-THD",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "FRU-VCA"
+    "route": "FRU-VCA",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "FRU-VDH"
+    "route": "FRU-VDH",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "FRU-VDO"
+    "route": "FRU-VDO",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "FRU-VII"
+    "route": "FRU-VII",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "GYD-BMV"
+    "route": "GYD-BMV",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "GYD-CXR"
+    "route": "GYD-CXR",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "GYD-DAD"
+    "route": "GYD-DAD",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "GYD-DLI"
+    "route": "GYD-DLI",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "GYD-HAN"
+    "route": "GYD-HAN",
+    "enabled": true
   },
   {
-    "route": "GYD-HPH"
+    "route": "GYD-HPH",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "GYD-HUI"
+    "route": "GYD-HUI",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "GYD-PQC"
+    "route": "GYD-PQC",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "GYD-PXU"
+    "route": "GYD-PXU",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "GYD-SGN"
+    "route": "GYD-SGN",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "GYD-THD"
+    "route": "GYD-THD",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "GYD-VCA"
+    "route": "GYD-VCA",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "GYD-VDH"
+    "route": "GYD-VDH",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "GYD-VDO"
+    "route": "GYD-VDO",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "GYD-VII"
+    "route": "GYD-VII",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "IKT-BMV"
+    "route": "IKT-BMV",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "IKT-CXR"
+    "route": "IKT-CXR",
+    "enabled": true
   },
   {
-    "route": "IKT-DAD"
+    "route": "IKT-DAD",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "IKT-DLI"
+    "route": "IKT-DLI",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "IKT-HAN"
+    "route": "IKT-HAN",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "IKT-HPH"
+    "route": "IKT-HPH",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "IKT-HUI"
+    "route": "IKT-HUI",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "IKT-PQC"
+    "route": "IKT-PQC",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "IKT-PXU"
+    "route": "IKT-PXU",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "IKT-SGN"
+    "route": "IKT-SGN",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "IKT-THD"
+    "route": "IKT-THD",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "IKT-VCA"
+    "route": "IKT-VCA",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "IKT-VDH"
+    "route": "IKT-VDH",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "IKT-VDO"
+    "route": "IKT-VDO",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "IKT-VII"
+    "route": "IKT-VII",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "KHV-BMV"
+    "route": "KHV-BMV",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "KHV-CXR"
+    "route": "KHV-CXR",
+    "enabled": true
   },
   {
-    "route": "KHV-DAD"
+    "route": "KHV-DAD",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "KHV-DLI"
+    "route": "KHV-DLI",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "KHV-HAN"
+    "route": "KHV-HAN",
+    "enabled": true
   },
   {
-    "route": "KHV-HPH"
+    "route": "KHV-HPH",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "KHV-HUI"
+    "route": "KHV-HUI",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "KHV-PQC"
+    "route": "KHV-PQC",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "KHV-PXU"
+    "route": "KHV-PXU",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "KHV-SGN"
+    "route": "KHV-SGN",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "KHV-THD"
+    "route": "KHV-THD",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "KHV-VCA"
+    "route": "KHV-VCA",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "KHV-VDH"
+    "route": "KHV-VDH",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "KHV-VDO"
+    "route": "KHV-VDO",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "KHV-VII"
+    "route": "KHV-VII",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "KJA-BMV"
+    "route": "KJA-BMV",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "KJA-CXR"
+    "route": "KJA-CXR",
+    "enabled": true
   },
   {
-    "route": "KJA-DAD"
+    "route": "KJA-DAD",
+    "enabled": true
   },
   {
-    "route": "KJA-DLI"
+    "route": "KJA-DLI",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "KJA-HAN"
+    "route": "KJA-HAN",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "KJA-HPH"
+    "route": "KJA-HPH",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "KJA-HUI"
+    "route": "KJA-HUI",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "KJA-PQC"
+    "route": "KJA-PQC",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "KJA-PXU"
+    "route": "KJA-PXU",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "KJA-SGN"
+    "route": "KJA-SGN",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "KJA-THD"
+    "route": "KJA-THD",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "KJA-VCA"
+    "route": "KJA-VCA",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "KJA-VDH"
+    "route": "KJA-VDH",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "KJA-VDO"
+    "route": "KJA-VDO",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "KJA-VII"
+    "route": "KJA-VII",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "LED-BMV"
+    "route": "LED-BMV",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "LED-CXR"
+    "route": "LED-CXR",
+    "enabled": true
   },
   {
-    "route": "LED-DAD"
+    "route": "LED-DAD",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "LED-DLI"
+    "route": "LED-DLI",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "LED-HAN"
+    "route": "LED-HAN",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "LED-HPH"
+    "route": "LED-HPH",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "LED-HUI"
+    "route": "LED-HUI",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "LED-PQC"
+    "route": "LED-PQC",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "LED-PXU"
+    "route": "LED-PXU",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "LED-SGN"
+    "route": "LED-SGN",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "LED-THD"
+    "route": "LED-THD",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "LED-VCA"
+    "route": "LED-VCA",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "LED-VDH"
+    "route": "LED-VDH",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "LED-VDO"
+    "route": "LED-VDO",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "LED-VII"
+    "route": "LED-VII",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "MSQ-BMV"
+    "route": "MSQ-BMV",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "MSQ-CXR"
+    "route": "MSQ-CXR",
+    "enabled": true
   },
   {
-    "route": "MSQ-DAD"
+    "route": "MSQ-DAD",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "MSQ-DLI"
+    "route": "MSQ-DLI",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "MSQ-HAN"
+    "route": "MSQ-HAN",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "MSQ-HPH"
+    "route": "MSQ-HPH",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "MSQ-HUI"
+    "route": "MSQ-HUI",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "MSQ-PQC"
+    "route": "MSQ-PQC",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "MSQ-PXU"
+    "route": "MSQ-PXU",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "MSQ-SGN"
+    "route": "MSQ-SGN",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "MSQ-THD"
+    "route": "MSQ-THD",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "MSQ-VCA"
+    "route": "MSQ-VCA",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "MSQ-VDH"
+    "route": "MSQ-VDH",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "MSQ-VDO"
+    "route": "MSQ-VDO",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "MSQ-VII"
+    "route": "MSQ-VII",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "NQZ-BMV"
+    "route": "NQZ-BMV",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "NQZ-CXR"
+    "route": "NQZ-CXR",
+    "enabled": true
   },
   {
-    "route": "NQZ-DAD"
+    "route": "NQZ-DAD",
+    "enabled": true
   },
   {
-    "route": "NQZ-DLI"
+    "route": "NQZ-DLI",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "NQZ-HAN"
+    "route": "NQZ-HAN",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "NQZ-HPH"
+    "route": "NQZ-HPH",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "NQZ-HUI"
+    "route": "NQZ-HUI",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "NQZ-PQC"
+    "route": "NQZ-PQC",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "NQZ-PXU"
+    "route": "NQZ-PXU",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "NQZ-SGN"
+    "route": "NQZ-SGN",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "NQZ-THD"
+    "route": "NQZ-THD",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "NQZ-VCA"
+    "route": "NQZ-VCA",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "NQZ-VDH"
+    "route": "NQZ-VDH",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "NQZ-VDO"
+    "route": "NQZ-VDO",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "NQZ-VII"
+    "route": "NQZ-VII",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "OVB-BMV"
+    "route": "OVB-BMV",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "OVB-CXR"
+    "route": "OVB-CXR",
+    "enabled": true
   },
   {
-    "route": "OVB-DAD"
+    "route": "OVB-DAD",
+    "enabled": true
   },
   {
-    "route": "OVB-DLI"
+    "route": "OVB-DLI",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "OVB-HAN"
+    "route": "OVB-HAN",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "OVB-HPH"
+    "route": "OVB-HPH",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "OVB-HUI"
+    "route": "OVB-HUI",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "OVB-PQC"
+    "route": "OVB-PQC",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "OVB-PXU"
+    "route": "OVB-PXU",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "OVB-SGN"
+    "route": "OVB-SGN",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "OVB-THD"
+    "route": "OVB-THD",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "OVB-VCA"
+    "route": "OVB-VCA",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "OVB-VDH"
+    "route": "OVB-VDH",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "OVB-VDO"
+    "route": "OVB-VDO",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "OVB-VII"
+    "route": "OVB-VII",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "SVO-BMV"
+    "route": "SVO-BMV",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "SVO-CXR"
+    "route": "SVO-CXR",
+    "enabled": true
   },
   {
-    "route": "SVO-DAD"
+    "route": "SVO-DAD",
+    "enabled": true
   },
   {
-    "route": "SVO-DLI"
+    "route": "SVO-DLI",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "SVO-HAN"
+    "route": "SVO-HAN",
+    "enabled": true
   },
   {
-    "route": "SVO-HPH"
+    "route": "SVO-HPH",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "SVO-HUI"
+    "route": "SVO-HUI",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "SVO-PQC"
+    "route": "SVO-PQC",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "SVO-PXU"
+    "route": "SVO-PXU",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "SVO-SGN"
+    "route": "SVO-SGN",
+    "enabled": true
   },
   {
-    "route": "SVO-THD"
+    "route": "SVO-THD",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "SVO-VCA"
+    "route": "SVO-VCA",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "SVO-VDH"
+    "route": "SVO-VDH",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "SVO-VDO"
+    "route": "SVO-VDO",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "SVO-VII"
+    "route": "SVO-VII",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "TAS-BMV"
+    "route": "TAS-BMV",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "TAS-CXR"
+    "route": "TAS-CXR",
+    "enabled": true
   },
   {
-    "route": "TAS-DAD"
+    "route": "TAS-DAD",
+    "enabled": true
   },
   {
-    "route": "TAS-DLI"
+    "route": "TAS-DLI",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "TAS-HAN"
+    "route": "TAS-HAN",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "TAS-HPH"
+    "route": "TAS-HPH",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "TAS-HUI"
+    "route": "TAS-HUI",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "TAS-PQC"
+    "route": "TAS-PQC",
+    "enabled": true
   },
   {
-    "route": "TAS-PXU"
+    "route": "TAS-PXU",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "TAS-SGN"
+    "route": "TAS-SGN",
+    "enabled": true
   },
   {
-    "route": "TAS-THD"
+    "route": "TAS-THD",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "TAS-VCA"
+    "route": "TAS-VCA",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "TAS-VDH"
+    "route": "TAS-VDH",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "TAS-VDO"
+    "route": "TAS-VDO",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "TAS-VII"
+    "route": "TAS-VII",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "VKO-BMV"
+    "route": "VKO-BMV",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "VKO-CXR"
+    "route": "VKO-CXR",
+    "enabled": true
   },
   {
-    "route": "VKO-DAD"
+    "route": "VKO-DAD",
+    "enabled": true
   },
   {
-    "route": "VKO-DLI"
+    "route": "VKO-DLI",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "VKO-HAN"
+    "route": "VKO-HAN",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "VKO-HPH"
+    "route": "VKO-HPH",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "VKO-HUI"
+    "route": "VKO-HUI",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "VKO-PQC"
+    "route": "VKO-PQC",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "VKO-PXU"
+    "route": "VKO-PXU",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "VKO-SGN"
+    "route": "VKO-SGN",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "VKO-THD"
+    "route": "VKO-THD",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "VKO-VCA"
+    "route": "VKO-VCA",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "VKO-VDH"
+    "route": "VKO-VDH",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "VKO-VDO"
+    "route": "VKO-VDO",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "VKO-VII"
+    "route": "VKO-VII",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "VVO-BMV"
+    "route": "VVO-BMV",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "VVO-CXR"
+    "route": "VVO-CXR",
+    "enabled": true
   },
   {
-    "route": "VVO-DAD"
+    "route": "VVO-DAD",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "VVO-DLI"
+    "route": "VVO-DLI",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "VVO-HAN"
+    "route": "VVO-HAN",
+    "enabled": true
   },
   {
-    "route": "VVO-HPH"
+    "route": "VVO-HPH",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "VVO-HUI"
+    "route": "VVO-HUI",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "VVO-PQC"
+    "route": "VVO-PQC",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "VVO-PXU"
+    "route": "VVO-PXU",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "VVO-SGN"
+    "route": "VVO-SGN",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "VVO-THD"
+    "route": "VVO-THD",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "VVO-VCA"
+    "route": "VVO-VCA",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "VVO-VDH"
+    "route": "VVO-VDH",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "VVO-VDO"
+    "route": "VVO-VDO",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   },
   {
-    "route": "VVO-VII"
+    "route": "VVO-VII",
+    "enabled": false,
+    "note": "no flights in downloaded raw data (2026-05–06)"
   }
 ]

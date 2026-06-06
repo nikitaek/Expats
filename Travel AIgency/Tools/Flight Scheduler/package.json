@@ -1,0 +1,28 @@
+{
+  "name": "flight-scheduler",
+  "version": "2.0.0",
+  "private": true,
+  "description": "FR24-only CIS→Vietnam flight pipeline",
+  "type": "module",
+  "scripts": {
+    "daily": "node scripts/v2-daily-run.mjs",
+    "download": "node scripts/v2-download-routes.mjs",
+    "analyze": "node scripts/v2-analyze-routes.mjs",
+    "parse-prefix": "node scripts/v2-parse-prefix.mjs",
+    "enrich-flights": "node scripts/v2-enrich-flights.mjs",
+    "load-bigquery": "node scripts/v2-load-bigquery.mjs",
+    "report": "node scripts/v2-report.mjs",
+    "bq-setup": "node scripts/bq-setup.mjs",
+    "bootstrap": "node scripts/v2-bootstrap.mjs",
+    "test-pipeline": "node scripts/v2-test-pipeline.mjs",
+    "r2-test": "node scripts/v2-r2-test.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.758.0",
+    "@google-cloud/bigquery": "^7.9.2",
+    "dotenv": "^16.4.7"
+  }
+}
